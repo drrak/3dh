@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="3dh" />
+	<meta name="description" content="Różności o Raspberry Pi, Raspbian, Kodi, RetroArch i Windows 10." />
+	<meta name="keywords" content="Raspberry Pi,Raspbian,Kodi,RetroArch,Windows 10" />
+	<title>3dh - Raspberry Pi - Pi-hole Blokowanie Reklam</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+</head>
+
+<body>
+
+<div id="container">
+	
+<div id="logo"><a href="../index.htm" class="opt">3dh</a></div>
+<div id="menu">
+<div class="option"><a href="../rpi/raspberry-pi.htm">&nbsp;Raspberry Pi&nbsp;</a></div>
+<div class="option"><a href="../w10/windows-10.htm" class="opt">&nbsp;Windows 10&nbsp;</a></div>
+</div>
+
+<div class="txt">
+<h2>Raspberry Pi:<h2><h1><a href="blokowanie-reklam-pi-hole.htm">Blokowanie reklam Pi-hole</a></h1>
+<p class="dat">17.07.19</p>
+<p>Do obsługi <a href="https://pi-hole.net/">Pi-hole</a> polecam <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbiana wersję Lite</a>. Po instalacji Raspbiania aktualizujemy system:</p> 
+<pre>sudo apt-get update && sudo apt-get dist-upgrade -y</pre>
+<p>i instalujemy Pi-hole wklejając tę komendę:</p>
+<pre>curl -sSL https://install.pi-hole.net | bash</pre>
+<p>W trakcie instalacji wybieramy domyślne ustawienia i serwer Google jeśli nie wiemy co wybrać. Zapamiętujemy przypisany adres IP i na koniec zwracamy jeszcze uwagę na hasło jakie otrzymamy. W razie problemów hasło zawsze można zmienić komendą:</p>
+<pre>sudo pihole -a -p</pre>
+<p>Otrzymany IP wpisujemy do DNS w komputerze/routerze na którym chcemy blokować reklamy. Ja opiszę przykład z komputerem. Wchodzimy w:<br />
+Ustawienia &gt; Sieć i Internet &gt; Zmień opcje karty<br />
+PPM na karcie sieciowej &gt;  Właściwości &gt; TCP/IPv4 &gt;  Właściwości > Użyj następujących adresów DNS &gt; w Preferowany adres wpisujemy IP malinki i zatwierdzamy nasze zmiany.</p>
+<p>Teraz możemy zobaczyć działanie Pi-hole w przeglądarce internetowej. Wklejamy IP przypisany w czasie instalacji i dopisujemy "admin". Przykład: <span>192.168.0.122/admin</span><br />
+Jeszcze tylko podajemy hasło i to w zasadzie tyle.</p>
+<p>Przy okazji polecam kanał szmala i jego poradnik: <a href="https://youtu.be/zVCXx6pJp8k">https://youtu.be/zVCXx6pJp8k</a></p>
+</div>
+
+<div id="fot"><footer>&copy 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
+
+</div>
+
+</body>
+</html>

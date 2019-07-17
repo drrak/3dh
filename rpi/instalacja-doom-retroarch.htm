@@ -6,7 +6,7 @@
 	<meta name="author" content="3dh" />
 	<meta name="description" content="Różności o Raspberry Pi, Raspbian, Kodi, RetroArch i Windows 10." />
 	<meta name="keywords" content="Raspberry Pi,Raspbian,Kodi,RetroArch,Windows 10" />
-	<title>3dh - Podłączenie do sieci bez klawiatury i monitora</title>
+	<title>3dh - Raspberry Pi - Jak zainstalować Doom</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../style.css" type="text/css" />
@@ -18,38 +18,19 @@
 	
 <div id="logo"><a href="../index.htm" class="opt">3dh</a></div>
 <div id="menu">
-<div class="option"><a href="raspberry-pi.htm">&nbsp;Raspberry Pi&nbsp;</a></div>
+<div class="option"><a href="../rpi/raspberry-pi.htm">&nbsp;Raspberry Pi&nbsp;</a></div>
 <div class="option"><a href="../w10/windows-10.htm" class="opt">&nbsp;Windows 10&nbsp;</a></div>
 </div>
 
+
 <div class="txt">
-<h2>Raspberry Pi:<h2><h1><a href="https://youtu.be/zVCXx6pJp8k">Podłączenie do sieci bez klawiatury i monitora</a></h1>
+<h2>LibreELEC, RetroArch:</h2><h1><a href="instalacja-doom-retroarch.htm">Jak zainstalować Doom</a></h1>
 <p class="dat">17.07.19</p>
-<p>Pobierz system <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a> i zainstaluj na kartę SD przy pomocy programu <a href="https://www.balena.io/etcher/">balenaEtcher</a>. <br />
-Po instalacji nie wyciągaj karty, tylko stwórz plik "ssh" bez podawania typu.<br />
-Dodaj jeszcze plik "wpa_supplicant.conf". Edytuj go i wklej:</p>
-<pre translate="no">
-network={
-    ssid="network"
-    psk="password"
-}
-</pre>
-<p>W <span>ssid</span> wpisz nazwę swojej sieci a w <span>psk</span> hasło.</p>
-
-<pre translate="no">
-<span style="color:green">   .~~.   .~~.
-  '. \ ' ' / .'</span>
-   <span style="color:red">.~ .~~~..~.
-  : .~.'~'.~. :
- ~ (   ) (   ) ~
-( : '~'.~.'~' : )
- ~ .~ (   ) ~. ~
-  (  : '~' :  )
-   '~ .~~~. ~'
-       '~'</span>
-</pre>
+<p>W <a href="https://github.com/bite-your-idols/Gamestarter/releases/latest">RetroArch</a> wybierz:<br />
+1. Online Updater > Core Updater > Doom (PrBoom)<br />
+2. Content Downloader > PrBoom > Doom [shareware][1993].zip<br />
+3. Load Content > Downloads > Doom > doom1.wad</p>
 </div>
-
 
 <div id="fot"><footer>&copy 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
 
