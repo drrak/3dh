@@ -15,7 +15,7 @@ body {
 a:link,a:visited {color:#484848;background-color:#bbbbbb;text-decoration:none;}
 /* a:visited {color:#404040;background-color:#909090;text-decoration:none;} */
 a:hover,a:active,a.opt,a.opt:visited {color:#bbbbbb;background-color:#484848;text-decoration:none;}
-a.opt:hover,a.opt:active,#act {color:#484848;background-color:#bbbbbb;text-decoration:none;}
+a.opt:hover,a.opt:active {color:#484848;background-color:#bbbbbb;text-decoration:none;}
 
 #container {
 	width:800px;
