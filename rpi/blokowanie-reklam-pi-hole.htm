@@ -26,11 +26,11 @@
 <h2>Raspberry Pi:<h2><h1><a href="blokowanie-reklam-pi-hole.htm">Blokowanie reklam Pi-hole</a></h1>
 <p class="dat">17.07.19</p>
 <p>Do obsługi <a href="https://pi-hole.net/">Pi-hole</a> polecam <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbiana wersję Lite</a>. Po instalacji Raspbiania aktualizujemy system:</p> 
-<pre>sudo apt-get update && sudo apt-get dist-upgrade -y</pre>
+<pre translate="no">sudo apt-get update && sudo apt-get dist-upgrade -y</pre>
 <p>i instalujemy Pi-hole wklejając tę komendę:</p>
-<pre>curl -sSL https://install.pi-hole.net | bash</pre>
+<pre translate="no">curl -sSL https://install.pi-hole.net | bash</pre>
 <p>W trakcie instalacji wybieramy domyślne ustawienia i serwer Google jeśli nie wiemy co wybrać. Zapamiętujemy przypisany adres IP i na koniec zwracamy jeszcze uwagę na hasło jakie otrzymamy. W razie problemów hasło zawsze można zmienić komendą:</p>
-<pre>sudo pihole -a -p</pre>
+<pre translate="no">sudo pihole -a -p</pre>
 <p>Otrzymany IP wpisujemy do DNS w komputerze/routerze na którym chcemy blokować reklamy. Ja opiszę przykład z komputerem. Wchodzimy w:<br />
 Ustawienia &gt; Sieć i Internet &gt; Zmień opcje karty<br />
 PPM na karcie sieciowej &gt;  Właściwości &gt; TCP/IPv4 &gt;  Właściwości > Użyj następujących adresów DNS &gt; w Preferowany adres wpisujemy IP malinki i zatwierdzamy nasze zmiany.</p>
