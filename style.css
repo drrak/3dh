@@ -1,0 +1,56 @@
+html,body {height:100%;}
+html { 
+	/* background:url(img/pi2.jpg) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover; */
+	background-color:#484848;
+}
+body {
+	font:12px 'Courier New',Courier,monospace;
+	color:#bbbbbb;
+	margin:0 auto;
+}
+a:link,a:visited {color:#484848;background-color:#bbbbbb;text-decoration:none;}
+/* a:visited {color:#404040;background-color:#909090;text-decoration:none;} */
+a:hover,a:active,a.opt,a.opt:visited {color:#bbbbbb;background-color:#484848;text-decoration:none;}
+a.opt:hover,a.opt:active,#act {color:#484848;background-color:#bbbbbb;text-decoration:none;}
+
+#container {
+	width:800px;
+	background-color:#484848;
+	margin:0 auto -50px;
+	border:0 solid #404040;
+	border-width:0 0 0 1px;
+	padding-bottom:0;
+	position:relative;
+	min-height:100%;
+}
+.txt {
+	clear:both;
+	padding:0 20px 0 20px;
+}
+#logo {
+	float:left;
+	padding:20px 10px 20px 20px;
+}
+#menu {
+	float:right;
+	padding:20px 20px 20px 10px;
+}
+.option {float:left;cursor:pointer;}
+
+pre {color:#ffffff;padding:5px 0 5px 0;}
+.dat {margin:5px 0 20px 0;}
+h1 {margin:10px 0 0 0;}
+h2 {padding:0;margin:10px 0 -7px 0;}
+span {color:#ffffff;}
+#fot {
+	padding:20px;
+}
+
+@media all and (max-width:850px) {
+	#container {width:100%;}
+	#menu {float:right;margin-right:25px;}
+}
