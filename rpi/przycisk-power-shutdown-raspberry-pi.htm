@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="3dh" />
+	<meta name="description" content="Różności o Raspberry Pi, Raspbian, Kodi, RetroArch i Windows 10." />
+	<meta name="keywords" content="Raspberry Pi,Raspbian,Kodi,RetroArch,Windows 10" />
+	<title>3dh - Raspberry Pi - Przycisk Power i Shutdown</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+</head>
+
+<body>
+
+<div id="container">
+	
+<div id="logo"><a href="../index.htm" class="opt">3dh</a></div>
+<div id="menu">
+<div class="option"><a href="../rpi/raspberry-pi.htm">&nbsp;Raspberry Pi&nbsp;</a></div>
+<div class="option"><a href="../w10/windows-10.htm" class="opt">&nbsp;Windows 10&nbsp;</a></div>
+</div>
+
+<div class="txt">
+<h2>Raspberry Pi:</h2><h1><a href="przycisk-power-shutdown-raspberry-pi.htm">Jak dodać bezpieczny przycisk shutdown</a></h1>
+<p class="dat">17.07.19</p>
+<p>To bardzo proste. Wystarczy otworzyć plik config.txt, najlepiej jako superuser:</p> 
+<pre translate="no">sudo su
+nano /boot/config.txt</pre>
+<p>i na końcu dodać tę linijkę:</p>
+<pre translate="no">dtoverlay=gpio-shutdown</pre>
+<p>Po tym wychodzimy <span>Ctrl+X</span> i zapisujemy zmiany.</p>
+<p>Wyłączamy malinkę i wpinamy przycisk chwilowy do pinów <span>5 i 6</span> (<span>GPIO3 i GND</span>). To wszystko! Od teraz mamy bezpieczny przycisk wyłączający oraz włączający naszą malinkę. Najlepsze jest to, że przycisk powienien działać i pod Raspbianem, i pod Kodi. Przynajmniej tak powinno być w LibreELEC 9 lub nowszym.</p>
+<p>Polecam tutorial z którego dowiedziałem się o tym przycisku: <a href="https://youtu.be/qAzheiZlB9k">https://youtu.be/qAzheiZlB9k</a></p>
+
+</div>
+
+<div id="fot"><footer>&copy; 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
+
+</div>
+
+</body>
+</html>
