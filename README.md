@@ -1,2 +1,2 @@
 # 3dh
-https://github.com/drrak/3dh/
+https://drrak.github.io/3dh/
