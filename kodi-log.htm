@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="3dh" />
+	<meta name="description" content="Różności o Raspberry Pi, Raspbian, Kodi, RetroArch i Windows 10." />
+	<meta name="keywords" content="Raspberry Pi,Raspbian,Kodi,RetroArch,Windows 10" />
+	<title>3dh - Kodi - Jak sprawdzić plik kodi.log</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+</head>
+
+<body>
+
+<div id="container">
+	
+<div id="logo"><a href="../index.htm" class="opt">3dh</a></div>
+<div id="menu">
+<div class="option"><a href="../rpi/raspberry-pi.htm">&nbsp;Raspberry Pi&nbsp;</a></div>
+<div class="option"><a href="../w10/windows-10.htm" class="opt">&nbsp;Windows 10&nbsp;</a></div>
+</div>
+
+<div class="txt">
+<h2>Kodi, LibreELEC:</h2><h1><a href="rpi/kodi-log.htm">Jak sprawdzić plik kodi.log</a></h1>
+<p class="dat">17.07.19</p>
+<p>Na Windows 10 przyda się program <a href="https://www.putty.org/">PuTTy</a>. Wystarczy podać IP malinki, połączyć się, podać nazwę i hasło (nazwa:root, hasło:libreelec). Jak już jesteśmy w terminalu wklejamy:</p> 
+<pre translate="no">nano /storage/.kodi/temp/kodi.log</pre>
+<p>Kopiujemy interesujący nas kawałek zaznaczając tylko tekst. W terminalu wszystko co zaznaczymy jest automatyczne kopiowane.</p>
+<p>Logowanie się przez Linuxa jest prostsze i sprowadza się do czegoś takiego:</p>
+<pre translate="no">ssh root@192.168.0.122</pre>
+<p>Nazwa root już jest podana więc wystarczy hasło i już jesteśmy zalogowani.</p>
+
+</div>
+
+<div id="fot"><footer>&copy 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
+
+</div>
+
+</body>
+</html>
