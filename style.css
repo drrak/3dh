@@ -33,11 +33,11 @@ a.opt:hover,a.opt:active,#act {color:#484848;background-color:#bbbbbb;text-decor
 }
 #logo {
 	float:left;
-	padding:20px 10px 20px 20px;
+	padding:20px 0px 20px 20px;
 }
 #menu {
 	float:right;
-	padding:20px 20px 20px 10px;
+	padding:20px 20px 20px 0px;
 }
 .option {float:left;cursor:pointer;}
 
@@ -52,5 +52,5 @@ span {color:#ffffff;}
 
 @media all and (max-width:850px) {
 	#container {width:100%;}
-	#menu {float:right;margin-right:25px;}
+	#menu {padding:20px 0px 20px 0px;}
 }
