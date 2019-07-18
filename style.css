@@ -23,7 +23,6 @@ a.opt:hover,a.opt:active {color:#484848;background-color:#bbbbbb;text-decoration
 	border:0 solid #404040;
 	border-width:0 0 0 1px;
 	padding-bottom:0;
-	position:relative;
 	min-height:100%;
 }
 .txt {
