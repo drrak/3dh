@@ -1,4 +1,4 @@
-html,body {height:100%;}
+html,body {height:100%;font:12px 'Courier New',Courier,monospace;}
 html { 
 	/* background:url(img/pi2.jpg) no-repeat center center fixed;
 	-webkit-background-size:cover;
@@ -6,10 +6,8 @@ html {
 	-o-background-size:cover;
 	background-size:cover; */
 	background-color:#484848;
-	font:12px 'Courier New',Courier,monospace;
 }
 body {
-	font:12px 'Courier New',Courier,monospace;
 	color:#bbbbbb;
 	margin:0 auto;
 }
