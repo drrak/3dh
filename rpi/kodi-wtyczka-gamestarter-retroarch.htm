@@ -6,7 +6,7 @@
 	<meta name="author" content="3dh" />
 	<meta name="description" content="Różności o Raspberry Pi, Raspbian, Kodi, RetroArch i Windows 10." />
 	<meta name="keywords" content="Raspberry Pi,Raspbian,Kodi,RetroArch,Windows 10" />
-	<title>3dh - Kodi - RetroArch - Brak Dźwięku</title>
+	<title>3dh - Kodi - RetroArch</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="../style.css" type="text/css" />
 </head>
@@ -22,18 +22,15 @@
 </div>
 
 <div class="txt">
-<h2>Kodi, LibreELEC, RetroArch:</h2><h1><a href="brak-dziwek-retroarch.htm">Rozwiązanie problemów z dźwiękiem</a></h1>
-<p class="dat">17.07.19</p>
-<p>W razie braku dźwięku w emulatorach wypróbuj ten sposób. Najpierw otwieramy plik config.txt:</p> 
-<pre translate="no">mount -o remount,rw /flash
-nano /flash/config.txt</pre>
-<p>Na końcu dodajemy:</p>
-<pre translate="no">hdmi_force_edid_audio=1
-hdmi_group=1
-hdmi_mode=16</pre>
-<p>Zapisujemy (Ctrl+O) i wychodzimy (Ctrl+X). Jeszcze trzeba zabezpieczyć katalog i zrestartować Kodi:</p>
-<pre translate="no">mount -o remount,ro /flash
-reboot</pre>
+<h2>Kodi, LibreELEC, RetroArch:</h2><h1><a href="kodi-wtyczka-gamestarter-retroarch.htm">Instalacja RetroArch/Gamestarter</a></h1>
+<p class="dat">18.07.19</p>
+<p>Repozytorium można pobrać z tej strony <a href="https://github.com/bite-your-idols/Gamestarter">GitHub</a>, konkretnie z tego <a href="https://goo.gl/m36qLT">linku</a>.</p>
+<p>Wybierz "Dodatki", "Zainstaluj z pliku zip" i wybierz pobrany wcześniej plik "repository.gamestarter-3.0.0.zip". Jeśli robisz to pierwszy raz, to będziesz musiał włączyć opcję pozwalającą na instalowanie dodatków z nieznanych źródeł. </p>
+<p>Repozytorium jest już zainstalowane. Teraz wybierz:<br />
+Zainstaluj z repozytorium &gt; Gamestarter add-on repository &gt; Programy &gt; RetroArch</p>
+<p>To wszystko. W razie problemów z dźwiękiem odsyłam do tego <a href="brak-dziwek-retroarch.htm">wpisu</a>.
+<pre translate="no"></pre>
+<p></p>
 
 </div>
 
