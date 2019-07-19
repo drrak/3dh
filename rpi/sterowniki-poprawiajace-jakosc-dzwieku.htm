@@ -27,7 +27,9 @@
 <p>W terminalu Kodi zezwól na modyfikowanie katalogu i otwórz config.txt:</p> 
 <pre translate="no">mount -o remount,rw /flash
 nano /flash/config.txt</pre>
-<p>Na końcu dodaj: <span>audio_pwm_mode=2</span> zapisz zmiany (Ctrl+O, Enter) i wyjdź (Ctrl+X). Na koniec zabezpiecz katalog przed zmianami i zrestartuj system:</p>
+<p>Na końcu dodaj:</p>
+<pre translate="no">audio_pwm_mode=2</pre>
+<p>Wyjdź (Ctrl+X) i zatwierdź zmiany. Na koniec zabezpiecz katalog przed zmianami i zrestartuj system:</p>
 <pre translate="no">mount -o remount,ro /flash
 reboot</pre>
 <p>PS. W Raspbianie modyfikuj plik jako su (superuser). Plik config.txt znajduje się w tym katalogu:</p>
