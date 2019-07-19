@@ -12,10 +12,8 @@ body {
 	margin:0 auto;
 }
 a:link,a:visited {color:#484848;background-color:#bbbbbb;text-decoration:none;}
-a.option:visited {color:#bbbbbb;background-color:#4848ff;text-decoration:none;}
 a:hover,a:active,a.opt {color:#bbbbbb;background-color:#484848;text-decoration:none;}
 a.opt:hover,a.opt:active {color:#484848;background-color:#bbbbbb;text-decoration:none;}
-
 
 #container {
 	width:800px;
