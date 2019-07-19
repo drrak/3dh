@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="3dh" />
+	<meta name="description" content="Różności o Raspberry Pi, Raspbian, Kodi, RetroArch i Windows 10." />
+	<meta name="keywords" content="Raspberry Pi,Raspbian,Kodi,RetroArch,Windows 10" />
+	<title>3dh - Kodi - Wtyczka YouTube</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+</head>
+
+<body>
+
+<div id="container">
+	
+<div id="logo"><a href="../index.htm" class="opt">3dh</a></div>
+<div id="menu">
+<div class="option"><a href="../rpi/raspberry-pi.htm">&nbsp;Raspberry Pi&nbsp;</a></div>
+<div class="option"><a href="../w10/windows-10.htm" class="opt">&nbsp;Windows 10&nbsp;</a></div>
+</div>
+
+<div class="txt">
+<h2>Kodi, LibreELEC, YouTube:</h2><h1><a href="kodi-wtyczka-youtube.htm">Instalacja wtyczki YouTube</a></h1>
+<p class="dat">18.07.19</p>
+<p>Wejdź w "Dodatki" i wybierz: Zainstaluj z repozytorium &gt; Kodi Add-on repository &gt; Wtyczki wideo &gt; YouTube (Shift+Y).</p>
+<p>Czas na trudniejszą część, czyli logowanie (potrzebne klucze API) i odtwarzanie strumieni (InputStream Adpative). Zacznijmy od InputStream Adpative. Wejdź w "Dodatki" i wybierz: Zainstaluj z repozytorium &gt; LibreELEC Add-ons &gt; Wtyczki strumieniowe &gt; InputStream Adpative.</p>
+<p>Teraz logowanie. Zamiast opisywać jak zdobyć klucze API, polecam sprawdzić <a href="https://forum.kodi.tv/showthread.php?tid=325740&pid=2681560#pid2681560">ten link</a>. Tu jest to dokładnie opisane a nawet pokazane.</p>
+<p>Teraz musimy wprowadzić klucze do wtyczki edytując plik "settings.xml". Można też wpisać klucze w ustawieniach wtyczki, ale przez edycję pliku jest to prostsze i pewniejsze. Lokacja pliku w SSH:</p>
+<pre translate="no">nano /storage/.kodi/userdata/addon_data/plugin.video.youtube/settings.xml</pre>
+<p>i w Sambie:</p>
+<pre translate="no">\\LIBREELEC\Userdata\addon_data\plugin.video.youtube</pre>
+<p>Szukamy tej części i wklejamy nasze klucze:</p>
+<pre translate="no">&lt;setting id="youtube.api.enable" value="<span style="color:red;">true</span>" /&gt;
+&lt;setting id="youtube.api.id" value="<span style="color:red;">Client ID</span>" /&gt;
+&lt;setting id="youtube.api.key" value="<span style="color:red;">API Key</span>" /&gt;
+&lt;setting id="youtube.api.key.switch" value="1" /&gt;
+&lt;setting id="youtube.api.secret" value="<span style="color:red;">Client Secret</span>" /&gt;</pre>
+
+<p>Dopiero teraz logujecie się i dwa razy potwierdzacie swoją tożsamość wpisując kody pokazane w Kodi.</p>
+
+<p>PS. Wtyczka YouTube na <a href="https://github.com/jdf76/plugin.video.youtube">GitHub</a>. W razie problemów można tu zgłosić błąd, trzeba tylko pamiętać o jego dokładnym opisaniu. Najlepiej dodając odpowiedni fragment pliku <a href="kodi-log.htm">kodi.log</a>.</p>
+</div>
+
+<div id="fot"><footer>&copy; 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
+
+</div>
+
+</body>
+</html>
