@@ -8,19 +8,18 @@ html {
 	background-color:#484848;
 }
 body {
-	color:#bbbbbb;
+	color:#bbb;
 	margin:0 auto;
 }
-a:link,a:visited {color:#484848;background-color:#bbbbbb;text-decoration:none;}
-a:hover,a:active,a.opt {color:#bbbbbb;background-color:#484848;text-decoration:none;}
-a.opt:hover,a.opt:active {color:#484848;background-color:#bbbbbb;text-decoration:none;}
+a:link,a:visited {color:#484848;background-color:#bbb;text-decoration:none;}
+a:hover,a:active,a.opt {color:#bbb;background-color:#484848;text-decoration:none;}
+a.opt:hover,a.opt:active {color:#484848;background-color:#bbb;text-decoration:none;}
 
 #container {
 	width:800px;
 	background-color:#484848;
-	margin:0 auto -50px;
+	margin:0 auto;
 	border-left:1px solid #404040;
-	padding-bottom:0;
 	min-height:100%;
 }
 .txt {
@@ -37,11 +36,11 @@ a.opt:hover,a.opt:active {color:#484848;background-color:#bbbbbb;text-decoration
 }
 .option {float:left;cursor:pointer;}
 
-pre {font:12px 'Courier New',Courier,monospace;color:#ffffff;padding:5px 0 5px 0;}
+pre {font:12px 'Courier New',Courier,monospace;color:#fff;padding:5px 0 5px 0;}
 .dat {margin:5px 0 20px 0;}
 h1 {margin:10px 0 0 0;}
 h2 {padding:0;margin:10px 0 -7px 0;}
-span {color:#ffffff;}
+span {color:#fff;}
 #fot {padding:20px;}
 
 @media all and (max-width:850px) {
