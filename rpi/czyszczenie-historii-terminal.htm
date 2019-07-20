@@ -26,7 +26,13 @@
 <p class="dat">17.07.19</p>
 <p>W terminalu wklejamy:</p> 
 <pre translate="no">history -c &amp;&amp; history -w</pre>
-<p>To działa tylko w przypadku Raspbiana. Nie wiem co począć z LibreELEC.</p>
+<p>Tak to działa tylko w przypadku Raspbiana.</p><br />
+<p>W LibreELEC jest z tym problem, ale znalazłem sposób. Najpierw szukamy pliku "bash_history" komendą:</p>
+<pre translate="no">ls -al</pre>
+<p>Edytujemy:</p>
+<pre translate="no">nano .bash_history</pre>
+<p>Wychodzimy i zatwierdzamy zmiany (Ctrl+X).</p>
+<p>PS. W moim przypadku plik miał nazwę ".ash_history".</p>
 
 </div>
 
