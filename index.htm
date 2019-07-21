@@ -20,22 +20,22 @@
 
 <main>
 
-<section><div class="txt" id="0">
+<article><div class="txt" id="0">
 <h2>Kodi, LibreELEC, RetroArch:</h2><h1><a href="#0">Instalacja RetroArch/Gamestarter</a></h1>
 <p class="dat">18.07.19</p>
-<article><div id="p0">
+<div id="p0">
 <p>Repozytorium można pobrać z tej strony <a href="0">GitHub</a>, konkretnie z tego <a href="0">linku</a>.</p>
 <p>Wybierz "Dodatki", "Zainstaluj z pliku zip" i wybierz pobrany wcześniej plik "repository.gamestarter-3.0.0.zip". Jeśli robisz to pierwszy raz, to będziesz musiał włączyć opcję pozwalającą na instalowanie dodatków z nieznanych źródeł. </p>
 <p>Repozytorium jest już zainstalowane. Teraz wybierz:<br />
 Zainstaluj z repozytorium &gt; Gamestarter add-on repository &gt; Programy &gt; RetroArch</p>
 <p>To wszystko. W razie problemów z dźwiękiem odsyłam do tego <a href="0">wpisu</a>.
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="1">
+<article><div class="txt" id="1">
 <h2>Raspberry Pi:</h2><h1><a href="#1">Podłączenie do sieci bez klawiatury i monitora</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p1">
+<div id="p1">
 <p>Pobierz system <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a> i zainstaluj na kartę SD przy pomocy programu <a href="https://www.balena.io/etcher/">balenaEtcher</a>. <br />
 Po instalacji nie wyciągaj karty, tylko stwórz plik "ssh" bez podawania typu.<br />
 Dodaj jeszcze plik "wpa_supplicant.conf". Edytuj go i wklej:</p>
@@ -59,13 +59,13 @@ network={
    '~ .~~~. ~'
        '~'</span>
 </pre>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="2">
+<article><div class="txt" id="2">
 <h2>Raspberry Pi:</h2><h1><a href="#2">Blokowanie reklam Pi-hole</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p2">
+<div id="p2">
 <p>Do obsługi <a href="https://pi-hole.net/">Pi-hole</a> polecam <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbiana wersję Lite</a>. Po instalacji Raspbiania aktualizujemy system:</p> 
 <pre translate="no">sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade -y</pre>
 <p>i instalujemy Pi-hole wklejając tę komendę:</p>
@@ -78,26 +78,26 @@ PPM na karcie sieciowej &gt;  Właściwości &gt; TCP/IPv4 &gt;  Właściwości 
 <p>Teraz możemy zobaczyć działanie Pi-hole w przeglądarce internetowej. Wklejamy IP przypisany w czasie instalacji i dopisujemy "admin". Przykład: <span>192.168.0.122/admin</span><br />
 Jeszcze tylko podajemy hasło i to w zasadzie tyle.</p>
 <p>Przy okazji polecam kanał szmala i jego poradnik: <a href="https://youtu.be/zVCXx6pJp8k">https://youtu.be/zVCXx6pJp8k</a></p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="3">
+<article><div class="txt" id="3">
 <h2>Kodi, LibreELEC:</h2><h1><a href="#3">Jak sprawdzić plik kodi.log</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p3">
+<div id="p3">
 <p>Na Windows 10 przyda się program <a href="https://www.putty.org/">PuTTy</a>. Wystarczy podać IP malinki, połączyć się, podać nazwę i hasło (nazwa:root, hasło:libreelec). Jak już jesteśmy w terminalu wklejamy:</p> 
 <pre translate="no">nano /storage/.kodi/temp/kodi.log</pre>
 <p>Kopiujemy interesujący nas kawałek zaznaczając tylko tekst. W terminalu wszystko co zaznaczymy jest automatyczne kopiowane.</p>
 <p>Logowanie się przez Linuxa jest prostsze i sprowadza się do czegoś takiego:</p>
 <pre translate="no">ssh root@192.168.0.122</pre>
 <p>Nazwa root już jest podana więc wystarczy hasło i już jesteśmy zalogowani.</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="4">
+<article><div class="txt" id="4">
 <h2>Windows 10:</h2><h1><a href="#4">Ulubione programy w Windows 10</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p4">
+<div id="p4">
 <p>To mój prywatny niezbędnik przydatny po świeżej instalacji Windowsa 10. Może znajdziesz tu też coś dla siebie.</p>
 <p><a href="http://www.7-zip.org/">http://www.7-zip.org/</a><br />
 <a href="http://www.foobar2000.org/download">http://www.foobar2000.org/download</a><br />
@@ -109,36 +109,36 @@ Jeszcze tylko podajemy hasło i to w zasadzie tyle.</p>
 <a href="http://www.openoffice.org/download/index.html">http://www.openoffice.org/download/index.html</a><br />
 <a href="https://www.skype.com/pl/download-skype/skype-for-computer/">https://www.skype.com/pl/download-skype/skype-for-computer/</a><br />
 </p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="5">
+<article><div class="txt" id="5">
 <h2>Raspbian:</h2><h1><a href="#5">Update i Upgrade systemu Raspbian</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p5">
+<div id="p5">
 <p>W terminalu wklejamy:</p> 
 <pre translate="no">sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade -y
 sudo apt-get clean</pre>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="6">
+<article><div class="txt" id="6">
 <h2>Raspbian:</h2><h1><a href="#6">Lista procesów i ich zabijanie</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p6">
+<div id="p6">
 <p>Lista procesów:</p> 
 <pre translate="no">ps -aux</pre>
 <p>Zabicie procesu:</p>
 <pre translate="no">kill -9 {PID}</pre>
 <p>Szukanie procesu wg nazwy:</p>
 <pre translate="no">pgrep {nazwaProgramu}</pre>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="7">
+<article><div class="txt" id="7">
 <h2>Raspbian:</h2><h1><a href="#7">Reset zawieszonego systemu Raspbian</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p7">
+<div id="p7">
 <p>Ten nietypowy reset, ma nawet swoją nazwę i stronę na Wikipedii: <a href="https://en.wikipedia.org/wiki/Magic_SysRq_key">Magic SysRq key</a>. Wykonuje się go przytrzymując klawisze: <span>Ctrl+L.Alt+PrtSc/SysRq</span></p>
 <p>Potem, nie puszczając ww. klawiszy, kolejno: <span>r s e i s u b</span></p>
 <p>Jeszcze krótko opiszę co jaki klawisz wywołuje:<br />
@@ -151,13 +151,13 @@ sudo apt-get clean</pre>
 <span>u</span> - Remount all mounted filesystems in read-only mode<br />
 <span>b</span> - Immediately reboot the system, without unmounting or syncing filesystems<br />
 </p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="8">
+<article><div class="txt" id="8">
 <h2>Raspbian:</h2><h1><a href="#8">Przydatne skróty w Raspbianie</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p8">
+<div id="p8">
 <p>Przydatny skróty w katalogu:<br />
 <span>F3</span> - dzieli katalog na dwie części<br />
 <span>F4</span> - otwiera Terminal w aktualnie ogladanym katalogu<br />
@@ -165,13 +165,13 @@ sudo apt-get clean</pre>
 <p>Terminal:<br />
 <span>Ctrl+Alt+F1 (2..6)</span> - otwiera terminal<br />
 <span>Ctrl+Alt+F7</span> - zamyka i wraca na pulpit</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="9">
+<article><div class="txt" id="9">
 <h2>Linux:</h2><h1><a href="#9">Czyszczenie historii w terminalu</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p9">
+<div id="p9">
 <p>W terminalu wklejamy:</p> 
 <pre translate="no">history -c &amp;&amp; history -w</pre>
 <p>Tak to działa tylko w przypadku Raspbiana.</p><br />
@@ -180,13 +180,13 @@ sudo apt-get clean</pre>
 <p>Usuwamy śmieci i przy wyjściu (Ctrl+X) zatwierdzamy zmiany.</p>
 <p>Albo niszczymy plik:</p>
 <pre translate="no">&gt; ~/.ash_history</pre>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="10">
+<article><div class="txt" id="10">
 <h2>Linux:</h2><h1><a href="#10">Zmiana użytwkownika sudo - root</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p10">
+<div id="p10">
 <p>Jeśli chcemy mieć pełny wgląd do komputera musimy zalogować się jako root/superuser. Do tego służy ta krótka komenda:</p> 
 <pre translate="no">sudo su</pre>
 <p>Powrót do normalnego użytkownika:</p>
@@ -194,25 +194,25 @@ sudo apt-get clean</pre>
 <p>lub</p>
 <pre translate="no">exit</pre>
 <p>Trzecią opcją jest wciśnięcie Ctrl+D.</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="11">
+<article><div class="txt" id="11">
 <h2>Raspbian, LibreELEC:</h2><h1><a href="#11">Podgląd zegarów i temperatury</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p11">
+<div id="p11">
 <p>Ta komenda sprawdza zegary:</p> 
 <pre translate="no">watch vcgencmd measure_clock arm</pre>
 <p>a ta temperaturę:</p> 
 <pre translate="no">watch vcgencmd measure_temp</pre>
 <p>Aby wrócić do terminalu wystarczy nacisnąć <span>Ctrl+C</span>.</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="12">
+<article><div class="txt" id="12">
 <h2>Raspberry Pi:</h2><h1><a href="#12">Jak dodać bezpieczny przycisk shutdown</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p12">
+<div id="p12">
 <p>To bardzo proste. Wystarczy otworzyć plik config.txt, najlepiej jako superuser:</p> 
 <pre translate="no">sudo su
 nano /boot/config.txt</pre>
@@ -221,41 +221,41 @@ nano /boot/config.txt</pre>
 <p>Po tym wychodzimy <span>Ctrl+X</span> i zapisujemy zmiany.</p>
 <p>Wyłączamy malinkę i wpinamy przycisk chwilowy do pinów <span>5 i 6</span> (<span>GPIO3 i GND</span>). To wszystko! Od teraz mamy bezpieczny przycisk wyłączający oraz włączający naszą malinkę. Najlepsze jest to, że przycisk działa i pod Raspbianem, i pod Kodi. Przynajmniej tak jest w LibreELEC 9 lub nowszym.</p>
 <p>Polecam tutorial z którego dowiedziałem się o tym przycisku: <a href="https://youtu.be/qAzheiZlB9k">https://youtu.be/qAzheiZlB9k</a></p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="13">
+<article><div class="txt" id="13">
 <h2>Android, Linux:</h2><h1><a href="#13">Zdalne sterowanie terminalem w Androidzie</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p13">
+<div id="p13">
 <p>Zainstaluj "JuiceSSH" z Google Play, wybierz "Connections" i naciśnij ikonę plus. Wpisz adres IP i ewentualnie identify (<span>root</span> lub <span>pi</span>) jak i password 
 (<span>libreelec</span> lub <span>raspberry</span>). Zatwierdź.</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="14">
+<article><div class="txt" id="14">
 <h2>Windows 10:</h2><h1><a href="#14">Zdalne sterowanie terminalem w Windows 10</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p14">
+<div id="p14">
 <p>Pobierz program <a href="https://www.putty.org/">PuTTy</a>. Uruchom i wpisz adres IP swojej malinki. Jeśli nie znasz adresu sprawdź go w terminalu komendą <span>ifconfig</span>. Zaloguj się jako <span>root</span> lub <span>pi</span> i wpisz hasło (<span>libreelec</span> lub <span>raspberry</span>).</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="15">
+<article><div class="txt" id="15">
 <h2>Kodi, LibreELEC:</h2><h1><a href="#15">Resetowanie zawieszonego systemu Kodi</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p15">
+<div id="p15">
 <p>Wklepujemy to:</p> 
 <pre translate="no">systemctl restart kodi</pre>
 <p>lub to jeśli jest bardzo źle:</p>
 <pre translate="no">reboot</pre>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="16">
+<article><div class="txt" id="16">
 <h2>Kodi, LibreELEC:</h2><h1><a href="#16">Przydatne skróty klawiszowe w Kodi</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p16">
+<div id="p16">
 <p>Kompletny spis klawiszy jest pod tym adresem <a href="http://kodi.wiki/view/Keyboard_controls">linkiem</a> a u mnie tylko kilka najczęściej używanych:</p>
 <p><span>c</span> - Contextual menu<br />
 <span>i</span> - Info<br />
@@ -266,23 +266,23 @@ nano /boot/config.txt</pre>
 <span>Tab</span> - Fullscreen playback<br />
 <span>Shift+LETTER</span> - Jump to that letter in a list<br />
 <span>t</span> - subtitles on/off</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="17">
+<article><div class="txt" id="17">
 <h2>Kodi, LibreELEC:</h2><h1><a href="#17">Dokładne ustawienie czasu</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p17">
+<div id="p17">
 <p>Ustawienia &gt; LibreELEC &gt; Sieć:<br />
 Serwer czasu #1    <span>0.pl.pool.ntp.org</span><br />
 Serwer czasu #2    <span>1.pl.pool.ntp.org</span></p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="18">
+<article><div class="txt" id="18">
 <h2>Kodi, LibreELEC, Exodus:</h2><h1><a href="#18">Instalacja wtyczki Exodus Redux</a></h1>
 <p class="dat">18.07.19</p>
-<article><div id="p18">
+<div id="p18">
 <p>Wejdź w Ustawienia &gt; Menedżer plików i wybierz opcję "Dodaj źródło". Wprowadź źródło:</p> 
 <pre translate="no">https://i-a-c.github.io/</pre>
 <p>i nazwij je np.: <span>r-redux</span></p>
@@ -291,13 +291,13 @@ Serwer czasu #2    <span>1.pl.pool.ntp.org</span></p>
 Zainstaluj z repozytorium &gt; Exodus Redux Repo &gt; Wtyczki wideo &gt; Exodus Redux</p><br />
 <p>Przy okazji, jeśli masz konto na <a href="https://www.imdb.com/">imdb.com</a>, możesz zsynchronizować wtyczkę Exodus z tym kontem i dzięki temu mieć dostęp do twoich list ze strony IMDb. Potrzebujesz do tego numeru użytkownika z adresu www. Wejdź w swój profil i przepisz fragment po "/user/". Przykład: <br />https://www.imdb.com/user/<span>ur77561000</span>/?ref_=nb_usr_prof_0</p>
 <p>Teraz wejdź w ustawienia wtyczki Exodus (klawisz c) &gt; Konta &gt; i w IMDb wpisz fragment z adresu www.</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="19">
+<article><div class="txt" id="19">
 <h2>Kodi, LibreELEC, YouTube:</h2><h1><a href="#19">Instalacja wtyczki YouTube</a></h1>
 <p class="dat">19.07.19</p>
-<article><div id="p19">
+<div id="p19">
 <p>Wejdź w "Dodatki" i wybierz: Zainstaluj z repozytorium &gt; Kodi Add-on repository &gt; Wtyczki wideo &gt; YouTube (Shift+Y).</p>
 <p>Czas na trudniejszą część, czyli logowanie (potrzebne klucze API) i odtwarzanie strumieni (InputStream Adpative). Zacznijmy od InputStream Adpative. Wejdź w "Dodatki" i wybierz: Zainstaluj z repozytorium &gt; LibreELEC Add-ons &gt; Wtyczki strumieniowe &gt; InputStream Adpative.</p>
 <p>Teraz logowanie. Zamiast opisywać jak zdobyć klucze API, polecam sprawdzić <a href="https://forum.kodi.tv/showthread.php?tid=325740&pid=2681560#pid2681560">ten link</a>. Tu jest to dokładnie opisane a nawet pokazane.</p>
@@ -315,31 +315,31 @@ Zainstaluj z repozytorium &gt; Exodus Redux Repo &gt; Wtyczki wideo &gt; Exodus 
 <p>Dopiero teraz logujecie się i dwa razy potwierdzacie swoją tożsamość wpisując kody pokazane w Kodi.</p>
 
 <p>PS. Wtyczka YouTube na <a href="https://github.com/jdf76/plugin.video.youtube">GitHub</a>. W razie problemów można tu zgłosić błąd, trzeba tylko pamiętać o jego dokładnym opisaniu. Najlepiej dodając odpowiedni fragment pliku <a href="#3">kodi.log</a>.</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="20">
+<article><div class="txt" id="20">
 <h2>Kodi, LibreELEC, Radio:</h2><h1><a href="#20">Instalacja wtyczki Radio</a></h1>
 <p class="dat">18.07.19</p>
-<article><div id="p20">
+<div id="p20">
 <p>Wejdź w "Dodatki" i wybierz: Zainstaluj z repozytorium &gt; Kodi Add-on repository &gt; Wtyczki muzyki &gt; Radio (Shift+R) autorstwa Tristana Fishera.</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="21">
+<article><div class="txt" id="21">
 <h2>Kodi, LibreELEC, Keymap Editor:</h2><h1><a href="#21">Instalacja wtyczki Keymap Editor</a></h1>
 <p class="dat">18.07.19</p>
-<article><div id="p21">
+<div id="p21">
 <p>Wejdź w "Dodatki" i wybierz: Zainstaluj z repozytorium &gt; Kodi Add-on repository &gt; Programy &gt; Keymap Editor (Shift+K).</p>
 <p>PS. Tutaj znajdziemy skonfigurowane wcześniej przyciski w postaci pliku xml:</p>
 <pre translate="no">nano /storage/.kodi/userdata/keymaps/gen.xml</pre>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="22">
+<article><div class="txt" id="22">
 <h2>Raspberry Pi:</h2><h1><a href="#22">Sterowniki poprawiające jakość dźwięku</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p22">
+<div id="p22">
 <p>W terminalu Kodi zezwól na modyfikowanie katalogu i otwórz config.txt:</p> 
 <pre translate="no">mount -o remount,rw /flash
 nano /flash/config.txt</pre>
@@ -351,22 +351,22 @@ reboot</pre>
 <p>PS. W Raspbianie modyfikuj plik jako su (superuser). Plik config.txt znajduje się w tym katalogu:</p>
 <pre translate="no">sudo su
 nano /boot/config.txt</pre>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="23">
+<article><div class="txt" id="23">
 <h2>Kodi, LibreELEC:</h2><h1><a href="#23">Sterowanie Kodi przez przeglądarkę internetową</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p23">
+<div id="p23">
 <p>System &gt; Ustawienia usług &gt; Sterowanie: 8080, kodi</p>
 <p>To wszystko. Teraz wejdź na stronę www z IP malinki i końcówką 8080. Przykład: <span>192.168.0.122:8080</span></p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="24">
+<article><div class="txt" id="24">
 <h2>Raspberry Pi, Raspbian, LibreELEC:</h2><h1><a href="#24">Podkręcanie maliny</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p24">
+<div id="p24">
 <p>Podkręcanie (overclocking) Raspberry Pi jest bardzo proste, wystarczy zmodyfikować plik config.txt. Opiszę to na przykładzie modelu 3 (bez B+) i w dwóch systemach. Zacznijmy od Kodi:</p>
 <pre translate="no">mount -o remount,rw /flash
 nano /flash/config.txt</pre>
@@ -380,13 +380,13 @@ reboot</pre>
 <pre translate="no">sudo su
 nano /boot/config.txt</pre>
 <p>Dodajemy parametry <span>arm_freq</span> i <span>over_voltage</span>, zapisujemy (Ctrl+O) i wychodzimy (Ctrl+X). Jeszcze tylko <span>reboot</span> i możemy cieszyć się podkręconą malinką.</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="25">
+<article><div class="txt" id="25">
 <h2>Windows 10, Google:</h2><h1><a href="#25">Szukanie zaawansowane</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p25">
+<div id="p25">
 <p>Przykład:</p>
 <pre translate="no">intitle:"index.of" (zip|rar) ebook -html, -htm, -php, -cf, -jsp, -asp</pre>
 <p><span>intitle</span> to coś co musi znaleźć się w wynikach, czyli w tym przypadku "index.of".<br />
@@ -395,13 +395,13 @@ nano /boot/config.txt</pre>
 <span>-html, -htm, -php, -cf, -jsp, -asp</span> minus przed nazwą to coś co Google ma omijać, czyli nie chcemy stron html, php itd.</p>
 
 <p><a href="https://www.google.pl/#q=intitle:%22index.of%22+(zip%7Crar)+ebook+-html%2C+-htm%2C+-php%2C+-cf%2C+-jsp%2C+-asp">Link</a> do ww. przykładu.</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="26">
+<article><div class="txt" id="26">
 <h2>Windows 10, Notepad++:</h2><h1><a href="#26">Kilka sztuczek w Notepad++</a></h1>
 <p class="dat">18.07.19</p>
-<article><div id="p26">
+<div id="p26">
 <p>Przede wszystkim zaznacz "Wyrażenie regularne" w zakładce "Zamień" (CTRL+F). <a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions">Tu</a> możesz przeczytać o wyrażeniu regularnym. Przykłady:</p>
 <pre translate="no">&lt;[^&gt;]+&gt;</pre>
 <p>Usunie wszystkie tagi html. Można tez sprawdzić <span>[&lt;].*?&gt;</span></p><br /><br />
@@ -468,24 +468,24 @@ Edycja &gt; Edytor kolumn... (Alt+C)</p><br /><br />
 Ustawienia &gt; Preferencje... &gt; Edycja &gt; zaznaczam Pokaż krawędź pionową i zmieniam Liczbę kolumn na powiedzmy 82. <br />
 Teraz zaznaczam tekst i używam skrótu Ctrl+i, albo wybieram: <br />
 Edycja &gt; Operacje na liniach &gt; Podziel wiersze Ctrl+I</p>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="27">
+<article><div class="txt" id="27">
 <h2>Windows 10, Linux:</h2><h1><a href="#27">Jak znaleźć IP i MAC</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p27">
+<div id="p27">
 <p>W Windows 10 szukamy <span>cmd</span> i wpisujemy:</p>
 <pre translate="no">ipconfig -all</pre>
 <p>W Linuxie wpisujemy:</p>
 <pre translate="no">ifconfig</pre>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="28">
+<article><div class="txt" id="28">
 <h2>Kodi, LibreELEC, RetroArch:</h2><h1><a href="#28">Rozwiązanie problemów z dźwiękiem</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p28">
+<div id="p28">
 <p>W razie braku dźwięku w emulatorach wypróbuj ten sposób. Najpierw otwieramy plik config.txt:</p> 
 <pre translate="no">mount -o remount,rw /flash
 nano /flash/config.txt</pre>
@@ -496,19 +496,19 @@ hdmi_mode=16</pre>
 <p>Wychodzimy (Ctrl+X) i zatwierdzamy zmiany. Jeszcze trzeba zabezpieczyć katalog i zrestartować Kodi:</p>
 <pre translate="no">mount -o remount,ro /flash
 reboot</pre>
+</div>
 </div></article>
-</div></section>
 
-<section><div class="txt" id="29">
+<article><div class="txt" id="29">
 <h2>Kodi, LibreELEC, RetroArch:</h2><h1><a href="#29">Jak zainstalować Doom</a></h1>
 <p class="dat">17.07.19</p>
-<article><div id="p29">
+<div id="p29">
 <p>W <a href="https://github.com/bite-your-idols/Gamestarter/releases/latest">RetroArch</a> wybierz:<br />
 1. Online Updater &gt; Core Updater &gt; Doom (PrBoom)<br />
 2. Content Downloader &gt; PrBoom &gt; Doom [shareware][1993].zip<br />
 3. Load Content &gt; Downloads &gt; Doom &gt; doom1.wad</p>
+</div>
 </div></article>
-</div></section>
 
 </main>
 
