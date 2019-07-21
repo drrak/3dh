@@ -30,11 +30,8 @@ a.opt:hover,a.opt:active {color:#484848;background-color:#bbb;text-decoration:no
 	float:left;
 	padding:20px 0px 30px 20px;
 }
-#menu {
-	float:right;
-	padding:20px 20px 30px 0px;
-}
-.option {float:left;cursor:pointer;}
+[id^="p"] {display:none;margin:0 0 30px 0;}
+.txt:target [id^="p"] {display:block;}
 
 pre {font:12px 'Courier New',Courier,monospace;color:#fff;padding:5px 0 5px 0;}
 .dat {margin:5px 0 20px 0;}
