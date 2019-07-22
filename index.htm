@@ -188,7 +188,7 @@ sudo apt-get clean</pre>
 <p class="dat">17.07.19</p>
 <div id="p10">
 <p>Jeśli chcemy mieć pełny wgląd do komputera musimy zalogować się jako root/superuser. Do tego służy ta krótka komenda:</p> 
-<pre translate="no">sudo su</pre>
+<pre translate="no">su</pre>
 <p>Powrót do normalnego użytkownika:</p>
 <pre translate="no">su pi</pre>
 <p>lub</p>
@@ -214,8 +214,7 @@ sudo apt-get clean</pre>
 <p class="dat">17.07.19</p>
 <div id="p12">
 <p>To bardzo proste. Wystarczy otworzyć plik config.txt, najlepiej jako superuser:</p> 
-<pre translate="no">sudo su
-nano /boot/config.txt</pre>
+<pre translate="no">sudo nano /boot/config.txt</pre>
 <p>i na końcu dodać tę linijkę:</p>
 <pre translate="no">dtoverlay=gpio-shutdown</pre>
 <p>Po tym wychodzimy <span>Ctrl+X</span> i zapisujemy zmiany.</p>
@@ -257,14 +256,14 @@ nano /boot/config.txt</pre>
 <p class="dat">17.07.19</p>
 <div id="p16">
 <p>Kompletny spis klawiszy jest pod tym adresem <a href="http://kodi.wiki/view/Keyboard_controls">linkiem</a> a u mnie tylko kilka najczęściej używanych:</p>
-<p><span>c</span> - Contextual menu<br />
-<span>i</span> - Info<br />
-<span>o</span> - Codec Info<br />
-<span>x</span> - Stop<br />
-<span>z</span> - Zoom/aspect ratio<br />
-<span>Ctrl+s</span> / PrintSrc - Screenshot<br />
-<span>Tab</span> - Fullscreen playback<br />
-<span>Shift+LETTER</span> - Jump to that letter in a list<br />
+<p><span>c</span> - contextual menu<br />
+<span>i</span> - info<br />
+<span>o</span> - codec info<br />
+<span>x</span> - stop<br />
+<span>z</span> - zoom/aspect ratio<br />
+<span>Ctrl+s</span> / <span>PrintSrc</span> - screenshot<br />
+<span>Tab</span> - fullscreen playback<br />
+<span>Shift+LETTER</span> - jump to that letter in a list<br />
 <span>t</span> - subtitles on/off</p>
 </div>
 </div></article>
@@ -349,8 +348,7 @@ nano /flash/config.txt</pre>
 <pre translate="no">mount -o remount,ro /flash
 reboot</pre>
 <p>PS. W Raspbianie modyfikuj plik jako su (superuser). Plik config.txt znajduje się w tym katalogu:</p>
-<pre translate="no">sudo su
-nano /boot/config.txt</pre>
+<pre translate="no">sudo nano /boot/config.txt</pre>
 </div>
 </div></article>
 
@@ -377,8 +375,7 @@ over_voltage=4</pre>
 <pre translate="no">mount -o remount,ro /flash
 reboot</pre>
 <p>W Raspbianie plik config.txt zmieniamy w ten sposób:</p>
-<pre translate="no">sudo su
-nano /boot/config.txt</pre>
+<pre translate="no">sudo nano /boot/config.txt</pre>
 <p>Dodajemy parametry <span>arm_freq</span> i <span>over_voltage</span>, zapisujemy (Ctrl+O) i wychodzimy (Ctrl+X). Jeszcze tylko <span>reboot</span> i możemy cieszyć się podkręconą malinką.</p>
 </div>
 </div></article>
