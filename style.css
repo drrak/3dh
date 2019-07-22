@@ -32,6 +32,7 @@ a.opt:hover,a.opt:active {color:#484848;background-color:#bbb;text-decoration:no
 }
 [id^="p"] {display:none;margin:0 0 30px 0;}
 .txt:target [id^="p"] {display:block;}
+h1 a {font-size:18;}
 
 pre {font:12px 'Courier New',Courier,monospace;color:#fff;padding:5px 0 5px 0;}
 .dat {margin:5px 0 20px 0;}
