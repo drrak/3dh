@@ -42,3 +42,8 @@ span {color:#fff;}
 @media all and (max-width:850px) {
 	#container {width:100%;}
 }
+
+@media print {
+	html,body,pre {font:8px 'Courier New',Courier,monospace;}
+	[id^="p"] {display:block;}
+}
