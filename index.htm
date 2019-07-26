@@ -179,7 +179,7 @@ sudo apt-get clean</pre>
 <p>Tak to działa w przypadku Raspbiana. W LibreELEC trzeba to zrobić w inny sposób.</p>
 <p>Albo edytujemy plik "ash_history":</p>
 <pre translate="no">nano .ash_history</pre>
-<p>Usuwamy śmieci i przy wyjściu (Ctrl+X) zatwierdzamy zmiany.</p>
+<p>Usuwamy śmieci i przy wyjściu (<span>Ctrl+X</span>) zatwierdzamy zmiany.</p>
 <p>Albo niszczymy plik:</p>
 <pre translate="no">&gt; ~/.ash_history</pre>
 </div>
@@ -195,7 +195,7 @@ sudo apt-get clean</pre>
 <pre translate="no">su pi</pre>
 <p>lub</p>
 <pre translate="no">exit</pre>
-<p>Trzecią opcją jest wciśnięcie Ctrl+D.</p>
+<p>Trzecią opcją jest wciśnięcie <span>Ctrl+D</span>.</p>
 </div>
 </div></article>
 
@@ -226,7 +226,7 @@ sudo apt-get clean</pre>
 <p>PS. W LibreELEC edytujemy ten plik:</p>
 <pre translate="no">mount -o remount,rw /flash
 nano /flash/config.txt</pre>
-Dodajemy <span>dtoverlay=gpio-shutdown</span> i wychodząc (Ctrl+X) i zatwierdzamy zmiany. Jeszcze trzeba zabezpieczyć katalog i zrestartować Kodi:
+Dodajemy <span>dtoverlay=gpio-shutdown</span> i wychodząc (<span>Ctrl+X</span>) i zatwierdzamy zmiany. Jeszcze trzeba zabezpieczyć katalog i zrestartować Kodi:
 <pre translate="no">mount -o remount,ro /flash
 reboot</pre>
 </div>
@@ -353,7 +353,7 @@ Zainstaluj z repozytorium &gt; Exodus Redux Repo &gt; Wtyczki wideo &gt; Exodus 
 nano /flash/config.txt</pre>
 <p>Na końcu dodaj:</p>
 <pre translate="no">audio_pwm_mode=2</pre>
-<p>Wyjdź (Ctrl+X) i zatwierdź zmiany. Na koniec zabezpiecz katalog przed zmianami i zrestartuj system:</p>
+<p>Wyjdź (<span>Ctrl+X</span>) i zatwierdź zmiany. Na koniec zabezpiecz katalog przed zmianami i zrestartuj system:</p>
 <pre translate="no">mount -o remount,ro /flash
 reboot</pre>
 <p>PS. W Raspbianie modyfikuj plik jako su (superuser). Plik config.txt znajduje się w tym katalogu:</p>
@@ -380,12 +380,12 @@ nano /flash/config.txt</pre>
 <p>Do pliku dodajemy:</p>
 <pre translate="no">arm_freq=1400
 over_voltage=4</pre>
-<p>Wychodzimy (Ctrl+X) i zatwierdzamy zmiany. Jeszcze trzeba zabezpieczyć katalog i zrestartować Kodi:</p>
+<p>Wychodzimy (<span>Ctrl+X</span>) i zatwierdzamy zmiany. Jeszcze trzeba zabezpieczyć katalog i zrestartować Kodi:</p>
 <pre translate="no">mount -o remount,ro /flash
 reboot</pre>
 <p>W Raspbianie plik config.txt zmieniamy w ten sposób:</p>
 <pre translate="no">sudo nano /boot/config.txt</pre>
-<p>Dodajemy parametry <span>arm_freq</span> i <span>over_voltage</span>, zapisujemy (Ctrl+O) i wychodzimy (Ctrl+X). Jeszcze tylko <span>reboot</span> i możemy cieszyć się podkręconą malinką.</p>
+<p>Dodajemy parametry <span>arm_freq</span> i <span>over_voltage</span>, wychodzimy (<span>Ctrl+X</span>) i zatwierdzamy zmiany. Jeszcze tylko <span>reboot</span> i możemy cieszyć się podkręconą malinką.</p>
 </div>
 </div></article>
 
@@ -417,7 +417,7 @@ reboot</pre>
 <h2>Windows 10, Notepad++:</h2><h1><a href="#26">Kilka sztuczek w Notepad++</a></h1>
 <p class="dat">18.07.19</p>
 <div id="p26">
-<p>Przede wszystkim zaznacz "Wyrażenie regularne" w zakładce "Zamień" (CTRL+F). <a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions">Tu</a> możesz przeczytać o wyrażeniu regularnym. Przykłady:</p>
+<p>Przede wszystkim zaznacz "Wyrażenie regularne" w zakładce "Zamień" (<span>Ctrl+F</span>). <a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions">Tu</a> możesz przeczytać o wyrażeniu regularnym. Przykłady:</p>
 <pre translate="no">&lt;[^&gt;]+&gt;</pre>
 <p>Usunie wszystkie tagi html. Można tez sprawdzić <span>[&lt;].*?&gt;</span></p><br /><br />
 
@@ -481,8 +481,8 @@ Edycja &gt; Edytor kolumn... (Alt+C)</p><br /><br />
 
 <p>Ustawienie szerokości tekstu:<br />
 Ustawienia &gt; Preferencje... &gt; Edycja &gt; zaznaczam Pokaż krawędź pionową i zmieniam Liczbę kolumn na powiedzmy 82. <br />
-Teraz zaznaczam tekst i używam skrótu Ctrl+i, albo wybieram: <br />
-Edycja &gt; Operacje na liniach &gt; Podziel wiersze Ctrl+I</p>
+Teraz zaznaczam tekst i używam skrótu <span>Ctrl+i</span>, albo wybieram: <br />
+Edycja &gt; Operacje na liniach &gt; Podziel wiersze <span>Ctrl+I</span></p>
 </div>
 </div></article>
 
@@ -508,7 +508,7 @@ nano /flash/config.txt</pre>
 <pre translate="no">hdmi_force_edid_audio=1
 hdmi_group=1
 hdmi_mode=16</pre>
-<p>Wychodzimy (Ctrl+X) i zatwierdzamy zmiany. Jeszcze trzeba zabezpieczyć katalog i zrestartować Kodi:</p>
+<p>Wychodzimy (<span>Ctrl+X</span>) i zatwierdzamy zmiany. Jeszcze trzeba zabezpieczyć katalog i zrestartować Kodi:</p>
 <pre translate="no">mount -o remount,ro /flash
 reboot</pre>
 </div>
