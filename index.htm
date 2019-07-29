@@ -563,6 +563,37 @@ Zaznaczamy opcję <span>Verify with AccurateRip</span> a w <span>Proceed to the 
 </div>
 </div></article>
 
+<article><div class="txt" id="32">
+<h2>Kodi, LibreELEC, Windows 10:</h2><h1><a href="#32">Samba i udostępnianie</a></h1>
+<p class="dat">29.07.19</p>
+<div id="p32">
+<p>Samba w Kodi jest domyślnie włączona, ale można to sprawdzić wchodząc w:<br />
+Ustawienia &gt; LibreELEC &gt; Usługi<br />
+Przy okazji sprawdzamy nazwę użytkownika, hasło i w Połączeniach sprawdzamy adres IP.</p>
+<p>W Windows 10 wchodzimy w Eksplorator plików i w pasku adresu wpisujemy albo adres IP Kodi:</p>
+<pre translate="no">\\192.168.0.18</pre>
+<p>albo nazwę hosta</p>
+<pre translate="no">\\libreelec</pre>
+<p>Na koniec podajemy nazwę użytkowania i hasło.</p>
+</div>
+</div></article>
+
+<article><div class="txt" id="33">
+<h2>Kodi, LibreELEC, Windows 10:</h2><h1><a href="#33">Windows 10 i udostępnianie</a></h1>
+<p class="dat">29.07.19</p>
+<div id="p33">
+<p>Aby udostępnianie zadziałało, musimy być w jednej sieci i Windows 10 musi być chroniony hasłem. Teraz wybieramy katalog/dysk który chcemy udostępnić i klikamy PPM. Wybieramy:<br />
+Udziel dostępu do &gt; Grupa domowa (wyświetlanie i edycja)<br />
+Później klikamy PPM na wcześniej wybranym katalogu/dysku i wybieramy Właściwości, a w zakładce Udostępnianie zapisujemy ścieżkę sieciową. Np.:</p>
+<pre translate="no">\\DESKTOP-GT390CD\DyskD\</pre>
+<p>Teraz w Kodi wchodzimy do:<br />
+Ustawienia &gt; Menedżer plików &gt; Dodaj źródło<br />
+Wpisujemy:</p>
+<pre translate="no">smb://DESKTOP-GT390CD/DyskD/</pre>
+<p>Na koniec podajemy nazwę użytkowania i hasło z Windows 10.</p>
+</div>
+</div></article>
+
 </main>
 
 <div id="fot"><footer>&copy; 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
