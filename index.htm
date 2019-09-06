@@ -42,9 +42,15 @@ Zainstaluj z repozytorium &gt; Gamestarter add-on repository &gt; Programy &gt; 
 Po instalacji nie wyciągaj karty, tylko stwórz plik "ssh" bez podawania typu.<br />
 Dodaj jeszcze plik "wpa_supplicant.conf". Edytuj go i wklej:</p>
 <pre translate="no">
+country=PL
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
 network={
-    ssid="network"
-    psk="password"
+    ssid="NETWORK NAME"
+    scan_ssid=1
+    psk="NETWORK PASSWORD"
+    key_mgmt=WPA-PSK
 }
 </pre>
 <p>W <span>ssid</span> wpisz nazwę swojej sieci a w <span>psk</span> hasło.</p>
