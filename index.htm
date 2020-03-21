@@ -54,7 +54,9 @@ network={
 }
 </pre>
 <p>W <span>ssid</span> wpisz nazwę swojej sieci a w <span>psk</span> hasło.</p>
-
+<p>W razie problemów warto sprawdzić dostępne sieci i plik wpa_supplicant.conf:</p>
+<pre translate="no">sudo iw dev wlan0 scan | grep SSID
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</pre>
 <pre translate="no">
 <span style="color:green">   .~~.   .~~.
   '. \ ' ' / .'</span>
@@ -334,10 +336,26 @@ Zainstaluj z repozytorium &gt; Exodus Redux Repo &gt; Wtyczki wideo &gt; Exodus 
 </div></article>
 
 <article><div class="txt" id="20">
-<h2>Kodi, LibreELEC, Radio:</h2><h1><a href="#20">Instalacja wtyczki Radio</a></h1>
+<h2>Kodi, LibreELEC, Radio:</h2><h1><a href="#20">Instalacja wtyczki Radio/Plik pls</a></h1>
 <p class="dat">18.07.19</p>
 <div id="p20">
 <p>Wejdź w "Dodatki" i wybierz: Zainstaluj z repozytorium &gt; Kodi Add-on repository &gt; Wtyczki muzyki &gt; Radio (Shift+R) autorstwa Tristana Fishera.</p>
+<p>Można też odtwarzać radio bezpośrednio przez plik <span>pls</span>. Przykład pliku radio.pls:</p>
+<pre>[playlist]
+NumberOfEntries=6
+File1=http://stream3.polskieradio.pl:8904/
+Title1=Radio Trojka
+File2=http://zet-net-02.cdn.eurozet.pl:8400/
+Title2=Radio ZET
+File3=http://zt02.cdn.eurozet.pl/ZETROK.mp3
+Title3=Radio ZET Rock
+File4=http://31.192.216.8:8000/rmf_blues
+Title4=Radio RMF Blues
+File5=http://mainstream.radioagora.pl/tuba9-1.mp3
+Title5=Radio Zlote Przeboje
+File6=http://ant-kat-01.cdn.eurozet.pl:8604/
+Title6=Radio AntyRadio Katowice</pre>
+<p>Taki plik można też użyć np. w foobar2000.</p>
 </div>
 </div></article>
 
@@ -598,6 +616,53 @@ Ustawienia &gt; Menedżer plików &gt; Dodaj źródło<br />
 Wpisujemy:</p>
 <pre translate="no">smb://DESKTOP-GT390CD/DyskD/</pre>
 <p>Na koniec podajemy nazwę użytkowania i hasło z Windows 10.</p>
+</div>
+</div></article>
+
+<article><div class="txt" id="34">
+<h2>Linux, Windows 10:</h2><h1><a href="#34">Przydatne komendy/skróty w Linuxie i Windows 10</a></h1>
+<p class="dat">21.03.20</p>
+<div id="p34">
+<p>Linux:<br />
+<span>sudo iw dev wlan0 scan | grep SSID</span> - sprawdza dostępne sieci Wi-Fi<br />
+<span>sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</span> - podgląd pliku z ustawieniami Wi-Fi<br />
+<span>sudo nano /boot/config.txt</span> - plik konfiguracyjny Rasbian<br />
+<span>nano /flash/config.txt</span> - plik konfiguracyjny Kodi<br />
+<span>ifconfig</span> - adres IP i MAC<br />
+<span>systemctl restart kodi</span> - restart Kodi<br />
+<span>reboot</span> - reset<br />
+<span>sudo apt-get update && sudo apt-get dist-upgrade -y</span> - aktualizacja Rasbian<br />
+<span>nano /storage/.kodi/temp/kodi.log</span> - plik kodi.log<br />
+<span>Ctrl + C</span> - powrót do terminala z uruchomionych aplikacji<br />
+<span>Ctrl + D</span> - wylogowanie, wyjście<br />
+<span>Ctrl + L</span> - czyszczenie konsoli</p> 
+<p>Windows 10:<br />
+<span>Win + D</span> - wyświetlanie i ukrywanie pulpitu<br />
+<span>Win + E</span> - otwarcie Eksploratora plików<br />
+<span>Win + I</span> - otwarcie obszaru Ustawienia<br />
+<span>Win + P</span> - otwarcie opcji wielu ekranów<br />
+<span>Win + R</span> - otwarcie okna Uruchamianie<br />
+<span>Win + S</span> - otwarcie wyszukiwania<br />
+<span>Win + Shift + S</span> - utworzenie zrzutu części ekranu<br />
+<span>Win + .</span> - otwarcie panelu emoji<br />
+<span>Win + Pause</span> - otwarcie okna Właściwości systemu<br />
+<span>Win + Tab</span> - otwarcie widoku zadań<br />
+<span>Win + strzałka w górę/dół</span> - zmaksymalizowanie okna/usunięcie z ekranu lub zminimalizowanie okna<br />
+<span>Win + strzałka w lewo/prawo</span> - przesunięcie okna aplikacji w lewo/prawo<br />
+<span>Win + Shift + strzałka w górę</span> - rozciągnięcie okna pulpitu do góry i dołu ekranu<br />
+<span>Win + Shift + strzałka w lewo/prawo</span> - przenoszenie aplikacji/okna z jednego monitora do drugiego<br />
+<span>Shift + Del</span> - usuwanie zaznaczonego elementu bez przenoszenia go najpierw do Kosza<br />
+<span>Alt + PrintSrc</span> - zrzut aktywnego okna<br />
+<span>Ctrl + A</span> - zaznaczenie wszystkich elementów w dokumencie lub oknie<br />
+<span>Ctrl + X</span> - wycięcie zaznaczonego elementu<br />
+<span>Ctrl + C/V</span> - kopiuj/wklej<br />
+<span>Ctrl + Z</span> - cofnięcie akcji<br />
+<span>Alt + Tab</span> - przełączenie się między otwartymi aplikacjami<br />
+<span>Alt + F4</span> - zamknięcie aktywnego elementu<br />
+<span>Alt + strzałka w lewo/prawo</span> - poprzednia/następna strona<br />
+<span>Alt + strzałka w górę</span> - przejście do katalogu nadrzędnego<br />
+<span>Alt + Enter</span> - właściwości wybranego elementu<br />
+<span>ipconfig -all</span> - adres IP i MAC</p>
 </div>
 </div></article>
 
