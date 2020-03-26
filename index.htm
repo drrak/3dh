@@ -656,6 +656,7 @@ Wpisujemy:</p>
 <span>Win + Shift + strzałka w lewo/prawo</span> - przenoszenie aplikacji/okna z jednego monitora do drugiego<br />
 <span>Shift + Del</span> - usuwanie zaznaczonego elementu bez przenoszenia go najpierw do Kosza<br />
 <span>Alt + PrintSrc</span> - zrzut aktywnego okna<br />
+<span>Ctrl + Shift + Esc</span> - menedżer zadań<br />
 <span>Ctrl + A</span> - zaznaczenie wszystkich elementów w dokumencie lub oknie<br />
 <span>Ctrl + X</span> - wycięcie zaznaczonego elementu<br />
 <span>Ctrl + C/V</span> - kopiuj/wklej<br />
@@ -666,6 +667,18 @@ Wpisujemy:</p>
 <span>Alt + strzałka w górę</span> - przejście do katalogu nadrzędnego<br />
 <span>Alt + Enter</span> - właściwości wybranego elementu<br />
 <span>ipconfig -all</span> - adres IP i MAC</p>
+</div>
+</div></article>
+
+<article><div class="txt" id="35">
+<h2>Kodi, LibreELEC:</h2><h1><a href="#35">Czyszczenie i backup Kodi</a></h1>
+<p class="dat">26.03.20</p>
+<div id="p35">
+<p>Przed utworzeniem kopii zapasowej warto posprzątać system i usunąć niepotrzebne śmieci. W terminalu wkljam tę komendę:</p>
+<pre translate="no">rm -r /storage/.kodi/userdata/Database/MyVideos116.db /storage/.kodi/userdata/Database/Textures13.db /storage/.kodi/userdata/Thumbnails</pre>
+<p>Plik "MyVideos116.db" odpowiada za YouTube a "Textures13.db" za miniatury Kodi. W katalogu "Thumbnails" zapisane są wszystkie miniatury. Po tym zabiegu restartujemy Kodi:</p>
+<pre translate="no">systemctl restart kodi</pre>
+<p>Usunięte pliki i katalog utworzą się na nowo, ale będą trochę odchudzone. Dopiero teraz zabieramy się za backup. Wchodzimy w System &gt; LibreELEC i wybieramy "Utwórz kopię zapasową systemu Kodi".</p>
 </div>
 </div></article>
 
