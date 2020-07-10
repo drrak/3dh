@@ -694,6 +694,20 @@ Wpisujemy:</p>
 </div>
 </div></article>
 
+<article><div class="txt" id="37">
+<h2>Windows 10, Linux:</h2><h1><a href="#37">usunięcie partycji z Linuxem z dysku i Boot Menu, oraz jak usunąć GDK GRUB</a></h1>
+<p class="dat">10.07.20</p>
+<div id="p37">
+<p>Aby usunąć partycję z Linuxem, musimy poszukać (<span>Win+S</span>) "Zarządzanie komputerem". Uruchamiamy program jako administrator, wybieramy zarządzanie dyskami, potem klikamy PPM na partycję z Linuxem i wybieramy "Usuń wolumin...". Na koniec wystarczy wybrać główny dysk i opcję "Rozszerz wolumin...".</p>
+<p>Aby usunąć GRUB, musimy trochę namieszać w dyskach: <br /><a href="https://youtu.be/rxYSzxXawjU">https://youtu.be/rxYSzxXawjU</a><br />
+PS. Komendą "remove letter=Z" schowamy wyciągnięty wcześniej dysk Z.</p>
+<p>Do usunięcia partycji z Boot Menu, musimy otworzyć jako administrator "Wiersz polecenia" (<span>Win+S</span> i szukaj "cmd") wpisać komendę:</p>
+<pre translate="no">bcdedit /enum firmware</pre>
+<p>Skopiuj identyfikator niechcianej partycji i usuń ją komendą:</p>
+<pre translate="no">bcdedit /delete {identifier}</pre>
+</div>
+</div></article>
+
 </main>
 
 <div id="fot"><footer>&copy; 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
