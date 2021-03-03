@@ -755,14 +755,13 @@ youtube-dl -f 140 --extract-audio --audio-format mp3 --audio-quality 128K "LINK"
 <p class="dat">21.03.03</p>
 <div id="p41">
 <p>Aby wyłączyć wszelkie oświetlenie w Raspberry Pi, musimy edytować plik config.txt i wkleić poniższy fragment (<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=149126#p1445502">RPi3</a>, <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=252049#p1725221">RPi4</a>). Jak edytować plik config.txt wytłumaczyłem <a href="#24">tutaj</a>.</p>
-<pre translate="no">[pi4]
-# Disable the PWR LED
+<pre translate="no"># Disable the PWR and Activity LED
 dtparam=pwr_led_trigger=none
 dtparam=pwr_led_activelow=off
-# Disable the Activity LED
 dtparam=act_led_trigger=none
 dtparam=act_led_activelow=off
-# Disable ethernet port LEDs
+[pi4]
+# Disable Ethernet LEDs
 dtparam=eth_led0=4
 dtparam=eth_led1=4</pre>
 </div>
