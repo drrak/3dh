@@ -415,6 +415,8 @@ reboot</pre>
 <p>W Raspbianie plik config.txt zmieniamy w ten sposób:</p>
 <pre translate="no">sudo nano /boot/config.txt</pre>
 <p>Dodajemy parametry <span>arm_freq</span> i <span>over_voltage</span>, wychodzimy (<span>Ctrl+X</span>) i zatwierdzamy zmiany. Jeszcze tylko <span>reboot</span> i możemy cieszyć się podkręconą malinką.</p>
+<p>Tą komedą możemy sprawdzić działanie naszego podkręconego procesora:</p>
+<pre translate="no">watch -n 1 vcgencmd measure_clock arm</pre>
 </div>
 </div></article>
 
@@ -844,7 +846,7 @@ R - w górę
 
 </main>
 
-<div id="fot"><footer>&copy; 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;youtube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;github&nbsp;</a></footer></div>
+<div id="fot"><footer>&copy; 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
 
 </div>
 
