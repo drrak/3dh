@@ -126,12 +126,18 @@ Jeszcze tylko podajemy hasło i to w zasadzie tyle.</p>
 </div></article>
 
 <article><div class="txt" id="5">
-<h2>Raspbian:</h2><h1><a href="#5">Update i Upgrade systemu Raspbian</a></h1>
+<h2>Raspbian:</h2><h1><a href="#5">Update i Upgrade systemu Raspbian i pi-hole</a></h1>
 <p class="dat">17.07.2019</p>
 <div id="p5">
-<p>W terminalu wklejamy:</p> 
+<p>Po zalogowaniu do systemu Raspbian (pi, raspberry) w terminalu wklejamy:</p> 
 <pre translate="no">sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade -y
 sudo apt-get clean</pre>
+<p>Komendą -v sprawdzamy wersję pi-hole:</p> 
+<pre translate="no">pihole -v</pre>
+<p>Komendą -up wykonujemy update pi-hole:</p> 
+<pre translate="no">pihole -up</pre>
+<p>Na koniec restartujemy malinkę:</p> 
+<pre translate="no">sudo reboot</pre>
 </div>
 </div></article>
 
