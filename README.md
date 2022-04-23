@@ -17,7 +17,10 @@ Opowiadania wszystkie
 
 0. Dracula  
 1. Problem trzech ciał  
-2-5. Bobiverse  
+2. Bobiverse  
+3. Bobiverse  
+4. Bobiverse  
+5. Bobiverse  
 6. Autostopem przez galaktykę
 7. Historia twojego życia
 9. Wydech
