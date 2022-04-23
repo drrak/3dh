@@ -8,24 +8,16 @@ https://i.imgur.com/FD6t98a.mp4
 https://i.imgur.com/05BC2ce.mp4
 
 
-Obcy w obcym kraju
-
-Żeglarze nocy
-
-Równi Bogom
-
-Zamieć, Neal
-
-Kwiaty dla Algernona
-
+Obcy w obcym kraju  
+Żeglarze nocy  
+Równi Bogom  
+Zamieć, Neal  
+Kwiaty dla Algernona  
 Opowiadania wszystkie 
 
-0. Dracula
-
-2.Problem trzech ciał
-
-2-5. Bobiverse
-
+0. Dracula  
+1. Problem trzech ciał  
+2-5. Bobiverse  
 6. Autostopem przez galaktykę
 7. Historia twojego życia
 9. Wydech
