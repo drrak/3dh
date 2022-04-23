@@ -21,33 +21,33 @@ Opowiadania wszystkie
 3. Bobiverse  
 4. Bobiverse  
 5. Bobiverse  
-6. Autostopem przez galaktykę
-7. Historia twojego życia
-9. Wydech
-10. Nowy wspaniały świat
-11. Rok 1984
-12. 451 stopnia Fahrenheita
-13. Ostatni brzeg
-14. Wehikuł czasu
-15. Neuromancer
-16. Drzwi do lata
-17. Anatomia pęknięcia
-18. Starość aksolotla
-19. Głos Pana
-20. Kongres futurologiczny
-21. Piknik na skraju drogi
-22. Poniedziałek zaczyna się w sobotę
-23. Trudno być bogiem
-24. Miliard lat przed końcem świata
-25. Żuk w mrowisku
-26. Ubik
-27. Gdzie dawniej śpiewał ptak?
-28. Terapeutka
-29. Ciemny las
-30. Zaklinacz
-31. Szadź
-32. Ślepowidzenie
-33. Anatomia zła
+6. Autostopem przez galaktykę  
+7. Historia twojego życia  
+9. Wydech  
+10. Nowy wspaniały świat  
+11. Rok 1984  
+12. 451 stopnia Fahrenheita  
+13. Ostatni brzeg  
+14. Wehikuł czasu  
+15. Neuromancer  
+16. Drzwi do lata  
+17. Anatomia pęknięcia  
+18. Starość aksolotla  
+19. Głos Pana  
+20. Kongres futurologiczny  
+21. Piknik na skraju drogi  
+22. Poniedziałek zaczyna się w sobotę  
+23. Trudno być bogiem  
+24. Miliard lat przed końcem świata  
+25. Żuk w mrowisku  
+26. Ubik  
+27. Gdzie dawniej śpiewał ptak?  
+28. Terapeutka  
+29. Ciemny las  
+30. Zaklinacz  
+31. Szadź  
+32. Ślepowidzenie  
+33. Anatomia zła  
 34. 
 
 
