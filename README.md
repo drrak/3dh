@@ -7,7 +7,7 @@ https://i.imgur.com/FD6t98a.mp4
 
 https://i.imgur.com/05BC2ce.mp4
 
-
+```
 Obcy w obcym kraju  
 Żeglarze nocy  
 Równi Bogom  
@@ -17,10 +17,7 @@ Opowiadania wszystkie
 
 0. Dracula
 1. Problem trzech ciał
-2. Bobiverse
-3. Bobiverse
-4. Bobiverse
-5. Bobiverse
+2-5. Bobiverse
 6. Autostopem przez galaktykę
 7. Historia twojego życia
 9. Wydech
@@ -62,3 +59,4 @@ Audiobooki
 7. Bajki robotów
 8. Dzienniki gwiazdowe
 9. Niezwyciężony
+```
