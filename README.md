@@ -7,6 +7,8 @@ https://i.imgur.com/FD6t98a.mp4
 
 https://i.imgur.com/05BC2ce.mp4
 
+https://i.imgur.com/GQOVBbT.jpeg
+
 ```
 Obcy w obcym kraju  
 Żeglarze nocy  
