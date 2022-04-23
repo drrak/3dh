@@ -59,6 +59,5 @@ Audiobooki
 7. Bajki robotów
 8. Dzienniki gwiazdowe
 9. Niezwyciężony
-
-Wiele wysiłku kosztował mnie dowód, że Dillowska kombinatoryka wariacyjna jest tylko niedoskonałą aproksymacją ergodycznego teorematu!
 ```
+Wiele wysiłku kosztował mnie dowód, że Dillowska kombinatoryka wariacyjna jest tylko niedoskonałą aproksymacją ergodycznego teorematu!
