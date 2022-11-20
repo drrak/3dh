@@ -975,7 +975,7 @@ usermod -m -d /home/newname newname</pre>
 <pre translate="no">sudo visudo</pre>
 <p>Na samym dole dodajemy:</p>
 <pre translate="no">YOUR_USERNAME_HERE ALL=(ALL) NOPASSWD: ALL</pre>
-<p>Po wpisaniu naciskamy <span>Ctrl+X</span> i potwierdzamy zapisanie zmian.</p>
+<p>Zapisujemy zmiany po wciśnięciu <span>Ctrl+X</span> i to wszystko.</p>
 <p>W terminalu już nie będzie pytań o hasło, ale w graficznej wersji nadal będą się pojawiać.</p>
 </div>
 </div></article>
@@ -986,7 +986,7 @@ usermod -m -d /home/newname newname</pre>
 <div id="p52">
 <p>Zamień <span>#PermitRootLogin prohibit-password</span> na <span>PermitRootLogin yes</span> w tym pliku:</p>
 <pre translate="no">sudo nano /etc/ssh/sshd_config</pre>
-<p>Po wpisaniu naciskamy <span>Ctrl+X</span> i potwierdzamy zapisanie zmian. Jeszcze tylko wpisz tę komendę:</p>
+<p>Po wszystkim naciskamy <span>Ctrl+X</span> i potwierdzamy zapisanie zmian. Jeszcze tylko wpisz tę komendę:</p>
 <pre translate="no">sudo systemctl restart ssh</pre>
 <p>I teraz, po dodaniu hasła dla użytkownika root:</p>
 <pre translate="no">sudo passwd root</pre>
