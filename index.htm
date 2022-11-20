@@ -980,6 +980,21 @@ usermod -m -d /home/newname newname</pre>
 </div>
 </div></article>
 
+<article><div class="txt" id="52">
+<h2>Linux</h2><h1><a href="#52">Jak zalogować się jako root przez ssh</a></h1>
+<p class="dat">20.11.2022</p>
+<div id="p52">
+<p>Zamień <span>#PermitRootLogin prohibit-password</span> na <span>PermitRootLogin yes</span> w tym pliku:</p>
+<pre translate="no">sudo nano /etc/ssh/sshd_config</pre>
+<p>Po wpisaniu naciskamy <span>Ctrl+X</span> i potwierdzamy zapisanie zmian. Jeszcze tylko wpisz tę komendę:</p>
+<pre translate="no">sudo systemctl restart ssh</pre>
+<p>I teraz, po dodaniu hasła dla użytkownika root:</p>
+<pre translate="no">sudo passwd root</pre>
+<p>Możesz się zalogować przez ssh.</p>
+<p>Pamiętaj tylko, żeby po wszystkim co chciałeś zrobić jako root, wrócić do ustawień domyślnych. Dla bezpieczeństwa.</p>
+</div>
+</div></article>
+
 </main>
 
 <div id="fot"><footer>&copy; 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
