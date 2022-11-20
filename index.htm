@@ -951,6 +951,35 @@ Shift + q - wyjście z w3m</pre>
 </div>
 </div></article>
 
+<article><div class="txt" id="50">
+<h2>Linux</h2><h1><a href="#50">Jak zmienić username</a></h1>
+<p class="dat">20.11.2022</p>
+<div id="p50">
+<p><a href="https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-change-the-default-account-username-and-password">Tutaj</a> dobrze to wyjaśniono. W skrócie, aktywujemy konto root dodając do niego hasło:</p>
+<pre translate="no">sudo passwd root</pre>
+<p>Następnie logujemy się jako <span>root</span> i wpisujemy:</p>
+<pre translate="no">usermod -l newname oldname
+usermod -m -d /home/newname newname</pre>
+<p>Można już się zalogować na konto nowego użytkownika. Hasło zostaje przejęte po starym użytkowniku. Sprawdzamy czy wszystko działa przykładową komendą:</p>
+<pre translate="no">sudo apt update</pre>
+<p>Jeśli wszystko gra, dezaktywujemy konto root:</p>
+<pre translate="no">sudo passwd -l root</pre>
+</div>
+</div></article>
+
+<article><div class="txt" id="51">
+<h2>Linux</h2><h1><a href="#51">Jak wyłączyć pytania o hasło dla danego użytkownmika</a></h1>
+<p class="dat">20.11.2022</p>
+<div id="p51">
+<p>Pod tym <a href="https://askubuntu.com/questions/147241/execute-sudo-without-password">linkiem</a> znalazłem rozwiązanie. W skrócie, edytujemy ten plik:</p>
+<pre translate="no">sudo visudo</pre>
+<p>Na samym dole dodajemy:</p>
+<pre translate="no">YOUR_USERNAME_HERE ALL=(ALL) NOPASSWD: ALL</pre>
+<p>Po wpisaniu naciskamy <span>Ctrl+X</span> i potwierdzamy zapisanie zmian.</p>
+<p>W terminalu już nie będzie pytań o hasło, ale w graficznej wersji nadal będą się pojawiać.</p>
+</div>
+</div></article>
+
 </main>
 
 <div id="fot"><footer>&copy; 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
