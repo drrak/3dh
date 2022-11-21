@@ -998,6 +998,22 @@ usermod -m -d /home/newname newname</pre>
 </div>
 </div></article>
 
+<article><div class="txt" id="53">
+<h2>LibreELEC</h2><h1><a href="#53">Brak sygnału po aktualizacji LibreELEC do 10.0.1-3</a></h1>
+<p class="dat">21.11.2022</p>
+<div id="p53">
+<p>To jeszcze nie jest przetestowane, ale może wystarczy dodać:</p>
+<pre translate="no">hdmi_group=1
+hdmi_mode=16</pre>
+<p>w pliku konfiguracyjnym:</p>
+<pre translate="no">nano /flash/config.txt</pre>
+<p>Najlepiej pod <span>[all]</span> lub na końcu. Jak edytować plik <span>config.txt</span> wytłumaczyłem <a href="https://drrak.github.io/3dh/#24">tutaj</a>.</p>
+<p>Gdyby nie udało się tego naprawić, trzeba będzie to zgłosić na tym <a href="https://forum.libreelec.tv/board/35-bug-reports/">forum</a>. Najlepiej wysyłając <a href="https://wiki.libreelec.tv/support/log-files">plik log</a> poprzez komendę:</p>
+<pre translate="no">pastekodi</pre>
+<p>Wcześniej, przed zmianą wersji LibreELEC, warto też zmienić w <span>Ustawienia &gt; System &gt; Diagnostyka</span> kika opcji, np. włączając komunikaty diagnostyczne.</p> 
+</div>
+</div></article>
+
 </main>
 
 <div id="fot"><footer>&copy; 2019 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
