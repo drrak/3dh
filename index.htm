@@ -38,7 +38,7 @@ Zainstaluj z repozytorium &gt; Gamestarter add-on repository &gt; Programy &gt; 
 <h2>Raspberry Pi:</h2><h1><a href="#1">Podłączenie do sieci bez klawiatury i monitora</a></h1>
 <p class="dat">17.07.2019</p>
 <div id="p1">
-<p>Pobierz system <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a> i zainstaluj na kartę SD przy pomocy programu <a href="https://www.balena.io/etcher/">balenaEtcher</a>. <br />
+<p>Pobierz system <a href="https://www.raspberrypi.com/software/operating-systems/">Raspberry Pi OS</a> i zainstaluj na kartę SD przy pomocy programu <a href="https://www.balena.io/etcher/">balenaEtcher</a>. <br />
 Po instalacji nie wyciągaj karty, tylko stwórz plik "ssh" bez podawania typu.<br />
 Dodaj jeszcze plik "wpa_supplicant.conf". Edytuj go i wklej:</p>
 <pre translate="no">
@@ -76,8 +76,8 @@ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</pre>
 <h2>Raspberry Pi:</h2><h1><a href="#2">Blokowanie reklam Pi-hole</a></h1>
 <p class="dat">17.07.2019</p>
 <div id="p2">
-<p>Do obsługi <a href="https://pi-hole.net/">Pi-hole</a> polecam <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbiana wersję Lite</a>. Po instalacji Raspbiania aktualizujemy system:</p> 
-<pre translate="no">sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade -y</pre>
+<p>Do obsługi <a href="https://pi-hole.net/">Pi-hole</a> polecam <a href="https://www.raspberrypi.com/software/operating-systems/">Raspberry PI OS wersję Lite</a>. Po instalacji aktualizujemy system:</p> 
+<pre translate="no">sudo apt update &amp;&amp; sudo apt full-upgrade -y</pre>
 <p>i instalujemy Pi-hole wklejając tę komendę:</p>
 <pre translate="no">curl -sSL https://install.pi-hole.net | bash</pre>
 <p>W trakcie instalacji wybieramy domyślne ustawienia i serwer Google jeśli nie wiemy co wybrać. Zapamiętujemy przypisany adres IP i na koniec zwracamy jeszcze uwagę na hasło jakie otrzymamy. W razie problemów hasło zawsze można zmienić komendą:</p>
@@ -88,7 +88,7 @@ PPM na karcie sieciowej &gt;  Właściwości &gt; TCP/IPv4 &gt;  Właściwości 
 <p>Teraz możemy zobaczyć działanie Pi-hole w przeglądarce internetowej. Wklejamy IP przypisany w czasie instalacji i dopisujemy "admin". Przykład: <span>192.168.0.122/admin</span><br />
 Jeszcze tylko podajemy hasło i to w zasadzie tyle.</p>
 <p>Przy okazji polecam kanał szmala i jego poradnik: <a href="https://youtu.be/zVCXx6pJp8k">https://youtu.be/zVCXx6pJp8k</a></p>
-<p>PS. <a href="#1">Tutaj</a> możemy przeczytać jak ustawić sieć na Raspbianie Lite.</p>
+<p>PS. <a href="#1">Tutaj</a> możemy przeczytać jak ustawić sieć na RPi OS Lite.</p>
 </div>
 </div></article>
 
@@ -104,6 +104,7 @@ Jeszcze tylko podajemy hasło i to w zasadzie tyle.</p>
 <p>Logowanie się przez Linuxa jest prostsze i sprowadza się do czegoś takiego:</p>
 <pre translate="no">ssh root@192.168.0.122</pre>
 <p>Nazwa root już jest podana więc wystarczy hasło i już jesteśmy zalogowani.</p>
+<p>PS. <a href="#53">Tutaj</a> przedstawiłem sposób na wysłanie logów.</p>
 </div>
 </div></article>
 
@@ -138,7 +139,7 @@ sudo apt-get clean</pre>
 <pre translate="no">pihole -up</pre>
 <p>Na koniec restartujemy malinkę:</p> 
 <pre translate="no">sudo reboot</pre>
-<p>PS. W Raspberry Pi OS wyglada to tak:</p>
+<p>PS. W Raspberry Pi OS wygląda to tak:</p>
 <pre translate="no">sudo apt update
 sudo apt full-upgrade
 sudo apt clean</pre>
@@ -654,7 +655,7 @@ Wpisujemy:</p>
 <span>ifconfig</span> - adres IP i MAC<br />
 <span>systemctl restart kodi</span> - restart Kodi<br />
 <span>reboot</span> - reset<br />
-<span>sudo apt update && sudo apt full-upgrade -y</span> - aktualizacja Rasbian<br />
+<span>sudo apt update &amp;&amp; sudo apt full-upgrade -y</span> - aktualizacja Rasbian<br />
 <span>nano /storage/.kodi/temp/kodi.log</span> - plik kodi.log<br />
 <span>Ctrl + C</span> - powrót do terminala z uruchomionych aplikacji<br />
 <span>Ctrl + D</span> - wylogowanie, wyjście<br />
@@ -890,7 +891,7 @@ reboot</pre>
 <p class="dat">09.11.2022</p>
 <div id="p47">
 <p><a href="https://typespeed.sourceforge.net/#Download">Typespeed</a> - gra i przy okazji nauka szybkiego pisania:</p>
-<pre translate="no">sudo apt-get install typespeed</pre>
+<pre translate="no">sudo apt install typespeed</pre>
 <p><a href="https://www.gnu.org/software/chess/manual/">GNU Chess</a> - szachy, szybka instalacja:</p>
 <pre translate="no">sudo apt install gnuchess</pre>
 <p>Pobranie, kompilacja i instalacja:</p>
@@ -1009,7 +1010,7 @@ usermod -m -d /home/newname newname</pre>
 hdmi_mode=16</pre>
 <p>w pliku konfiguracyjnym:</p>
 <pre translate="no">nano /flash/config.txt</pre>
-<p>Najlepiej pod <span>[all]</span> lub na końcu. Jak edytować plik <span>config.txt</span> wytłumaczyłem <a href="https://drrak.github.io/3dh/#24">tutaj</a>.</p>
+<p>Najlepiej pod <span>[all]</span> lub na końcu. Jak edytować plik <span>config.txt</span> wytłumaczyłem <a href="#24">tutaj</a>.</p>
 <p>Gdyby nie udało się tego naprawić, trzeba będzie to zgłosić na tym <a href="https://forum.libreelec.tv/board/35-bug-reports/">forum</a>. Najlepiej wysyłając <a href="https://wiki.libreelec.tv/support/log-files">plik log</a> poprzez komendę:</p>
 <pre translate="no">pastekodi</pre>
 <p>Wcześniej, przed zmianą wersji LibreELEC, warto też zmienić w <span>Ustawienia &gt; System &gt; Diagnostyka</span> kika opcji, np. włączając komunikaty diagnostyczne.</p> 
