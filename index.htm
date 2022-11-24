@@ -203,7 +203,7 @@ sudo apt clean</pre>
 <pre translate="no">nano .ash_history</pre>
 <p>Usuwamy śmieci i przy wyjściu (<span>Ctrl+X</span>) zatwierdzamy zmiany.</p>
 <p>Albo niszczymy plik:</p>
-<pre translate="no">&gt; ~/.ash_history</pre>
+<pre translate="no">rm ~/.ash_history</pre>
 </div>
 </div></article>
 
@@ -242,7 +242,7 @@ sudo apt clean</pre>
 <p>i na końcu dodać tę linijkę:</p>
 <pre translate="no">dtoverlay=gpio-shutdown</pre>
 <p>Po tym wychodzimy <span>Ctrl+X</span> i zapisujemy zmiany.</p>
-<p>Wyłączamy malinkę i wpinamy przycisk chwilowy do pinów <span>5 i 6</span> (<span>GPIO3 i GND</span>). To wszystko! Od teraz mamy bezpieczny przycisk wyłączający oraz włączający naszą malinkę. Najlepsze jest to, że przycisk działa i pod Raspbianem, i pod Kodi. Przynajmniej tak jest w LibreELEC 9 lub nowszym.</p>
+<p>Wyłączamy malinkę i wpinamy przycisk chwilowy do pinów <span>5 i 6</span> (<span>GPIO3 i GND</span>). To wszystko! Od teraz mamy bezpieczny przycisk wyłączający oraz włączający naszą malinkę. Najlepsze jest to, że przycisk działa i pod Raspbianem i pod Kodi. Przynajmniej tak jest w LibreELEC 9 lub nowszym.</p>
 <p>Polecam tutorial z którego dowiedziałem się o tym przycisku: <a href="https://youtu.be/qAzheiZlB9k">https://youtu.be/qAzheiZlB9k</a></p>
 <br />
 <p>PS. W LibreELEC edytujemy ten plik:</p>
@@ -269,7 +269,7 @@ reboot</pre>
 <div id="p14">
 <p>Pobierz program <a href="https://www.putty.org/">PuTTy</a>. Uruchom i wpisz adres IP swojej malinki. Jeśli nie znasz adresu sprawdź go w terminalu komendą <span>ifconfig</span>. Zaloguj się jako <span>root</span> lub <span>pi</span> i wpisz hasło (<span>libreelec</span> lub <span>raspberry</span>).</p>
 <p>Można też użyć Terminalu w Windowsie. Naciśnij PPM na ikonie Windowsa i wybierz PowerShell w W10 lub Terminal (Administrator) w W11 i wpisz:</p>
-<pre translate="no">ssh rpi0w@192.168.0.128</pre>
+<pre translate="no">ssh pi@192.168.0.128</pre>
 </div>
 </div></article>
 
@@ -465,7 +465,7 @@ reboot</pre>
 <div id="p26">
 <p>Przede wszystkim zaznacz "Wyrażenie regularne" w zakładce "Zamień" (<span>Ctrl+F</span>). <a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions">Tu</a> możesz przeczytać o wyrażeniu regularnym. Przykłady:</p>
 <pre translate="no">&lt;[^&gt;]+&gt;</pre>
-<p>Usunie wszystkie tagi html. Można tez sprawdzić <span>[&lt;].*?&gt;</span></p><br /><br />
+<p>Usunie wszystkie tagi html. Można też sprawdzić <span>[&lt;].*?&gt;</span></p><br /><br />
 
 <pre translate="no">&lt;TD.*?&gt;(.*?)&lt;/TD&gt;
 &lt;td&gt;\1&lt;/td&gt;</pre>
@@ -769,7 +769,7 @@ youtube-dl -f 140 --extract-audio --audio-format mp3 --audio-quality 128K "LINK"
 <div id="p40">
 <p>1. Jeśli wasz DAC, niekoniecznie DragonFly, jest widoczny dwa razy, jako Analog i S/PDIF, wybierzcie S/PDIF. Dopiero wtedy wykorzystacie pełen potencjał DACa i przy okazji pozbędziecie się sporadycznych "pyknięć".</p>
 <p>2. W opcjach systemu &gt; dźwięku &gt; konfiguracji odtwarzania, najlepiej wybrać: Zoptymalizowana. Jeszcze ustawiamy limit częstotliwości odtwarzania (kHZ) i możemy się cieszyć czystym dźwiękiem bez mikro-przerw między utworami.</p>
-<p>3. Na koniec coś, co mnie nieźle wystraszyło, ale z tym też sobie poradziłem. Czasami po restarcie DAC nie był wykrywany! I tu też może chodzić o różne DACi, nie tylko DragonFly. Sposobem na to jest poczekanie na sieć przed uruchomieniem Kodi. W opcjach LibreELEC wybieramy sieć, i włączamy opcję czekania. 10 sekund powinno wystarczyć.</p>
+<p>3. Na koniec coś, co mnie nieźle wystraszyło, ale z tym też sobie poradziłem. Czasami po restarcie DAC nie był wykrywany! I tu też może chodzić o różne DACi, nie tylko DragonFly. Sposobem na to jest poczekanie na sieć przed uruchomieniem Kodi. W opcjach LibreELEC wybieramy sieć i włączamy opcję czekania. 10 sekund powinno wystarczyć.</p>
 </div>
 </div></article>
 
@@ -981,7 +981,7 @@ usermod -m -d /home/newname newname</pre>
 <pre translate="no">YOUR_USERNAME_HERE ALL=(ALL) NOPASSWD: ALL</pre>
 <p>Zapisujemy zmiany po wciśnięciu <span>Ctrl+X</span> i to wszystko.</p>
 <p>W terminalu już nie będzie pytań o hasło, ale w graficznej wersji nadal będą się pojawiać.</p>
-<p>PS. W Raspberry Pi OS Lite można zmienić użytkownika edytując ten plik:</p>
+<p>PS. W Raspberry Pi OS Lite najlepiej zmienić użytkownika edytując ten plik:</p>
 <pre translate="no">sudo nano /etc/sudoers.d/010_pi-nopasswd</pre>
 </div>
 </div></article>
