@@ -47,9 +47,9 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-    ssid="NETWORK NAME"
+    ssid="NETWORK_NAME"
     scan_ssid=1
-    psk="NETWORK PASSWORD"
+    psk="NETWORK_PASSWORD"
     key_mgmt=WPA-PSK
 }
 </pre>
@@ -57,6 +57,7 @@ network={
 <p>W razie problemów warto sprawdzić dostępne sieci i plik wpa_supplicant.conf:</p>
 <pre translate="no">sudo iw dev wlan0 scan | grep SSID
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</pre>
+<p>PS. Od jakiegoś czasu zamiast balenaEtcher można użyć <a href="https://www.raspberrypi.com/software/">RPi Imager</a>. Ustawienia ssh, nazwę użytkownika/hosta można wstępnie <a href="https://youtu.be/ntaXWS8Lk34">skonfigurować</a> przed włożeniem karty SD do RPi.</p>
 <pre translate="no">
 <span style="color:green">   .~~.   .~~.
   '. \ ' ' / .'</span>
