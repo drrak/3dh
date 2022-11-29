@@ -708,6 +708,8 @@ Wpisujemy:</p>
 <p>Plik "MyVideos116.db" odpowiada za YouTube a "Textures13.db" za miniatury Kodi. W katalogu "Thumbnails" zapisane są wszystkie miniatury. Po tym zabiegu restartujemy Kodi:</p>
 <pre translate="no">systemctl restart kodi</pre>
 <p>Usunięte pliki i katalog utworzą się na nowo, ale będą trochę odchudzone. Dopiero teraz zabieramy się za backup. Wchodzimy w <span>System &gt; LibreELEC</span> i wybieramy "Utwórz kopię zapasową systemu Kodi".</p>
+<p>PS. Z czasem trochę się pozmieniało i teraz YT używa pliku o nazwie "MyVideos119.db", ale usuwając go, tracimy też wszystkie oznaczenia w stylu obejrzane albo w trakcie. "Textures13.db" zostało niezmienione, aczkolwiek nie warto go czyścić dla kilku miniatur. Dziś najlepiej usunąć same miniaturki tą komendą:</p>
+<pre translate="no">rm -r /storage/.kodi/userdata/Thumbnails</pre>
 </div>
 </div></article>
 
