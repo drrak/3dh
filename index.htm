@@ -1047,7 +1047,9 @@ nano /flash/config.txt</pre>
 <p>1. Test RAM-u. Wyszukaj "Diagnostyka pamięci systemu Windows". Po wybraniu pierwszej opcji PC się zrestartuje i zacznie przeprowadzać diagnostykę. Może to potrwać nawet do godziny. <br />Po wszystkim wyszukaj "Wyświetl historię niezawodności" i na dole wybierz "Wyświetl wszystkie raporty o problemach". Tu powinien być raport z diagnostyki RAM-u.</p>
 <p>2. Naprawa dysku. W terminalu jako administrator wpisz:</p>
 <pre translate="no">chkdsk /f</pre>
-<p>Potwierdź i zrestartuj komputer.<br />Inna, dokładniejsza naprawa dysku wygląda tak:</p>
+<p>Potwierdź i zrestartuj komputer. <br />Jeśli nie chcesz restartować komputera i chcesz przeskanować konkretny dysk bez naprawiania, wpisz komendę:</p>
+<pre translate="no">chkdsk c:</pre>
+<p>Inna, dokładniejsza naprawa dysku wygląda tak:</p>
 <pre translate="no">chkdsk /r</pre>
 <p>3. Deployment Image Servicing and Management (DISM) naprawa magazynu systemu Windows. W terminalu jako administrator wpisz:</p>
 <pre translate="no">dism /online /cleanup-image /scanhealth
