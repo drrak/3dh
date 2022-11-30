@@ -57,7 +57,7 @@ network={
 <p>W razie problemów warto sprawdzić dostępne sieci i plik wpa_supplicant.conf:</p>
 <pre translate="no">sudo iw dev wlan0 scan | grep SSID
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</pre>
-<p>PS. Od jakiegoś czasu zamiast balenaEtcher można użyć <a href="https://www.raspberrypi.com/software/">RPi Imager</a>. Ustawienia ssh, nazwę użytkownika/hosta można wstępnie <a href="https://youtu.be/ntaXWS8Lk34">skonfigurować</a> przed włożeniem karty SD do RPi.</p>
+<p>PS. Od jakiegoś czasu zamiast balenaEtcher można użyć <a href="https://www.raspberrypi.com/software/">RPi Imager</a>. Ustawienia ssh, nazwę użytkownika/hosta można wstępnie <a href="https://youtu.be/ntaXWS8Lk34">skonfigurować</a> przed przeniesieniem obrazu systemu na kartę SD.</p>
 <pre translate="no">
 <span style="color:green">   .~~.   .~~.
   '. \ ' ' / .'</span>
@@ -116,13 +116,20 @@ Jeszcze tylko podajemy hasło i to w zasadzie tyle.</p>
 <p>To mój prywatny niezbędnik przydatny po świeżej instalacji Windowsa 10. Może znajdziesz tu też coś dla siebie.</p>
 <p><a href="http://www.7-zip.org/">http://www.7-zip.org/</a><br />
 <a href="http://www.foobar2000.org/download">http://www.foobar2000.org/download</a><br />
+<a href="https://www.gimp.org/downloads/">https://www.gimp.org/downloads/</a><br />
 <a href="http://fy.3dyd.com/download/">http://fy.3dyd.com/download/</a><br />
 <a href="https://www.videolan.org/vlc/">https://www.videolan.org/vlc/</a><br />
 <a href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a><br />
 <a href="https://www.foxitsoftware.com/products/pdf-reader/">https://www.foxitsoftware.com/products/pdf-reader/</a><br />
-<a href="http://www.openoffice.org/download/index.html">http://www.openoffice.org/download/index.html</a><br />
 <a href="https://pl.libreoffice.org/pobieranie/stabilna/">https://pl.libreoffice.org/pobieranie/stabilna/</a><br />
 <a href="https://www.skype.com/pl/download-skype/skype-for-computer/">https://www.skype.com/pl/download-skype/skype-for-computer/</a><br />
+<a href="https://www.cpuid.com/softwares/cpu-z.html">https://www.cpuid.com/softwares/cpu-z.html</a><br />
+<a href="https://www.cpuid.com/softwares/hwmonitor.html">https://www.cpuid.com/softwares/hwmonitor.html</a><br />
+<a href="https://obsproject.com/download">https://obsproject.com/download</a><br />
+<a href="https://www.blackmagicdesign.com/pl/products/davinciresolve">https://www.blackmagicdesign.com/pl/products/davinciresolve</a><br />
+<a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a><br />
+<a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a><br />
+<a href="https://github.com/CXWorld/CapFrameX">https://github.com/CXWorld/CapFrameX</a><br />
 </p>
 </div>
 </div></article>
@@ -1047,7 +1054,7 @@ nano /flash/config.txt</pre>
 <p>1. Test RAM-u. Wyszukaj "Diagnostyka pamięci systemu Windows". Po wybraniu pierwszej opcji PC się zrestartuje i zacznie przeprowadzać diagnostykę. Może to potrwać nawet do godziny. <br />Po wszystkim wyszukaj "Wyświetl historię niezawodności" i na dole wybierz "Wyświetl wszystkie raporty o problemach". Tu powinien być raport z diagnostyki RAM-u.</p>
 <p>2. Naprawa dysku. W terminalu jako administrator wpisz:</p>
 <pre translate="no">chkdsk /f</pre>
-<p>Potwierdź i zrestartuj komputer. <br />Jeśli nie chcesz restartować komputera i chcesz przeskanować konkretny dysk bez naprawiania, wpisz komendę:</p>
+<p>Potwierdź i zrestartuj komputer. <br />Jeśli nie chcesz restartować komputera i chcesz przeskanować konkretny dysk bez naprawiania, wpisz komendę wybierając tylko konkretny dysk:</p>
 <pre translate="no">chkdsk c:</pre>
 <p>Inna, dokładniejsza naprawa dysku wygląda tak:</p>
 <pre translate="no">chkdsk /r</pre>
