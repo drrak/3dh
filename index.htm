@@ -26,7 +26,7 @@
 <div id="p0">
 <p>Repozytorium można pobrać z tej strony <a href="https://github.com/bite-your-idols/Gamestarter">GitHub</a>, konkretnie z tego <a href="https://goo.gl/m36qLT">linku</a>.</p>
 <p>Wybierz "Dodatki", "Zainstaluj z pliku zip" i wybierz pobrany wcześniej plik "repository.gamestarter-3.0.0.zip". Jeśli robisz to pierwszy raz, to będziesz musiał włączyć opcję pozwalającą na instalowanie dodatków z nieznanych źródeł.</p>
-<p>Repozytorium jest już zainstalowane. Teraz wybierz:<br/>
+<p>Repozytorium jest już zainstalowane. Teraz wybierz:<br>
 <span>Zainstaluj z repozytorium &gt; Gamestarter add-on repository &gt; Programy &gt; RetroArch</span></p>
 <p>To wszystko. W razie problemów z dźwiękiem odsyłam do tego <a href="#28">wpisu</a>.
 <p>PS. Spradziłem to tylko w LibreELEC 8. Nie wiem jak, czy w ogóle będzie działać w LE wersji 9.</p>
@@ -38,8 +38,8 @@
 <h2>Raspberry Pi</h2><h1><a href="#1">Podłączenie do sieci bez klawiatury i monitora</a></h1>
 <p class="dat">17.07.2019</p>
 <div id="p1">
-<p>Pobierz system <a href="https://www.raspberrypi.com/software/operating-systems/">Raspberry Pi OS</a> i zainstaluj na kartę SD przy pomocy programu <a href="https://www.balena.io/etcher/">balenaEtcher</a>. <br/>
-Po instalacji nie wyciągaj karty, tylko stwórz plik "ssh" bez podawania typu.<br/>
+<p>Pobierz system <a href="https://www.raspberrypi.com/software/operating-systems/">Raspberry Pi OS</a> i zainstaluj na kartę SD przy pomocy programu <a href="https://www.balena.io/etcher/">balenaEtcher</a>. <br>
+Po instalacji nie wyciągaj karty, tylko stwórz plik "ssh" bez podawania typu.<br>
 Dodaj jeszcze plik "wpa_supplicant.conf". Edytuj go i wklej:</p>
 <pre translate="no">
 country=PL
@@ -83,10 +83,10 @@ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</pre>
 <pre translate="no">curl -sSL https://install.pi-hole.net | bash</pre>
 <p>W trakcie instalacji wybieramy domyślne ustawienia i serwer Google jeśli nie wiemy co wybrać. Zapamiętujemy przypisany adres IP i na koniec zwracamy jeszcze uwagę na hasło jakie otrzymamy. W razie problemów hasło zawsze można zmienić komendą:</p>
 <pre translate="no">sudo pihole -a -p</pre>
-<p>Otrzymany IP wpisujemy do DNS w komputerze/routerze na którym chcemy blokować reklamy. Ja opiszę przykład z komputerem. Wchodzimy w:<br/>
-<span>Ustawienia &gt; Sieć i Internet &gt; Zmień opcje karty</span><br/>
+<p>Otrzymany IP wpisujemy do DNS w komputerze/routerze na którym chcemy blokować reklamy. Ja opiszę przykład z komputerem. Wchodzimy w:<br>
+<span>Ustawienia &gt; Sieć i Internet &gt; Zmień opcje karty</span><br>
 <span>PPM na karcie sieciowej &gt;  Właściwości &gt; TCP/IPv4 &gt;  Właściwości > Użyj następujących adresów DNS &gt; w Preferowany adres</span> wpisujemy IP malinki i zatwierdzamy nasze zmiany.</p>
-<p>Teraz możemy zobaczyć działanie Pi-hole w przeglądarce internetowej. Wklejamy IP przypisany w czasie instalacji i dopisujemy "admin". Przykład: <span>192.168.0.122/admin</span><br/>
+<p>Teraz możemy zobaczyć działanie Pi-hole w przeglądarce internetowej. Wklejamy IP przypisany w czasie instalacji i dopisujemy "admin". Przykład: <span>192.168.0.122/admin</span><br>
 Jeszcze tylko podajemy hasło i to w zasadzie tyle.</p>
 <p>Przy okazji polecam kanał szmala i jego poradnik: <a href="https://youtu.be/zVCXx6pJp8k">https://youtu.be/zVCXx6pJp8k</a></p>
 <p>PS. <a href="#1">Tutaj</a> możemy przeczytać jak ustawić sieć na RPi OS Lite.</p>
@@ -114,22 +114,22 @@ Jeszcze tylko podajemy hasło i to w zasadzie tyle.</p>
 <p class="dat">17.07.2019</p>
 <div id="p4">
 <p>To mój prywatny niezbędnik przydatny po świeżej instalacji Windowsa. Może znajdziesz tu też coś dla siebie.</p>
-<p><a href="https://7-zip.org/">https://7-zip.org/</a><br/>
-<a href="https://www.foobar2000.org/download">https://www.foobar2000.org/download</a><br/>
-<a href="http://fy.3dyd.com/download/">http://fy.3dyd.com/download/</a><br/>
-<a href="https://www.gimp.org/downloads/">https://www.gimp.org/downloads/</a><br/>
-<a href="https://www.videolan.org/vlc/">https://www.videolan.org/vlc/</a><br/>
-<a href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a><br/>
-<a href="https://www.foxitsoftware.com/products/pdf-reader/">https://www.foxitsoftware.com/products/pdf-reader/</a><br/>
-<a href="https://pl.libreoffice.org/pobieranie/stabilna/">https://pl.libreoffice.org/pobieranie/stabilna/</a><br/>
-<a href="https://www.skype.com/pl/download-skype/skype-for-computer/">https://www.skype.com/pl/download-skype/skype-for-computer/</a><br/>
-<a href="https://www.cpuid.com/softwares/cpu-z.html">https://www.cpuid.com/softwares/cpu-z.html</a><br/>
-<a href="https://www.cpuid.com/softwares/hwmonitor.html">https://www.cpuid.com/softwares/hwmonitor.html</a><br/>
-<a href="https://obsproject.com/download">https://obsproject.com/download</a><br/>
-<a href="https://www.blackmagicdesign.com/pl/products/davinciresolve">https://www.blackmagicdesign.com/pl/products/davinciresolve</a><br/>
-<a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a><br/>
-<a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a><br/>
-<a href="https://github.com/CXWorld/CapFrameX">https://github.com/CXWorld/CapFrameX</a><br/>
+<p><a href="https://7-zip.org/">https://7-zip.org/</a><br>
+<a href="https://www.foobar2000.org/download">https://www.foobar2000.org/download</a><br>
+<a href="http://fy.3dyd.com/download/">http://fy.3dyd.com/download/</a><br>
+<a href="https://www.gimp.org/downloads/">https://www.gimp.org/downloads/</a><br>
+<a href="https://www.videolan.org/vlc/">https://www.videolan.org/vlc/</a><br>
+<a href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a><br>
+<a href="https://www.foxitsoftware.com/products/pdf-reader/">https://www.foxitsoftware.com/products/pdf-reader/</a><br>
+<a href="https://pl.libreoffice.org/pobieranie/stabilna/">https://pl.libreoffice.org/pobieranie/stabilna/</a><br>
+<a href="https://www.skype.com/pl/download-skype/skype-for-computer/">https://www.skype.com/pl/download-skype/skype-for-computer/</a><br>
+<a href="https://www.cpuid.com/softwares/cpu-z.html">https://www.cpuid.com/softwares/cpu-z.html</a><br>
+<a href="https://www.cpuid.com/softwares/hwmonitor.html">https://www.cpuid.com/softwares/hwmonitor.html</a><br>
+<a href="https://obsproject.com/download">https://obsproject.com/download</a><br>
+<a href="https://www.blackmagicdesign.com/pl/products/davinciresolve">https://www.blackmagicdesign.com/pl/products/davinciresolve</a><br>
+<a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a><br>
+<a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a><br>
+<a href="https://github.com/CXWorld/CapFrameX">https://github.com/CXWorld/CapFrameX</a><br>
 </p>
 </div>
 </div></article>
@@ -173,15 +173,15 @@ sudo apt clean</pre>
 <div id="p7">
 <p>Ten nietypowy reset, ma nawet swoją nazwę i stronę na Wikipedii: <a href="https://en.wikipedia.org/wiki/Magic_SysRq_key">Magic SysRq key</a>. Wykonuje się go przytrzymując klawisze: <span>Ctrl+L.Alt+PrtSc/SysRq</span></p>
 <p>Potem, nie puszczając ww. klawiszy, kolejno: <span>r s e i s u b</span></p>
-<p>Jeszcze krótko opiszę co jaki klawisz wywołuje:<br/>
-<span>r</span> - Switch the keyboard from raw mode, the mode used by programs such as X11 <br/>
-    and svgalib, to XLATE mode<br/>
-<span>s</span> - Sync all mounted filesystems<br/>
-<span>e</span> - Send the SIGTERM signal to all processes except init (PID 1)<br/>
-<span>i</span> - Send the SIGKILL signal to all processes except init<br/>
-<span>s</span> - Sync all mounted filesystems<br/>
-<span>u</span> - Remount all mounted filesystems in read-only mode<br/>
-<span>b</span> - Immediately reboot the system, without unmounting or syncing filesystems<br/>
+<p>Jeszcze krótko opiszę co jaki klawisz wywołuje:<br>
+<span>r</span> - Switch the keyboard from raw mode, the mode used by programs such as X11 <br>
+    and svgalib, to XLATE mode<br>
+<span>s</span> - Sync all mounted filesystems<br>
+<span>e</span> - Send the SIGTERM signal to all processes except init (PID 1)<br>
+<span>i</span> - Send the SIGKILL signal to all processes except init<br>
+<span>s</span> - Sync all mounted filesystems<br>
+<span>u</span> - Remount all mounted filesystems in read-only mode<br>
+<span>b</span> - Immediately reboot the system, without unmounting or syncing filesystems<br>
 </p>
 </div>
 </div></article>
@@ -190,12 +190,12 @@ sudo apt clean</pre>
 <h2>Raspbian</h2><h1><a href="#8">Przydatne skróty w Raspbianie</a></h1>
 <p class="dat">17.07.2019</p>
 <div id="p8">
-<p>Przydatny skróty w katalogu:<br/>
-<span>F3</span> - dzieli katalog na dwie części<br/>
-<span>F4</span> - otwiera Terminal w aktualnie ogladanym katalogu<br/>
+<p>Przydatny skróty w katalogu:<br>
+<span>F3</span> - dzieli katalog na dwie części<br>
+<span>F4</span> - otwiera Terminal w aktualnie ogladanym katalogu<br>
 <span>F11</span> - fullscreen</p> 
-<p>Terminal:<br/>
-<span>Ctrl+Alt+F1 (2..6)</span> - otwiera terminal<br/>
+<p>Terminal:<br>
+<span>Ctrl+Alt+F1 (2..6)</span> - otwiera terminal<br>
 <span>Ctrl+Alt+F7</span> - zamyka i wraca na pulpit</p>
 </div>
 </div></article>
@@ -254,7 +254,7 @@ sudo apt clean</pre>
 <p>Po tym wychodzimy <span>Ctrl+X</span> i zapisujemy zmiany.</p>
 <p>Wyłączamy malinkę i wpinamy przycisk chwilowy do pinów <span>5 i 6</span> (<span>GPIO3 i GND</span>). To wszystko! Od teraz mamy bezpieczny przycisk wyłączający oraz włączający naszą malinkę. Najlepsze jest to, że przycisk działa i pod Raspbianem i pod Kodi. Przynajmniej tak jest w LibreELEC 9 lub nowszym.</p>
 <p>Polecam tutorial z którego dowiedziałem się o tym przycisku: <a href="https://youtu.be/qAzheiZlB9k">https://youtu.be/qAzheiZlB9k</a></p>
-<br/>
+<br>
 <p>PS. W LibreELEC edytujemy ten plik:</p>
 <pre translate="no">mount -o remount,rw /flash
 nano /flash/config.txt</pre>
@@ -299,14 +299,14 @@ reboot</pre>
 <p class="dat">17.07.2019</p>
 <div id="p16">
 <p>Kompletny spis klawiszy jest pod tym adresem <a href="http://kodi.wiki/view/Keyboard_controls">linkiem</a> a u mnie tylko kilka najczęściej używanych:</p>
-<p><span>c</span> - contextual menu<br/>
-<span>i</span> - info<br/>
-<span>o</span> - codec info<br/>
-<span>x</span> - stop<br/>
-<span>z</span> - zoom/aspect ratio<br/>
-<span>Ctrl+s</span> / <span>PrintSrc</span> - screenshot<br/>
-<span>Tab</span> - fullscreen playback<br/>
-<span>Shift+LETTER</span> - jump to that letter in a list<br/>
+<p><span>c</span> - contextual menu<br>
+<span>i</span> - info<br>
+<span>o</span> - codec info<br>
+<span>x</span> - stop<br>
+<span>z</span> - zoom/aspect ratio<br>
+<span>Ctrl+s</span> / <span>PrintSrc</span> - screenshot<br>
+<span>Tab</span> - fullscreen playback<br>
+<span>Shift+LETTER</span> - jump to that letter in a list<br>
 <span>t</span> - subtitles on/off</p>
 </div>
 </div></article>
@@ -315,8 +315,8 @@ reboot</pre>
 <h2>Kodi, LibreELEC</h2><h1><a href="#17">Dokładne ustawienie czasu</a></h1>
 <p class="dat">17.07.2019</p>
 <div id="p17">
-<p><span>Ustawienia &gt; LibreELEC &gt; Sieć:</span><br/>
-Serwer czasu #1    <span>0.pl.pool.ntp.org</span><br/>
+<p><span>Ustawienia &gt; LibreELEC &gt; Sieć:</span><br>
+Serwer czasu #1    <span>0.pl.pool.ntp.org</span><br>
 Serwer czasu #2    <span>1.pl.pool.ntp.org</span></p>
 </div>
 </div></article>
@@ -329,9 +329,9 @@ Serwer czasu #2    <span>1.pl.pool.ntp.org</span></p>
 <pre translate="no">https://i-a-c.github.io/</pre>
 <p>i nazwij je np.: <span>r-redux</span></p>
 <p>Teraz wróć na ekran główny, wybierz "Dodatki" i "Zainstaluj z pliku zip". Jeśli robisz to pierwszy raz, to będziesz musiał włączyć opcję pozwalającą na instalowanie dodatków z nieznanych źródeł. Wybierz "r-redux" i "repository.exsodusredux-0.0.8.zip".</p>
-<p>Repozytorium jest już zainstalowane. Teraz wybierz:<br/>
-Zainstaluj z repozytorium &gt; Exodus Redux Repo &gt; Wtyczki wideo &gt; Exodus Redux</p><br/>
-<p>Przy okazji, jeśli masz konto na <a href="https://www.imdb.com/">imdb.com</a>, możesz zsynchronizować wtyczkę Exodus z tym kontem i dzięki temu mieć dostęp do twoich list ze strony IMDb. Potrzebujesz do tego numeru użytkownika z adresu www. Wejdź w swój profil i przepisz fragment po "/user/". Przykład: <br/>https://www.imdb.com/user/<span>ur77561000</span>/?ref_=nb_usr_prof_0</p>
+<p>Repozytorium jest już zainstalowane. Teraz wybierz:<br>
+Zainstaluj z repozytorium &gt; Exodus Redux Repo &gt; Wtyczki wideo &gt; Exodus Redux</p><br>
+<p>Przy okazji, jeśli masz konto na <a href="https://www.imdb.com/">imdb.com</a>, możesz zsynchronizować wtyczkę Exodus z tym kontem i dzięki temu mieć dostęp do twoich list ze strony IMDb. Potrzebujesz do tego numeru użytkownika z adresu www. Wejdź w swój profil i przepisz fragment po "/user/". Przykład: <br>https://www.imdb.com/user/<span>ur77561000</span>/?ref_=nb_usr_prof_0</p>
 <p>Teraz wejdź w <span>ustawienia wtyczki Exodus (klawisz c) &gt; Konta &gt; i w IMDb</span> wpisz fragment z adresu www.</p>
 </div>
 </div></article>
@@ -452,19 +452,19 @@ reboot</pre>
 <div id="p25">
 <p>Przykład:</p>
 <pre translate="no">intitle:"index.of" (zip|rar) ebook -html, -htm, -php, -cf, -jsp, -asp</pre>
-<p><span>intitle</span> to coś co musi znaleźć się w wynikach, czyli w tym przypadku "index.of".<br/>
-<span>(zip|rar)</span> to typ szukanych plików.<br/>
-<span>ebook</span> w tym przykładzie szukamy ebooka.<br/>
+<p><span>intitle</span> to coś co musi znaleźć się w wynikach, czyli w tym przypadku "index.of".<br>
+<span>(zip|rar)</span> to typ szukanych plików.<br>
+<span>ebook</span> w tym przykładzie szukamy ebooka.<br>
 <span>-html, -htm, -php, -cf, -jsp, -asp</span> minus przed nazwą to coś co Google ma omijać, czyli nie chcemy stron html, php itd.</p>
 <p><a href="https://www.google.com/search?q=intitle%3A%22index.of%22+(zip%7Crar)+ebook+-html%2C+-htm%2C+-php%2C+-cf%2C+-jsp%2C+-asp&oq=intitle%3A%22index.of%22+(zip%7Crar)+ebook+-html%2C+-htm%2C+-php%2C+-cf%2C+-jsp%2C+-asp&aqs=edge..69i57j69i58j69i60&sourceid=chrome&ie=UTF-8">Link</a> do ww. przykładu.</p>
-<br/>
-<p>YouTube też ma kilka ciekawych funkcji, np.:<br/>
-<span>raspberry pi kodi -osmc</span> - minus działa jak w google, czyli zaznaczamy które z szukanych słów chcemy ominąć.<br/>
-<span>3dh, channel</span> - szukamy tylko w kanałach.<br/>
-<span>classic rock, playlist</span> - szukamy tylko w playlistach.<br/>
-<span>raspberry pi 4, this month</span> - this month, <span>year</span>, <span>week</span>, <span>today</span> albo <span>last hour</span>. Zaznaczamy z kiedy mają być wyszukane materiały.<br/>
-<span>raspberry pi, short</span> lub <span>long</span> - szukamy materiał poniżej 4 min. lub powyżej 20 min.<br/>
-<span>demo, hd</span> lub <span>4k</span> lub <span>360</span>  - szukamy filmów w jakości HD, 4K lub 360°.<br/>
+<br>
+<p>YouTube też ma kilka ciekawych funkcji, np.:<br>
+<span>raspberry pi kodi -osmc</span> - minus działa jak w google, czyli zaznaczamy które z szukanych słów chcemy ominąć.<br>
+<span>3dh, channel</span> - szukamy tylko w kanałach.<br>
+<span>classic rock, playlist</span> - szukamy tylko w playlistach.<br>
+<span>raspberry pi 4, this month</span> - this month, <span>year</span>, <span>week</span>, <span>today</span> albo <span>last hour</span>. Zaznaczamy z kiedy mają być wyszukane materiały.<br>
+<span>raspberry pi, short</span> lub <span>long</span> - szukamy materiał poniżej 4 min. lub powyżej 20 min.<br>
+<span>demo, hd</span> lub <span>4k</span> lub <span>360</span>  - szukamy filmów w jakości HD, 4K lub 360°.<br>
 <span>music, live</span>  - szukamy w transmisjach na żywo.</p>
 </div>
 </div></article>
@@ -475,69 +475,69 @@ reboot</pre>
 <div id="p26">
 <p>Przede wszystkim zaznacz "Wyrażenie regularne" w zakładce "Zamień" (<span>Ctrl+F</span>). <a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions">Tu</a> możesz przeczytać o wyrażeniu regularnym. Przykłady:</p>
 <pre translate="no">&lt;[^&gt;]+&gt;</pre>
-<p>Usunie wszystkie tagi html. Można też sprawdzić <span>[&lt;].*?&gt;</span></p><br/><br/>
+<p>Usunie wszystkie tagi html. Można też sprawdzić <span>[&lt;].*?&gt;</span></p><br><br>
 
 <pre translate="no">&lt;TD.*?&gt;(.*?)&lt;/TD&gt;
 &lt;td&gt;\1&lt;/td&gt;</pre>
-<p>Usunie tag <span>&lt;TD&gt;</span> i wyczyści jego parametry, zamieni na <span>&lt;td&gt;</span> zostawiając wszystko co było w środku.</p><br/><br/>
+<p>Usunie tag <span>&lt;TD&gt;</span> i wyczyści jego parametry, zamieni na <span>&lt;td&gt;</span> zostawiając wszystko co było w środku.</p><br><br>
 
 <pre translate="no">&lt;TD.*?&gt;&lt;FONT.*?&gt;(.*?)&lt;/FONT&gt;&lt;/TD&gt;
 &lt;td&gt;\1&lt;/td&gt;</pre>
-<p>Usunie tagi <span>&lt;TD&gt;</span> i <span>&lt;FONT&gt;</span> z jego parametrami, zostawiając zawartość i zamieniająć tagi <span>&lt;td&gt;</span> na małe litery.</p><br/><br/>
+<p>Usunie tagi <span>&lt;TD&gt;</span> i <span>&lt;FONT&gt;</span> z jego parametrami, zostawiając zawartość i zamieniająć tagi <span>&lt;td&gt;</span> na małe litery.</p><br><br>
 
 <pre translate="no">&lt;span.*?&gt;(.*?)&lt;/span&gt;
 \1</pre>
-<p>Usunie tagi <span>&lt;span&gt;</span> zaostawiająć nienaruszoną zawartość.</p><br/><br/>
+<p>Usunie tagi <span>&lt;span&gt;</span> zaostawiająć nienaruszoną zawartość.</p><br><br>
 
 <pre translate="no">&lt;span(.*?)&gt;Stary tekst.&lt;/span&gt;
 &lt;span\1&gt;Nowy tekst.&lt;/span&gt;</pre>
-<p>Zamieni tekst i tylko tekst w tagach <span>&lt;span&gt;</span>.</p><br/><br/>
+<p>Zamieni tekst i tylko tekst w tagach <span>&lt;span&gt;</span>.</p><br><br>
 
 <pre translate="no">&lt;TD.*?&gt;&lt;B&gt;&lt;FONT.*?&gt;(.*?)&lt;/FONT&gt;&lt;/B&gt;&lt;/TD&gt;
 &lt;td&gt;\1&lt;/td&gt;</pre>
-<p>Jak wyżej + usunięcie tagów <span>&lt;B&gt;</span>.</p><br/><br/>
+<p>Jak wyżej + usunięcie tagów <span>&lt;B&gt;</span>.</p><br><br>
 
 <pre translate="no">.*SPAM.*</pre>
-<p>Usunie całą linijkę tekstu w którym znaduję się słowo SPAM.</p><br/><br/>
+<p>Usunie całą linijkę tekstu w którym znaduję się słowo SPAM.</p><br><br>
 
 <pre translate="no">(\d\d)\.(\d\d\d)
 \1,\2</pre>
-<p>Zamienia kropkę w "55.896", na przecinek "55,896".</p><br/><br/>
+<p>Zamienia kropkę w "55.896", na przecinek "55,896".</p><br><br>
 
-<p>Usunie duplikaty w wierszach.</p><br/><br/>
+<p>Usunie duplikaty w wierszach.</p><br><br>
 <pre translate="no">^(.*\r?\n)(\1)+
 \1</pre>
-<p>Usunie duplikaty w wierszach, jeśli są jeden pod drugim.</p><br/><br/>
+<p>Usunie duplikaty w wierszach, jeśli są jeden pod drugim.</p><br><br>
 
 <pre translate="no">.*"&gt;(&lt;.*&gt;)&lt;\/a&gt;
 \1</pre>
-<p>Zamienia to:<br/>
-<span>&lt;a href="www.google.com"&gt;&lt;a href="www.google.com">www.google.com&lt;/a&gt;&lt;/a&gt;</span><br/>
-na to:<br/>
-<span>&lt;a href="www.google.com"&gt;www.google.com&lt;/a&gt;</span></p><br/><br/>
+<p>Zamienia to:<br>
+<span>&lt;a href="www.google.com"&gt;&lt;a href="www.google.com">www.google.com&lt;/a&gt;&lt;/a&gt;</span><br>
+na to:<br>
+<span>&lt;a href="www.google.com"&gt;www.google.com&lt;/a&gt;</span></p><br><br>
 
 <pre translate="no">&lt;span style="color:#000000"&gt;(.*?)&lt;/span&gt;
 ░░</pre>
-<p>Zamieni to:<br/>
-<span>&lt;span style="color:#000000"&gt;██&lt;/span&gt;</span><br/>
-na to: <span>░░</span></p><br/><br/>
+<p>Zamieni to:<br>
+<span>&lt;span style="color:#000000"&gt;██&lt;/span&gt;</span><br>
+na to: <span>░░</span></p><br><br>
 
 <pre translate="no">(░░+)
 &lt;span style="color:#000000"&gt;\1&lt;/span&gt;</pre>
-<p>Zamieni to: <span>░░░░</span><br/>
-na to: <span>&lt;span style="color:#000000"&gt;░░░░&lt;/span&gt;</span></p><br/><br/>
+<p>Zamieni to: <span>░░░░</span><br>
+na to: <span>&lt;span style="color:#000000"&gt;░░░░&lt;/span&gt;</span></p><br><br>
 
 <pre translate="no">&lt;span class="a"&gt;(.*?)&lt;/span&gt;\r\n&lt;span class="a"&gt;(.*?)&lt;/span&gt;
 &lt;span class="a"&gt;\1\r\n\2&lt;/span&gt;</pre>
-<p>Połączy te same tagi w jeden.</p><br/><br/>
+<p>Połączy te same tagi w jeden.</p><br><br>
 
-<p>Edytowaie kolumny:<br/>
-Zaznacz kolumne przytrzymując Alt, następnie wybierz opcje:<br/>
-<span>Edycja &gt; Edytor kolumn... (Alt+C)</span></p><br/><br/>
+<p>Edytowaie kolumny:<br>
+Zaznacz kolumne przytrzymując Alt, następnie wybierz opcje:<br>
+<span>Edycja &gt; Edytor kolumn... (Alt+C)</span></p><br><br>
 
-<p>Ustawienie szerokości tekstu:<br/>
-<span>Ustawienia &gt; Preferencje... &gt; Edycja &gt; </span>zaznaczam <span>Pokaż krawędź pionową</span> i zmieniam Liczbę kolumn na powiedzmy 82. <br/>
-Teraz zaznaczam tekst i używam skrótu <span>Ctrl+i</span>, albo wybieram: <br/>
+<p>Ustawienie szerokości tekstu:<br>
+<span>Ustawienia &gt; Preferencje... &gt; Edycja &gt; </span>zaznaczam <span>Pokaż krawędź pionową</span> i zmieniam Liczbę kolumn na powiedzmy 82. <br>
+Teraz zaznaczam tekst i używam skrótu <span>Ctrl+i</span>, albo wybieram: <br>
 <span>Edycja &gt; Operacje na liniach &gt; Podziel wiersze Ctrl+I</span></p>
 </div>
 </div></article>
@@ -574,9 +574,9 @@ reboot</pre>
 <h2>Kodi, LibreELEC, RetroArch</h2><h1><a href="#29">Jak zainstalować Doom</a></h1>
 <p class="dat">17.07.2019</p>
 <div id="p29">
-<p>W <a href="https://github.com/bite-your-idols/Gamestarter/releases/latest">RetroArch</a> wybierz:<br/>
-1. <span>Online Updater &gt; Core Updater &gt; Doom (PrBoom)</span><br/>
-2. <span>Content Downloader &gt; PrBoom &gt; Doom [shareware][1993].zip</span><br/>
+<p>W <a href="https://github.com/bite-your-idols/Gamestarter/releases/latest">RetroArch</a> wybierz:<br>
+1. <span>Online Updater &gt; Core Updater &gt; Doom (PrBoom)</span><br>
+2. <span>Content Downloader &gt; PrBoom &gt; Doom [shareware][1993].zip</span><br>
 3. <span>Load Content &gt; Downloads &gt; Doom &gt; doom1.wad</span></p>
 </div>
 </div></article>
@@ -586,11 +586,11 @@ reboot</pre>
 <p class="dat">23.07.2019</p>
 <div id="p30">
 <p>Pobieramy system <a href="https://libreelec.tv/downloads_new/">LibreELEC</a> w wersji na swoją malinkę i instalujemy na kartę SD przy pomocy programu <a href="https://www.balena.io/etcher/">balenaEtcher</a>. Wskazujemy pobrany plik (nie musimy go rozpakowywać), kartę SD i instalujemy system. Tak przygotowaną kartę wkładamy do malinki i uruchamiamy. Na początku ustalamy kilka opcji, takich jak język, wi-fi itp. Koniecznie aktywujemy opcję SSH i wpisujemy swoje hasło.</p>
-<p>Teraz warto ustawić kilka opcji i w każdej wybrać poziom Ekspercki aby mieć dostęp do wszystkich ustawień:<br/>
-- wybieramy język polski: <span>Ustawienia &gt; Ustawienia interfejsu &gt; Regionalne</span><br/>
-- <a href="#17">wpisujemy polski czas</a>: <span>Ustawienia &gt; LibreELEC &gt; Sieć</span><br/>
-- pobieraj język polski w napisach: <span>Ustawienia &gt; Ustawienia odtwarzacza &gt; Język</span><br/>
-- wyłączamy tła i animacje: <span>Ustawienia &gt; Ustawienia interfejsu &gt; Skóra &gt; Konfiguracja skóry</span><br/>
+<p>Teraz warto ustawić kilka opcji i w każdej wybrać poziom Ekspercki aby mieć dostęp do wszystkich ustawień:<br>
+- wybieramy język polski: <span>Ustawienia &gt; Ustawienia interfejsu &gt; Regionalne</span><br>
+- <a href="#17">wpisujemy polski czas</a>: <span>Ustawienia &gt; LibreELEC &gt; Sieć</span><br>
+- pobieraj język polski w napisach: <span>Ustawienia &gt; Ustawienia odtwarzacza &gt; Język</span><br>
+- wyłączamy tła i animacje: <span>Ustawienia &gt; Ustawienia interfejsu &gt; Skóra &gt; Konfiguracja skóry</span><br>
 - wygaszacz ekranu Black: <span>Ustawienia &gt; Ustawienia interfejsu &gt; Wygaszacz ekranu</span></p>
 <p>Teraz można już instalować wtyczki. Polecam: <a href="#19">YouTube</a>, <a href="#18">Exodus Redux</a>, <a href="#20">Radio</a> i <a href="#21">Keymap Editor</a>.</p>
 </div>
@@ -600,21 +600,21 @@ reboot</pre>
 <h2>foobar2000, Windows</h2><h1><a href="#31">Ripowanie płyt CD-Audio</a></h1>
 <p class="dat">24.07.2019</p>
 <div id="p31">
-<p>Do zripowania płyty potrzebujemy:<br/>
-<a href="https://www.foobar2000.org/download">foobar2000</a><br/>
+<p>Do zripowania płyty potrzebujemy:<br>
+<a href="https://www.foobar2000.org/download">foobar2000</a><br>
 <a href="https://www.foobar2000.org/encoderpack">foobar2000 encoderpack</a></p>
 <p>Najpierw instalujemy foobar2000 i zaznaczamy dodatkowe programy w instalatorze:</p> 
 <pre translate="no">Audio CD support
 Conventer
 Online Tagger</pre>
 <p>Albo wybieramy wszystko jak leci. Foobar2000 to lekki odtwarzacz.</p>
-<p>Następnie instalujemy encoderpack. Czas włożyć płytę CD i ustawić parę opcji w napędzie optycznym. Wybieramy:<br/>
-<span>File &gt; Open audio CD... &gt; Drive settings</span><br/>
-<span>Read offset correction</span> - klikamy w auto i dla pewności sprawdzamy na <a href="http://www.accuraterip.com/driveoffsets.htm">tej stronie</a> czy przypisane parametry pasują do naszego napędu.<br/>
-<span>Ripping security</span> - zalecam wybrać opcję standard.<br/>
+<p>Następnie instalujemy encoderpack. Czas włożyć płytę CD i ustawić parę opcji w napędzie optycznym. Wybieramy:<br>
+<span>File &gt; Open audio CD... &gt; Drive settings</span><br>
+<span>Read offset correction</span> - klikamy w auto i dla pewności sprawdzamy na <a href="http://www.accuraterip.com/driveoffsets.htm">tej stronie</a> czy przypisane parametry pasują do naszego napędu.<br>
+<span>Ripping security</span> - zalecam wybrać opcję standard.<br>
 <span>Limit drive speed while reading</span> - zaznaczamy tylko kiedy mamy płytę w kiepskim stanie.</p>
-<p>Jeszczę parę opcji i możemy ripować. Wybieramy:<br/>
-<span>File &gt; Open audio CD... &gt; Rip</span><br/>
+<p>Jeszczę parę opcji i możemy ripować. Wybieramy:<br>
+<span>File &gt; Open audio CD... &gt; Rip</span><br>
 Zaznaczamy opcję <span>Verify with AccurateRip</span> a w <span>Proceed to the Converter Setup dialog</span> będziemy mogli wybrać plik wyjściowy, np. flac. Wcześniej warto sprawdzić tytuły, rok wydania płyty itp. opcje i w razie czego uzupełnić. Tak przygotowaną płytę możemy już zripować.</p>
 <p>W razie problemów odsyłam do poradnika z <a href="https://www.dobreprogramy.pl/Zgrywanie-i-kompresja-sciezek-CDAudio-w-programie-foobar-cz,Blog,24190.html">dobreprogramy.pl</a>.</p>
 </div>
@@ -624,8 +624,8 @@ Zaznaczamy opcję <span>Verify with AccurateRip</span> a w <span>Proceed to the 
 <h2>Kodi, LibreELEC, Windows</h2><h1><a href="#32">Samba i udostępnianie</a></h1>
 <p class="dat">29.07.2019</p>
 <div id="p32">
-<p>Samba w Kodi jest domyślnie włączona, ale można to sprawdzić wchodząc w:<br/>
-<span>Ustawienia &gt; LibreELEC &gt; Usługi</span><br/>
+<p>Samba w Kodi jest domyślnie włączona, ale można to sprawdzić wchodząc w:<br>
+<span>Ustawienia &gt; LibreELEC &gt; Usługi</span><br>
 Przy okazji sprawdzamy nazwę użytkownika, hasło i w Połączeniach sprawdzamy adres IP.</p>
 <p>W Windows wchodzimy w Eksplorator plików i w pasku adresu wpisujemy albo adres IP Kodi:</p>
 <pre translate="no">\\192.168.0.18</pre>
@@ -639,12 +639,12 @@ Przy okazji sprawdzamy nazwę użytkownika, hasło i w Połączeniach sprawdzamy
 <h2>Kodi, LibreELEC, Windows 10</h2><h1><a href="#33">Windows 10 i udostępnianie</a></h1>
 <p class="dat">29.07.2019</p>
 <div id="p33">
-<p>Aby udostępnianie zadziałało, musimy być w jednej sieci i Windows 10 musi być chroniony hasłem. Teraz wybieramy katalog/dysk który chcemy udostępnić i klikamy PPM. Wybieramy:<br/>
-Udziel dostępu do &gt; Grupa domowa (wyświetlanie i edycja)<br/>
+<p>Aby udostępnianie zadziałało, musimy być w jednej sieci i Windows 10 musi być chroniony hasłem. Teraz wybieramy katalog/dysk który chcemy udostępnić i klikamy PPM. Wybieramy:<br>
+Udziel dostępu do &gt; Grupa domowa (wyświetlanie i edycja)<br>
 Później klikamy PPM na wcześniej wybranym katalogu/dysku i wybieramy Właściwości, a w zakładce Udostępnianie zapisujemy ścieżkę sieciową. Np.:</p>
 <pre translate="no">\\DESKTOP-GT390CD\DyskD\</pre>
-<p>Teraz w Kodi wchodzimy do:<br/>
-<span>Ustawienia &gt; Menedżer plików &gt; Dodaj źródło</span><br/>
+<p>Teraz w Kodi wchodzimy do:<br>
+<span>Ustawienia &gt; Menedżer plików &gt; Dodaj źródło</span><br>
 Wpisujemy:</p>
 <pre translate="no">smb://DESKTOP-GT390CD/DyskD/</pre>
 <p>Na koniec podajemy nazwę użytkowania i hasło z Windows 10.</p>
@@ -655,54 +655,54 @@ Wpisujemy:</p>
 <h2>Linux, Windows</h2><h1><a href="#34">Przydatne komendy/skróty w Linuxie i Windows</a></h1>
 <p class="dat">21.03.2020</p>
 <div id="p34">
-<p>Linux:<br/>
-<span>cat /proc/version</span> - wyświetla wersję Linuxa<br/>
-<span>cat /proc/cpuinfo</span> - opis CPU i sprzętu<br/>
-<span>sudo apt install typespeed</span> - instalacja gry typespeed<br/>
-<span>sudo apt --purge remove typespeed</span> - całkowite (--purge) usunięcie gry typespeed<br/>
-<span>sudo iw dev wlan0 scan | grep SSID</span> - sprawdza dostępne sieci Wi-Fi<br/>
-<span>sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</span> - podgląd pliku z ustawieniami Wi-Fi<br/>
-<span>sudo nano /boot/config.txt</span> - plik konfiguracyjny RPi OS<br/>
-<span>nano /flash/config.txt</span> - plik konfiguracyjny Kodi<br/>
-<span>sudo find / -name *.cfg</span> - szukaj wszędzie plików cfg<br/>
-<span>find -type d -name ".w3m"</span> - wyszukaj w danym folderze ukrytego katalogu o nazwie w3m<br/>
-<span>ifconfig</span> - adres IP i MAC<br/>
-<span>systemctl restart kodi</span> - restart Kodi<br/>
-<span>reboot</span> - reset<br/>
-<span>sudo apt update &amp;&amp; sudo apt full-upgrade -y</span> - aktualizacja Rasbian<br/>
-<span>nano /storage/.kodi/temp/kodi.log</span> - plik kodi.log<br/>
-<span>Ctrl + C</span> - powrót do terminala z uruchomionych aplikacji<br/>
-<span>Ctrl + D</span> - wylogowanie, wyjście<br/>
+<p>Linux:<br>
+<span>cat /proc/version</span> - wyświetla wersję Linuxa<br>
+<span>cat /proc/cpuinfo</span> - opis CPU i sprzętu<br>
+<span>sudo apt install typespeed</span> - instalacja gry typespeed<br>
+<span>sudo apt --purge remove typespeed</span> - całkowite (--purge) usunięcie gry typespeed<br>
+<span>sudo iw dev wlan0 scan | grep SSID</span> - sprawdza dostępne sieci Wi-Fi<br>
+<span>sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</span> - podgląd pliku z ustawieniami Wi-Fi<br>
+<span>sudo nano /boot/config.txt</span> - plik konfiguracyjny RPi OS<br>
+<span>nano /flash/config.txt</span> - plik konfiguracyjny Kodi<br>
+<span>sudo find / -name *.cfg</span> - szukaj wszędzie plików cfg<br>
+<span>find -type d -name ".w3m"</span> - wyszukaj w danym folderze ukrytego katalogu o nazwie w3m<br>
+<span>ifconfig</span> - adres IP i MAC<br>
+<span>systemctl restart kodi</span> - restart Kodi<br>
+<span>reboot</span> - reset<br>
+<span>sudo apt update &amp;&amp; sudo apt full-upgrade -y</span> - aktualizacja Rasbian<br>
+<span>nano /storage/.kodi/temp/kodi.log</span> - plik kodi.log<br>
+<span>Ctrl + C</span> - powrót do terminala z uruchomionych aplikacji<br>
+<span>Ctrl + D</span> - wylogowanie, wyjście<br>
 <span>Ctrl + L</span> - czyszczenie konsoli</p> 
-<p>Windows 10 i 11:<br/>
-<span>Win + D</span> - wyświetlanie i ukrywanie pulpitu<br/>
-<span>Win + E</span> - otwarcie Eksploratora plików<br/>
-<span>Win + I</span> - otwarcie obszaru Ustawienia<br/>
-<span>Win + P</span> - otwarcie opcji wielu ekranów<br/>
-<span>Win + R</span> - otwarcie okna Uruchamianie<br/>
-<span>Win + S</span> - otwarcie wyszukiwania<br/>
-<span>Win + +/-/Esc</span> - zoom in/out/escape<br/>
-<span>Win + Shift + S</span> - utworzenie zrzutu części ekranu<br/>
-<span>Win + .</span> - otwarcie panelu emoji<br/>
-<span>Win + (P)ause + (FN)</span> - otwarcie okna Właściwości systemu<br/>
-<span>Win + Tab</span> - otwarcie widoku zadań<br/>
-<span>Win + strzałka w górę/dół</span> - zmaksymalizowanie okna/usunięcie z ekranu lub zminimalizowanie okna<br/>
-<span>Win + strzałka w lewo/prawo</span> - przesunięcie okna aplikacji w lewo/prawo<br/>
-<span>Win + Shift + strzałka w górę</span> - rozciągnięcie okna pulpitu do góry i dołu ekranu<br/>
-<span>Win + Shift + strzałka w lewo/prawo</span> - przenoszenie aplikacji/okna z jednego monitora do drugiego<br/>
-<span>Shift + Del</span> - usuwanie zaznaczonego elementu bez przenoszenia go najpierw do Kosza<br/>
-<span>Alt + PrintSrc</span> - zrzut aktywnego okna<br/>
-<span>Ctrl + Shift + Esc</span> - menedżer zadań<br/>
-<span>Ctrl + Shift</span> - otwarcie aplikacji jako administrator<br/>
-<span>Ctrl + A</span> - zaznaczenie wszystkich elementów w dokumencie lub oknie<br/>
-<span>Ctrl + X</span> - wycięcie zaznaczonego elementu<br/>
-<span>Ctrl + C/V</span> - kopiuj/wklej<br/>
-<span>Ctrl + Z</span> - cofnięcie akcji<br/>
-<span>Alt + Tab</span> - przełączenie się między otwartymi aplikacjami<br/>
-<span>Alt + F4</span> - zamknięcie aktywnego elementu<br/>
-<span>Alt + strzałka w lewo/prawo</span> - poprzednia/następna strona<br/>
-<span>Alt + strzałka w górę</span> - przejście do katalogu nadrzędnego<br/>
-<span>Alt + Enter</span> - właściwości wybranego elementu<br/>
+<p>Windows 10 i 11:<br>
+<span>Win + D</span> - wyświetlanie i ukrywanie pulpitu<br>
+<span>Win + E</span> - otwarcie Eksploratora plików<br>
+<span>Win + I</span> - otwarcie obszaru Ustawienia<br>
+<span>Win + P</span> - otwarcie opcji wielu ekranów<br>
+<span>Win + R</span> - otwarcie okna Uruchamianie<br>
+<span>Win + S</span> - otwarcie wyszukiwania<br>
+<span>Win + +/-/Esc</span> - zoom in/out/escape<br>
+<span>Win + Shift + S</span> - utworzenie zrzutu części ekranu<br>
+<span>Win + .</span> - otwarcie panelu emoji<br>
+<span>Win + (P)ause + (FN)</span> - otwarcie okna Właściwości systemu<br>
+<span>Win + Tab</span> - otwarcie widoku zadań<br>
+<span>Win + strzałka w górę/dół</span> - zmaksymalizowanie okna/usunięcie z ekranu lub zminimalizowanie okna<br>
+<span>Win + strzałka w lewo/prawo</span> - przesunięcie okna aplikacji w lewo/prawo<br>
+<span>Win + Shift + strzałka w górę</span> - rozciągnięcie okna pulpitu do góry i dołu ekranu<br>
+<span>Win + Shift + strzałka w lewo/prawo</span> - przenoszenie aplikacji/okna z jednego monitora do drugiego<br>
+<span>Shift + Del</span> - usuwanie zaznaczonego elementu bez przenoszenia go najpierw do Kosza<br>
+<span>Alt + PrintSrc</span> - zrzut aktywnego okna<br>
+<span>Ctrl + Shift + Esc</span> - menedżer zadań<br>
+<span>Ctrl + Shift</span> - otwarcie aplikacji jako administrator<br>
+<span>Ctrl + A</span> - zaznaczenie wszystkich elementów w dokumencie lub oknie<br>
+<span>Ctrl + X</span> - wycięcie zaznaczonego elementu<br>
+<span>Ctrl + C/V</span> - kopiuj/wklej<br>
+<span>Ctrl + Z</span> - cofnięcie akcji<br>
+<span>Alt + Tab</span> - przełączenie się między otwartymi aplikacjami<br>
+<span>Alt + F4</span> - zamknięcie aktywnego elementu<br>
+<span>Alt + strzałka w lewo/prawo</span> - poprzednia/następna strona<br>
+<span>Alt + strzałka w górę</span> - przejście do katalogu nadrzędnego<br>
+<span>Alt + Enter</span> - właściwości wybranego elementu<br>
 <span>ipconfig -all</span> - adres IP i MAC</p>
 </div>
 </div></article>
@@ -738,7 +738,7 @@ Wpisujemy:</p>
 <p class="dat">10.07.2020</p>
 <div id="p37">
 <p>Aby usunąć partycję z Linuxem, musimy poszukać (<span>Win+S</span>) "Zarządzanie komputerem". Uruchamiamy program jako administrator, wybieramy zarządzanie dyskami, potem klikamy PPM na partycję z Linuxem i wybieramy "Usuń wolumin...". Na koniec wystarczy kliknąć PPM w partycję z Windowsem i wybrać opcję "Rozszerz wolumin...".</p>
-<p>Aby usunąć GRUB, musimy trochę namieszać w dyskach: <br/><a href="https://youtu.be/rxYSzxXawjU">https://youtu.be/rxYSzxXawjU</a><br/>
+<p>Aby usunąć GRUB, musimy trochę namieszać w dyskach: <br><a href="https://youtu.be/rxYSzxXawjU">https://youtu.be/rxYSzxXawjU</a><br>
 PS. Komendą "remove letter=Z" schowamy wyciągnięty wcześniej dysk Z.</p>
 <p>Do usunięcia partycji z Boot Menu, musimy otworzyć jako administrator "Wiersz polecenia" (<span>Win+S</span> i szukaj "cmd") wpisać komendę:</p>
 <pre translate="no">bcdedit /enum firmware</pre>
@@ -751,7 +751,7 @@ PS. Komendą "remove letter=Z" schowamy wyciągnięty wcześniej dysk Z.</p>
 <h2>Windows, ffmpeg</h2><h1><a href="#38">jak używać youtube-dl</a></h1>
 <p class="dat">01.09.2020</p>
 <div id="p38">
-<p>Najpierw pobierz plik <span>youtube-dl.exe</span>: <br/><a href="https://github.com/ytdl-org/youtube-dl/releases/">https://github.com/ytdl-org/youtube-dl/releases/</a><br/>
+<p>Najpierw pobierz plik <span>youtube-dl.exe</span>: <br><a href="https://github.com/ytdl-org/youtube-dl/releases/">https://github.com/ytdl-org/youtube-dl/releases/</a><br>
 Przenieś ten plik do katalogu <span>ffmpeg/bin</span>.</p>
 <p>Przykładowe komendy:</p>
 <pre translate="no">::Aktualizacja youtube-dl:
@@ -830,24 +830,24 @@ $left(%filename%,$sub($len(%filename%),12))</pre>
 <h2>DaVinci Resolve</h2><h1><a href="#43">Przydatne skróty</a></h1>
 <p class="dat">06.04.2021</p>
 <div id="p43">
-<p><span>alt + rolka myszy</span> - linia czasu zoom in/out<br/>
-<span>ctrl + s</span> - zapisanie projektu<br/>
-<span>ctrl + d</span> - czas/długość<br/>
-<span>ctrl + \</span> - żyletka<br/>
-<span>ctrl + shift + []</span> - obetnij i przeciągnij w lewo [ lub w prawo ]<br/>
-<span>alt + drag</span> - skopiowanie przesuwanego elementu<br/>
-<span>shift + drag</span> - przesówanie obiektem tylko w poziomie<br/>
-<span>home</span> - początek<br/>
-<span>end</span> - koniec<br/>
-<span>ctrl + shift + drag</span> - podmiana klipu z innym(?)<br/>
-<span>alt+y</span> - zaznacz wszystko do prawej<br/>
-<span>ctrl+alt+y</span> - zaznacz wszystko do lewej<br/>
-<span>f9 (ikona insert)</span> - wybierz film i naciśnij F9 aby dodać dodatkowy materiał przesuwając resztę<br/><br/>
+<p><span>alt + rolka myszy</span> - linia czasu zoom in/out<br>
+<span>ctrl + s</span> - zapisanie projektu<br>
+<span>ctrl + d</span> - czas/długość<br>
+<span>ctrl + \</span> - żyletka<br>
+<span>ctrl + shift + []</span> - obetnij i przeciągnij w lewo [ lub w prawo ]<br>
+<span>alt + drag</span> - skopiowanie przesuwanego elementu<br>
+<span>shift + drag</span> - przesówanie obiektem tylko w poziomie<br>
+<span>home</span> - początek<br>
+<span>end</span> - koniec<br>
+<span>ctrl + shift + drag</span> - podmiana klipu z innym(?)<br>
+<span>alt+y</span> - zaznacz wszystko do prawej<br>
+<span>ctrl+alt+y</span> - zaznacz wszystko do lewej<br>
+<span>f9 (ikona insert)</span> - wybierz film i naciśnij F9 aby dodać dodatkowy materiał przesuwając resztę<br><br>
 
-<span>j</span> - odtwarzaj do tyłu + shit odtwarzaj do tylu szybciej<br/>
-<span>k + j</span> - spowolnione odtwarzanie do tylu<br/>
-<span>l</span> - odtwarzaj + shit odtwarzaj szybciej<br/>
-<span>k + l</span> - spowolnione odtwarzanie<br/><br/>
+<span>j</span> - odtwarzaj do tyłu + shit odtwarzaj do tylu szybciej<br>
+<span>k + j</span> - spowolnione odtwarzanie do tylu<br>
+<span>l</span> - odtwarzaj + shit odtwarzaj szybciej<br>
+<span>k + l</span> - spowolnione odtwarzanie<br><br>
 
 PS. Nie usuwaj kawałków klawiszem DEL, bo usuniesz wszystkie scieżki z tego odcinka czasu! Zamiast tego użyj Backspace.</p>
 </div>
@@ -1052,10 +1052,10 @@ nano /flash/config.txt</pre>
 <h2>Windows</h2><h1><a href="#54">Sprawdzenie RAM-u, dysku i systemu Windows oraz aktualizacja wszystkich programów</a></h1>
 <p class="dat">29.11.2022</p>
 <div id="p54">
-<p>1. Test RAM-u. Wyszukaj "Diagnostyka pamięci systemu Windows". Po wybraniu pierwszej opcji PC się zrestartuje i zacznie przeprowadzać diagnostykę. Może to potrwać nawet do godziny. <br/>Po wszystkim wyszukaj "Wyświetl historię niezawodności" i na dole wybierz "Wyświetl wszystkie raporty o problemach". Tu powinien być raport z diagnostyki RAM-u.</p>
+<p>1. Test RAM-u. Wyszukaj "Diagnostyka pamięci systemu Windows". Po wybraniu pierwszej opcji PC się zrestartuje i zacznie przeprowadzać diagnostykę. Może to potrwać nawet do godziny. <br>Po wszystkim wyszukaj "Wyświetl historię niezawodności" i na dole wybierz "Wyświetl wszystkie raporty o problemach". Tu powinien być raport z diagnostyki RAM-u.</p>
 <p>2. Naprawa dysku. W terminalu jako administrator wpisz:</p>
 <pre translate="no">chkdsk /f</pre>
-<p>Potwierdź i zrestartuj komputer. <br/>Jeśli nie chcesz restartować komputera i chcesz przeskanować konkretny dysk bez naprawiania, wpisz komendę wybierając tylko konkretny dysk:</p>
+<p>Potwierdź i zrestartuj komputer. <br>Jeśli nie chcesz restartować komputera i chcesz przeskanować konkretny dysk bez naprawiania, wpisz komendę wybierając tylko konkretny dysk:</p>
 <pre translate="no">chkdsk c:</pre>
 <p>Inna, dokładniejsza naprawa dysku wygląda tak:</p>
 <pre translate="no">chkdsk /r</pre>
