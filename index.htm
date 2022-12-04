@@ -982,7 +982,7 @@ Shift + q - wyjście z w3m</pre>
 </div></article>
 
 <article><div class="txt" id="50">
-<h2>Linux</h2><h1><a href="#50">Jak zmienić nazwę username</a></h1>
+<h2>Linux</h2><h1><a href="#50">Jak zmienić nazwę username i hostname</a></h1>
 <p class="dat">20.11.2022</p>
 <div id="p50">
 <p><a href="https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-change-the-default-account-username-and-password">Tutaj</a> dobrze to wyjaśniono. W skrócie, aktywujemy konto root dodając do niego hasło:</p>
@@ -998,6 +998,8 @@ usermod -m -d /home/newname newname</pre>
 <pre translate="no">sudo apt install userconf-pi
 sudo rename-user</pre>
 <p>Nie wiem tylko czy można zrobić to przez SSH. Raczej nie. Więcej można znaleźć na tym filmie <a href="https://youtu.be/VpO6f1oLSa4">YouTube</a> lub w tym <a href="https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/">artykule</a>. Jest tu też coś o szyfrowaniu hasła.</p>
+<p>Zmiana <span>hostname</span> jest mniej problematyczna. Wystarczy wpisać:</p>
+<pre translate="no">sudo hostnamectl set-hostname newhostname</pre>
 </div>
 </div></article>
 
