@@ -1078,6 +1078,22 @@ dism /online /cleanup-image /restorehealth</pre>
 </div>
 </div></article>
 
+<article><div class="txt" id="55">
+<h2>Linux Mint</h2><h1><a href="#55">Jak zainstalować i włączyć ssh</a></h1>
+<p class="dat">05.12.2022</p>
+<div id="p55">
+<p>Najpierw warto sprawdzić czy <span>openssh-server</span> jest już zainstalowany:</p>
+<pre translate="no">dpkg -l</pre>
+<p>Jeśli nie, to:</p>
+<pre translate="no">sudo apt install openssh-server</pre>
+<p>Jeszcze można sprawdzić czy ssh jest włączony i gdyby nie był, to druga komenda go włącza:</p>
+<pre translate="no">sudo systemctl is-enabled ssh
+sudo systemctl enable ssh --now</pre>
+<p>I to w zasadzie tyle. Dla pewności można jeszcze sprawdzić status ssh:</p>
+<pre translate="no">sudo systemctl status ssh</pre>
+</div>
+</div></article>
+
 </main>
 
 <div id="fot"><footer><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdrrak.github.io%2F3dh%2F" class="opt">&copy;</a> 2022 3dh<a href="https://www.youtube.com/channel/UCQarM1M3_4G92Gph5v4BCEQ" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
