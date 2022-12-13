@@ -201,7 +201,7 @@ sudo apt clean</pre>
 </div></article>
 
 <article><div class="txt" id="9">
-<h2>Linux</h2><h1><a href="#9">Czyszczenie historii w terminalu</a></h1>
+<h2>Linux, Windows</h2><h1><a href="#9">Czyszczenie historii w terminalu</a></h1>
 <p class="dat">17.07.2019</p>
 <div id="p9">
 <p>W terminalu wklejamy:</p> 
@@ -214,6 +214,9 @@ sudo apt clean</pre>
 <p>Usuwamy śmieci i przy wyjściu (<span>Ctrl+X</span>) zatwierdzamy zmiany.</p>
 <p>Albo niszczymy plik:</p>
 <pre translate="no">rm ~/.ash_history</pre>
+<p>Na Windows pierwsza opcja podaje adres do pliku z historią, a druga edytuje ten plik:</p>
+<pre translate="no">(Get-PSReadlineOption).HistorySavePath
+notepad ConsoleHost_history.txt</pre>
 </div>
 </div></article>
 
