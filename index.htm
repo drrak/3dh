@@ -1044,7 +1044,7 @@ sudo rename-user</pre>
 </div></article>
 
 <article><div class="txt" id="53">
-<h2>LibreELEC</h2><h1><a href="#53">Brak sygnału po aktualizacji LibreELEC do 10.0.1 - 10.0.3</a></h1>
+<h2>LibreELEC</h2><h1><a href="#53">Brak sygnału po aktualizacji LibreELEC do 10.0.1 - 11.0.1</a></h1>
 <p class="dat">21.11.2022</p>
 <div id="p53">
 <p>To jeszcze nie jest przetestowane, ale może wystarczy dodać:</p>
@@ -1060,6 +1060,8 @@ nano /flash/config.txt</pre>
 <pre translate="no">pastekodi</pre>
 <p>Wcześniej, przed zmianą wersji LibreELEC, warto też zmienić w <span>Ustawienia &gt; System &gt; Diagnostyka</span> kika opcji, np. włączając komunikaty diagnostyczne.</p>
 <p>PS. Jeśli użwyasz zbanowanych aplikacji, to ci nie pomogą.</p>
+<p>Trzeba dodać ten kawałek kodu na końcu (za "quiet") w <span>cmdline.txt</span>:</p>
+<pre translate="no">video=HDMI-A-1:1920x1080@60D</pre>
 </div>
 </div></article>
 
