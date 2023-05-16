@@ -334,7 +334,7 @@ Serwer czasu #2    <span>1.pl.pool.ntp.org</span></p>
 <p>Teraz wróć na ekran główny, wybierz "Dodatki" i "Zainstaluj z pliku zip". Jeśli robisz to pierwszy raz, to będziesz musiał włączyć opcję pozwalającą na instalowanie dodatków z nieznanych źródeł. Wybierz "r-redux" i "repository.exsodusredux-0.0.8.zip".</p>
 <p>Repozytorium jest już zainstalowane. Teraz wybierz:<br>
 Zainstaluj z repozytorium &gt; Exodus Redux Repo &gt; Wtyczki wideo &gt; Exodus Redux</p><br>
-<p>Przy okazji, jeśli masz konto na <a href="https://www.imdb.com/">imdb.com</a>, możesz zsynchronizować wtyczkę Exodus z tym kontem i dzięki temu mieć dostęp do twoich list ze strony IMDb. Potrzebujesz do tego numeru użytkownika z adresu www. Wejdź w swój profil i przepisz fragment po "/user/". Przykład: <br>https://www.imdb.com/user/<span>ur77561000</span>/?ref_=nb_usr_prof_0</p>
+<p>Przy okazji, jeśli masz konto na <a href="https://www.imdb.com/">imdb.com</a>, możesz zsynchronizować wtyczkę Exodus z tym kontem i dzięki temu mieć dostęp do twojej listy filmów ze strony IMDb. Potrzebujesz do tego numeru użytkownika z adresu www. Wejdź w swój profil i przepisz fragment po "/user/". Przykład: <br>https://www.imdb.com/user/<span>ur77561000</span>/?ref_=nb_usr_prof_0</p>
 <p>Teraz wejdź w <span>ustawienia wtyczki Exodus (klawisz c) &gt; Konta &gt; i w IMDb</span> wpisz fragment z adresu www.</p>
 </div>
 </div></article>
@@ -1060,7 +1060,8 @@ nano /flash/config.txt</pre>
 <pre translate="no">pastekodi</pre>
 <p>Wcześniej, przed zmianą wersji LibreELEC, warto też zmienić w <span>Ustawienia &gt; System &gt; Diagnostyka</span> kika opcji, np. włączając komunikaty diagnostyczne.</p>
 <p>PS. Jeśli użwyasz zbanowanych aplikacji, to ci nie pomogą.</p>
-<p>Trzeba dodać ten kawałek kodu na końcu (za "quiet") w <span>cmdline.txt</span>:</p>
+<p>---</p>
+<p>W LibreELEC 11.0.1 trzeba dodać ten kawałek kodu na końcu komendy (za "quiet") w pliku <span>cmdline.txt</span>:</p>
 <pre translate="no">video=HDMI-A-1:1920x1080@60D</pre>
 </div>
 </div></article>
@@ -1170,6 +1171,25 @@ sudo systemctl enable ssh --now</pre>
 <span>dxdiag</span> - narzędzie diagnostyczne DirektX<br>
 <span>sfc</span> - skanowanie i naprawianie systemu<br>
 <span>ipconfig -all</span> - adres IP i MAC</p>
+</div>
+</div></article>
+
+<article><div class="txt" id="59">
+<h2>Kodi 20, LibreELEC, The Crew, MP3 Streams</h2><h1><a href="#59">Instalacja repozytorium i wtyczek do oglądania filmów i słuchania muzyki</a></h1>
+<p class="dat">16.05.2023</p>
+<div id="p59">
+<p>Wejdź w <span>Ustawienia &gt; Menedżer plików</span> i wybierz opcję "Dodaj źródło". Wprowadź źródło:</p> 
+<pre translate="no">https://team-crew.github.io/</pre>
+<p>i nazwij je np.: <span>r-crew</span></p>
+<p>Teraz wróć na ekran główny, wybierz "Dodatki" i "Zainstaluj z pliku zip". Jeśli robisz to pierwszy raz, to będziesz musiał włączyć opcję pozwalającą na instalowanie dodatków z nieznanych źródeł. Wybierz "r-crew" i "repository.thecrew-x.x.x.zip".</p>
+<p>---</p>
+<p>Repozytorium jest już zainstalowane. Teraz wybierz:<br>
+Zainstaluj z repozytorium &gt; The Crew Repo &gt; Wtyczki wideo &gt; The Crew</p>
+<p>Przy okazji, jeśli masz konto na <a href="https://www.imdb.com/">imdb.com</a>, możesz zsynchronizować wtyczkę The Crew z tym kontem i dzięki temu mieć dostęp do twojej listy filmów ze strony IMDb. Potrzebujesz do tego numeru użytkownika z adresu www. Wejdź w swój profil i przepisz fragment po "/user/". Przykład: <br>https://www.imdb.com/user/<span>ur77561000</span>/?ref_=nb_usr_prof_0</p>
+<p>Teraz wejdź w <span>ustawienia wtyczki The Crew (klawisz c) &gt; Konta &gt; i w IMDb</span> wpisz fragment z adresu www.</p>
+<p>---</p>
+<p>Tutaj znajdziesz aplikację do słuchania muzyki:<br>
+Zainstaluj z repozytorium &gt; The Crew Repo &gt; Wtyczki muzyki &gt; MP3 Streams</p>
 </div>
 </div></article>
 
