@@ -734,13 +734,13 @@ Wpisujemy:</p>
 
 <article><div class="txt" id="36">
 <h2>Windows</h2><h1><a href="#36">cda.pl bookmarklet</a></h1>
-<p class="dat">12.04.2020</p>
+<p class="dat">12.04.2020 - 22.12.2023</p>
 <div id="p36">
 <p>Stwórz zakładkę z tym skryptem i odtwarzaj filmy bez reklam:</p>
 <pre translate="no">javascript:window.open(document.getElementsByTagName('video')[0].currentSrc,'_self');</pre>
 <p>Można też użyć tego skryptu:</p>
 <pre translate="no">javascript:window.location.href=document.getElementsByTagName('video')[0].currentSrc;</pre>
-<p>Ostatnio na cda dodali filmowe banery reklamowe na górnym banerze, przez co skrypt zamiast głównego filmu, wybiera ten pierwszy z reklamy. Można albo odświeżać stronę aż na górze nie będzie takiego baneru, albo użyć lekko zmodyfikowanego linku:</p>
+<p>Ostatnio na cda dodali filmowe banery reklamowe na górnym banerze, przez co skrypt zamiast głównego filmu, wybiera ten pierwszy z reklamy. Można albo odświeżać stronę aż na górze nie będzie takiego baneru, albo użyć lekko zmodyfikowanego skryptu:</p>
 <pre translate="no">javascript:window.location.href=document.getElementsByTagName('video')[document.getElementsByTagName('video').length - 2].currentSrc;</pre>
 <p>PS. Skrypty były testowane na przeglądarce Edge.</p>
 </div>
