@@ -740,6 +740,8 @@ Wpisujemy:</p>
 <pre translate="no">javascript:window.open(document.getElementsByTagName('video')[0].currentSrc,'_self');</pre>
 <p>Można też użyć tego skryptu:</p>
 <pre translate="no">javascript:window.location.href=document.getElementsByTagName('video')[0].currentSrc;</pre>
+<p>Ostatnio na cda dodali filmowe banery reklamowe na górnym banerze, przez co skrypt zamiast głównego filmu, wybiera ten pierwszy z reklamy. Można albo odświeżać stronę aż na górze nie będzie takiego baneru, albo użyć lekko zmodyfikowanego linku:</p>
+<pre translate="no">javascript:window.location.href=document.getElementsByTagName('video')[document.getElementsByTagName('video').length - 2].currentSrc;</pre>
 <p>PS. Skrypty były testowane na przeglądarce Edge.</p>
 </div>
 </div></article>
