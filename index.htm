@@ -1071,7 +1071,9 @@ nano /flash/config.txt</pre>
 <p>W LibreELEC 11.0.1 trzeba dodać ten kawałek kodu na końcu komendy (za "quiet") w pliku <span>cmdline.txt</span>:</p>
 <pre translate="no">video=HDMI-A-1:1920x1080@60D</pre>
 <p>---</p>
-<p>W LibreELEC 12 nadal trzeba zmodyfikować plik <span>cmdline.txt</span>, ale tym razem dodałem skrypt na sam koniec.</p>
+<p>W LibreELEC 12 nadal trzeba zmodyfikować plik <span>cmdline.txt</span>, ale tym razem dodałem skrypt na sam koniec. Na koniec wpisujemy:</p>
+<pre>mount -o remount,rw /flash
+reboot</pre>
 </div>
 </div></article>
 
