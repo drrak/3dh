@@ -644,18 +644,31 @@ Przy okazji sprawdzamy nazwę użytkownika, hasło i w Połączeniach sprawdzamy
 </div></article>
 
 <article><div class="txt" id="33">
-<h2>Kodi, LibreELEC, Windows 10</h2><h1><a href="#33">Windows 10 i udostępnianie</a></h1>
+<h2>Kodi, LibreELEC, Windows 10, 0x80070043</h2><h1><a href="#33">Windows 10 i udostępnianie</a></h1>
 <p class="dat">29.07.2019</p>
 <div id="p33">
 <p>Aby udostępnianie zadziałało, musimy być w jednej sieci i Windows 10 musi być chroniony hasłem. Teraz wybieramy katalog/dysk który chcemy udostępnić i klikamy PPM. Wybieramy:<br>
 <span>Udziel dostępu do &gt; Grupa domowa (wyświetlanie i edycja)</span><br>
-Później klikamy PPM na wcześniej wybranym katalogu/dysku i wybieramy Właściwości, a w zakładce Udostępnianie zapisujemy ścieżkę sieciową. Np.:</p>
+Później klikamy PPM na wcześniej wybranym katalogu/dysku i wybieramy Właściwości, a w zakładce Udostępnianie zapisujemy ścieżkę sieciową. Na przykład:</p>
 <pre translate="no">\\DESKTOP-GT390CD\DyskD\</pre>
 <p>Teraz w Kodi wchodzimy do:<br>
 <span>Ustawienia &gt; Menedżer plików &gt; Dodaj źródło</span><br>
 Wpisujemy:</p>
 <pre translate="no">smb://DESKTOP-GT390CD/DyskD/</pre>
 <p>Na koniec podajemy nazwę użytkowania i hasło z Windows 10.</p>
+<p>Gdyby pojawił się błąd <span>0x80070043</span>, trzeba zmienić parę rzeczy w zaawansowanych ustawieniach udostępniania:<br>
+<span>Panel sterowania\Sieć i Internet\Centrum sieci i udostępniania\Zaawansowane ustawienia udostępniania</span></p>
+<p>W sekcji prywatne:<br>
+<span>Włącz</span> odnajdywanie sieci i <span>zaznacz</span> włącz konfigurację<br>
+<span>Włącz</span> udostępnianie plików i drukarek</p>
+<p>W opcjach gość i publiczny:<br>
+<span>Wyłącz</span> odnajdywanie sieci<br>
+<span>Włącz</span> udostępnianie plików i drukarek</p>
+<p>Ostatnia sekcja to wszytskie sieci:<br>
+<span>Wyłącz</span> udostępnianie folderu publicznego<br>
+Użyj szyfrowania <span>128-bitowego</span><br>
+<span>Włącz</span> udostępnianie chronione hasłem</p>
+
 </div>
 </div></article>
 
@@ -1031,7 +1044,7 @@ sudo rename-user</pre>
 <p>W terminalu już nie będzie pytań o hasło, ale w graficznej wersji nadal będą się pojawiać.</p>
 <p>PS. W Raspberry Pi OS Lite najlepiej zmienić użytkownika edytując ten plik:</p>
 <pre translate="no">sudo nano /etc/sudoers.d/010_pi-nopasswd</pre>
-<p>Na Windowsie naciskamy <span>Win+R</span> i wpisujemy <span>netplwiz</span>. Wystarczy odnznaczyć pytanie o hasło.</p>
+<p>Na Windowsie naciskamy <span>Win+R</span> i wpisujemy <span>netplwiz</span>. Wystarczy odnznaczyć pytanie o hasło. Przy okazji można też usunąć niechciane dodatkowe konta.</p>
 </div>
 </div></article>
 
