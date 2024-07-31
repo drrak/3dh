@@ -1081,12 +1081,12 @@ nano /flash/config.txt</pre>
 <p>Wcześniej, przed zmianą wersji LibreELEC, warto też zmienić w <span>Ustawienia &gt; System &gt; Diagnostyka</span> kika opcji, np. włączając komunikaty diagnostyczne.</p>
 <p>PS. Jeśli użwyasz zbanowanych aplikacji, to ci nie pomogą.</p>
 <p>---</p>
-<p>W LibreELEC 11.0.1 trzeba dodać ten kawałek kodu na końcu komendy (za "quiet") w pliku <span>cmdline.txt</span>:</p>
+<p>W LibreELEC 11.0.1 trzeba dodać ten kawałek kodu w pliku <span>cmdline.txt</span>. Na końcu dopisujemy:</p>
 <pre translate="no">video=HDMI-A-1:1920x1080@60D</pre>
 <p>---</p>
 <p>W LibreELEC 12 nadal trzeba zmodyfikować plik:</p>
 <pre>nano /flash/cmdline.txt</pre>
-<p>Ale tym razem dodałem skrypt na sam koniec. Po zapisaniu zmian wpisz:</p>
+<p>Po zapisaniu zmian wpisz:</p>
 <pre>mount -o remount,ro /flash
 reboot</pre>
 </div>
