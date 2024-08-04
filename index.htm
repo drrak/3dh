@@ -1244,6 +1244,31 @@ Zainstaluj z repozytorium &gt; The Crew Repo &gt; Wtyczki muzyki &gt; MP3 Stream
 </div>
 </div></article>
 
+<article><div class="txt" id="62">
+<h2>Linux</h2><h1><a href="#62">Testowanie dysków</a></h1>
+<p class="dat">04.08.2024</p>
+<div id="p62">
+<p>Zainstaluj program <span>hdparm</span>:</p>
+<pre translate="no">sudo apt install hdparm</pre>
+<p>Tą komendą sprawdź wszystkie podpięte dyski:</p>
+<pre translate="no">lsblk</pre>
+<p>Przykład komendy do przetestowania pierwszego dysku:</p>
+<pre translate="no">sudo hdparm -tT /dev/sda</pre>
+<p>Takiej komendy używa facet z kanału <a href="https://www.youtube.com/@ExplainingComputers">ExplainingComputers</a>:</p>
+<pre translate="no">sudo hdparm -t --direct /dev/sda</pre>
+</div>
+</div></article>
+
+<article><div class="txt" id="63">
+<h2>Linux</h2><h1><a href="#63">Zmiana hasła w Linuxie</a></h1>
+<p class="dat">04.08.2024</p>
+<div id="p63">
+<p>Komenda do zmiany hasła root:</p>
+<pre translate="no">sudo passwd root</pre>
+<p>Zamiast root można wybrać swoją nazwę.</p>
+</div>
+</div></article>
+
 </main>
 
 <div id="fot"><footer><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdrrak.github.io%2F3dh%2F" class="opt">&copy;</a> 2024 3dh<a href="https://www.youtube.com/@3dhYT" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
