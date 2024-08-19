@@ -1290,6 +1290,39 @@ clean</pre>
 </div>
 </div></article>
 
+<article><div class="txt" id="65">
+<h2>Linux, Windows</h2><h1><a href="#65">Odzyskanie usuniętych plików programem testdisk</a></h1>
+<p class="dat">19.08.2024</p>
+<div id="p65">
+<p>Instalacja programu:</p>
+<pre translate="no">sudo apt install testdisk</pre>
+<p>Uruchomienie:</p>
+<pre translate="no">testdisk</pre>
+<p>Wybieramy:</p>
+<pre translate="no">>[ No Log ] Don't record anything
+{wybieramy dysk}
+{typ partycji, powinien być ustawiony na wykrytym typie}
+>[ Advanced ] Filesystem Utils
+>[Undelete] (na dole, strzałka w prawo)
+{wybieramy katalog albo plik i naciskamy "C"}
+{wybieramy gdzie zgrać pliki lub katalog i zatwierdzamy wybór "C"}
+</pre><br>
+<p>Drugi sposób:</p>
+<pre translate="no">>[ No Log ] Don't record anything
+{wybieramy dysk}
+{typ partycji, powinien być ustawiony na wykrytym typie}
+>[ Analyse  ] Analyse current partition structure and search for lost partitions
+>[Quick Search] 
+{zatwierdzamy klawiszem "Enter"}
+>[Deeper Search] 
+{naciskamy "P" aby wyświetlić listę plików}
+{wybieramy katalog albo plik i naciskamy "C"}
+{wybieramy gdzie zgrać pliki lub katalog i zatwierdzamy wybór "C"}
+</pre>
+<p>PS. <a href="https://www.cgsecurity.org/wiki/TestDisk_Download">Link</a> do wersji na system Windows.</p>
+</div>
+</div></article>
+
 </main>
 
 <div id="fot"><footer><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdrrak.github.io%2F3dh%2F" class="opt">&copy;</a> 2024 3dh<a href="https://www.youtube.com/@3dhYT" class="opt" style="float:right;">&nbsp;YouTube&nbsp;</a><a href="https://github.com/drrak?tab=repositories" class="opt" style="float:right;">&nbsp;GitHub&nbsp;</a></footer></div>
