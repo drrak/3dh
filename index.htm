@@ -1382,6 +1382,23 @@ Oto co trzeba zrobić:</p>
 </div>
 </div></article>
 
+<article><div class="txt" id="71">
+<h2>Linux Mint</h2><h1><a href="#71">Wyłączenie pytania o hasło w terminalu</a></h1>
+<p class="dat">27.10.2025</p>
+<div id="p71">
+<p>Aby wyłączyć pytania o hasło w komendach <span>update</span>, <span>upgrage</span> i <span>shutdown</span>, należy edytować plik taką komendą:</p>
+<pre translate="no">sudo visudo</pre>
+<p>i na końcu dodać coś takiego:</p>
+<pre translate="no">USERNAME ALL=(ALL) NOPASSWD: /usr/local/bin/apt, /usr/bin/apt-get, /usr/bin/apt-cache, /sbin/poweroff, /sbin/reboot, /sbin/shutdown</pre>
+<p><span>USERNAME</span> trzeba zamienić na własną nazwę użytkownika. Po wszystkim naciskamy (<span>Ctrl+X</span>), potwierdzamy zapis klawiszem (<span>T</span>) i naciskamy <span>enter</span>. Gdyby coś się nie zgadzało, otrzymasz pytanie <span>"Co teraz?"</span> i będziesz miał 3 opcje do wyboru:</p>
+<pre translate="no">Możliwe opcje:
+  (e) ponowna edycja pliku sudoers
+  (x) wyjście bez zapisu zmian do pliku sudoers
+  (Q) wyjście i zapisanie zmian w pliku sudoers (NIEBEZPIECZNE!)</pre>
+<p>Lepiej nie zapisywać tego pliku z błędami, więc nie używaj (<span>Q</span>). Edytuj plik tak długo, aż nie będzie pytania <span>"Co teraz?"</span>.</p>
+</div>
+</div></article>
+
 
 </main>
 
