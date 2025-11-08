@@ -1447,7 +1447,7 @@ Wybierz: <span>Video</span> (prawy górny róg) &gt; <span>Retime and scaling</s
 <h2>Lakka, RetroArch</h2><h1><a href="#74">Instalacja Lakki na RPi4 w wersji Composite Video</a></h1>
 <p class="dat">07.11.2025</p>
 <div id="p74">
-<p>Obraz Lakki pod RPi4 (i inne malinki) można znaleźć <a href="https://www.lakka.tv/articles/2024/05/02/rpi-composite/">tutaj</a>. Programem <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a> instalujemy Lakke na karcie SD bez domyślnych ustawień WiFi itp. rzeczy. Po wszystkim wyciągamy kartę i wkładamy spowrotem, żeby ustawić WiFi w pliku konfiguracyjnym. Po włączeniu Lakki na malince trzeba zaktualizować system (Main Menu &gt; Online Updater &gt; Update Lakka) i włączyć SSH (Settings &gt; Services). Samba jest domyślnie włączona (wpisz <span>\\lakka</span> w eksploratorze plików) a to są dane do połączenia SSH:</p>
+<p>Obraz Lakki pod RPi4 (i inne malinki) można znaleźć <a href="https://www.lakka.tv/articles/2024/05/02/rpi-composite/">tutaj</a>. Programem <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a> instalujemy Lakke na karcie SD bez ustawień WiFi itp. rzeczy. Po wszystkim wyciągamy kartę i wkładamy spowrotem, żeby ustawić WiFi w pliku konfiguracyjnym. Po włączeniu Lakki na malince trzeba zaktualizować system (Main Menu &gt; Online Updater &gt; Update Lakka) i włączyć SSH (Settings &gt; Services). Samba jest domyślnie włączona (wpisz <span>\\lakka</span> w eksploratorze plików) a to są dane do połączenia SSH:</p>
 <pre translate="no">Hostname: lakka
 User: root
 Password: root</pre>
@@ -1472,7 +1472,7 @@ GBA: gpSP</pre>
 <p class="dat">08.11.2025</p>
 <div id="p75">
 <p>To dość proste, po pierwsze zaktualizuj LibreELEC na RPi4 i utwórz kopię zapasową na pendrivie.</p>
-<p>Teraz pobierz <a href="https://libreelec.tv/downloads/raspberry/">LibreELEC</a> na RPi5 i zainstaluj na nowej karcie microSD. Polecam program <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a>, tylko w ostatnim pytaniu nie wybieraj domyślnych ustawień WiFi itp. rzeczy. To wszystko odzyskasz przywracając kopię zapasową zrobioną na RPi4.</p>
+<p>Teraz pobierz <a href="https://libreelec.tv/downloads/raspberry/">LibreELEC</a> na RPi5 i zainstaluj na nowej karcie microSD. Polecam program <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a>, tylko w ostatnim pytaniu nie używaj ustawień WiFi itp. rzeczy. To wszystko odzyskasz przywracając kopię zapasową zrobioną na RPi4.</p>
 <p>Po włączeniu RPi5 ustaw tylko język a resztę opji zostaw na domyślnych ustawieniach. Teraz przywróć kopię zapasową z RPi4 i to w zasadzie tyle.</p>
 <p>Windows 11 bez problemów połączył się z maliną przez sambe (<span>\\libreelec</span> - domyśłnie włączona) i ssh (to włączyłem jeszcze na RPi4). Niestety na smartfonie nie poszło tak gładko i musiałem się łączyć albo przez <span>IP</span>, albo przez hostname z routera (<span>libreelec-2</span> a potem <span>libreelec-1</span>).</p>
 </div>
