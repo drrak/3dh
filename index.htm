@@ -1447,7 +1447,7 @@ Wybierz: <span>Video</span> (prawy górny róg) &gt; <span>Retime and scaling</s
 <h2>Lakka, RetroArch</h2><h1><a href="#74">Instalacja Lakki na RPi4 w wersji Composite Video</a></h1>
 <p class="dat">07.11.2025</p>
 <div id="p74">
-<p>Obraz Lakki pod RPi4 (i inne malinki) można znaleźć <a href="https://www.lakka.tv/articles/2024/05/02/rpi-composite/">tutaj</a>. Programem <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a> instalujemy Lakke na karcie SD bez ustawień WiFi itp. rzeczy. Po wszystkim wyciągamy kartę i wkładamy spowrotem, żeby ustawić WiFi w pliku konfiguracyjnym. Po włączeniu Lakki na malince trzeba zaktualizować system (Main Menu &gt; Online Updater &gt; Update Lakka) i włączyć SSH (Settings &gt; Services). Samba jest domyślnie włączona (wpisz <span>\\lakka</span> w eksploratorze plików) a to są dane do połączenia SSH:</p>
+<p>Obraz Lakki pod RPi4 można znaleźć <a href="https://nightly.builds.lakka.tv/members/vudiq/RPi-Composite/RPi4-Composite.aarch64/">tutaj</a>. A <a href="https://www.lakka.tv/articles/2024/05/02/rpi-composite/">tu</a> znajdziesz artykuł o kompozytowej wersji Lakki. Programem <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a> instalujemy Lakke na karcie SD bez ustawień WiFi itp. rzeczy. Po wszystkim wyciągamy kartę i wkładamy spowrotem, żeby ustawić WiFi w pliku konfiguracyjnym. Po włączeniu Lakki na malince trzeba zaktualizować system (Main Menu &gt; Online Updater &gt; Update Lakka) i włączyć SSH (Settings &gt; Services). Samba jest domyślnie włączona (wpisz <span>\\lakka</span> w eksploratorze plików) a to są dane do połączenia SSH:</p>
 <pre translate="no">Hostname: lakka
 User: root
 Password: root</pre>
@@ -1464,6 +1464,7 @@ GBA: gpSP</pre>
 <p>Pamiętaj o kilku drobnych sprawach, takich jak ustawienie kontrolera <span>dualshock</span> w emulatorze <span>PCSX ReARMed</span>. Niektóre gry (np. Ace Combat 2) wymagają włączenia analoga kombinacją <span>L1+R1+Select</span>. I koniecznie zamień przyciski akcpetowania (z O na X) i cofania (z X na O) w menu.</p>
 <p>Na koniec warto zmienić hasło do ssh. Aby to zrobić zaloguj się i wpisz komendę:</p>
 <pre translate="no">passwd</pre>
+<p>PS. Z jakiegoś powodu Lakka nie wykrywała mojego pendriva z grami. Może to przez format (FAT32). Nie wiem.</p>
 </div>
 </div></article>
 
