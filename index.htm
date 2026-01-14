@@ -1479,6 +1479,33 @@ Atari 7800: ProSystem [zip]</pre>
 </div>
 </div></article>
 
+<article><div class="txt" id="76">
+<h2>C64, BASIC</h2><h1><a href="#76">Ciekawe skrypty</a></h1>
+<p class="dat">08.01.2026</p>
+<div id="p76">
+<p>Fajny skrypcik na C64:</p>
+<pre translate="no">10 print chr$(205.5+rnd(1)); : goto 10</pre>
+<p>Odpowiednik programu z C64 na ZX Spectrum:</p>
+<pre translate="no">10 PRINT " ▌▄"(1+RND);: GO TO 10</pre>
+<p>W modelu 48K trzeba użyć tokenów aby skrypt zadziałał. Tak to dokładnie trzeba wpisać:<br>
+<span>10<br>
+P (PRINT)<br>
+SYMBOL SHIFT + P (")<br>
+CAPS SHIFT + 9, 5, 3 (▌▄)<br>
+CAPS SHIFT + 9<br>
+SYMBOL SHIFT + P (")<br>
+SYMBOL SHIFT + 8 (otwarcie nawiasu)<br>
+1<br>
+SYMBOL SHIFT + K (+)<br>
+CAPS SHIFT + SYMBOL SHIFT, T (RND)<br>
+SYMBOL SHIFT + 9 (zamknięcie nawiasu)<br>
+SYMBOL SHIFT + O (;)<br>
+SYMBOL SHIFT + Z (:)<br>
+G (GO TO)<br>
+10</span></p>
+</div>
+</div></article>
+
 
 </main>
 
