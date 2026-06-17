@@ -476,9 +476,12 @@ reboot</pre>
 
 <article><div class="txt" id="26">
 <h2>Windows, Notepad++</h2><h1><a href="#26">Kilka sztuczek w Notepad++</a></h1>
-<p class="dat">18.07.2019</p>
+<p class="dat">17.06.2026</p>
 <div id="p26">
 <p>Przede wszystkim zaznacz "Wyrażenie regularne" w zakładce "Zamień" (<span>Ctrl+F</span>). <a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions">Tu</a> możesz przeczytać o wyrażeniu regularnym. Przykłady:</p>
+<pre translate="no">^(.*?)$\s+?^(?=.*^\1$)</pre>
+<p>Usunie wszystkie zduplikowane linie. Dodatkowo trzeba zaznaczyć "jako nowa linia" przy "Wyrażenie regularne". Szczególnie przydatne w czyszczeniu zduplikowanych komend w terminalu.</p><br><br>
+
 <pre translate="no">&lt;[^&gt;]+&gt;</pre>
 <p>Usunie wszystkie tagi html. Można też sprawdzić <span>[&lt;].*?&gt;</span></p><br><br>
 
