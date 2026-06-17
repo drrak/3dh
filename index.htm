@@ -480,68 +480,67 @@ reboot</pre>
 <div id="p26">
 <p>Przede wszystkim zaznacz "Wyrażenie regularne" w zakładce "Zamień" (<span>Ctrl+F</span>). <a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions">Tu</a> możesz przeczytać o wyrażeniu regularnym. Przykłady:</p>
 <pre translate="no">^(.*?)$\s+?^(?=.*^\1$)</pre>
-<p>Usunie wszystkie zduplikowane linie. Dodatkowo trzeba zaznaczyć "jako nowa linia" przy "Wyrażenie regularne". Szczególnie przydatne w czyszczeniu zduplikowanych komend w terminalu.</p><br><br>
+<p>Usunie wszystkie zduplikowane linie. Dodatkowo trzeba zaznaczyć "jako nowa linia" przy "Wyrażenie regularne". Szczególnie przydatne w czyszczeniu zduplikowanych komend w pliku z historii terminala.</p><br>---<br>
 
 <pre translate="no">&lt;[^&gt;]+&gt;</pre>
-<p>Usunie wszystkie tagi html. Można też sprawdzić <span>[&lt;].*?&gt;</span></p><br><br>
+<p>Usunie wszystkie tagi html. Można też sprawdzić <span>[&lt;].*?&gt;</span></p><br>---<br>
 
 <pre translate="no">&lt;TD.*?&gt;(.*?)&lt;/TD&gt;
 &lt;td&gt;\1&lt;/td&gt;</pre>
-<p>Usunie tag <span>&lt;TD&gt;</span> i wyczyści jego parametry, zamieni na <span>&lt;td&gt;</span> zostawiając wszystko co było w środku.</p><br><br>
+<p>Usunie tag <span>&lt;TD&gt;</span> i wyczyści jego parametry, zamieni na <span>&lt;td&gt;</span> zostawiając wszystko co było w środku.</p><br>---<br>
 
 <pre translate="no">&lt;TD.*?&gt;&lt;FONT.*?&gt;(.*?)&lt;/FONT&gt;&lt;/TD&gt;
 &lt;td&gt;\1&lt;/td&gt;</pre>
-<p>Usunie tagi <span>&lt;TD&gt;</span> i <span>&lt;FONT&gt;</span> z jego parametrami, zostawiając zawartość i zamieniająć tagi <span>&lt;td&gt;</span> na małe litery.</p><br><br>
+<p>Usunie tagi <span>&lt;TD&gt;</span> i <span>&lt;FONT&gt;</span> z jego parametrami, zostawiając zawartość i zamieniająć tagi <span>&lt;td&gt;</span> na małe litery.</p><br>---<br>
 
 <pre translate="no">&lt;span.*?&gt;(.*?)&lt;/span&gt;
 \1</pre>
-<p>Usunie tagi <span>&lt;span&gt;</span> zaostawiająć nienaruszoną zawartość.</p><br><br>
+<p>Usunie tagi <span>&lt;span&gt;</span> zaostawiająć nienaruszoną zawartość.</p><br>---<br>
 
 <pre translate="no">&lt;span(.*?)&gt;Stary tekst.&lt;/span&gt;
 &lt;span\1&gt;Nowy tekst.&lt;/span&gt;</pre>
-<p>Zamieni tekst i tylko tekst w tagach <span>&lt;span&gt;</span>.</p><br><br>
+<p>Zamieni tekst i tylko tekst w tagach <span>&lt;span&gt;</span>.</p><br>---<br>
 
 <pre translate="no">&lt;TD.*?&gt;&lt;B&gt;&lt;FONT.*?&gt;(.*?)&lt;/FONT&gt;&lt;/B&gt;&lt;/TD&gt;
 &lt;td&gt;\1&lt;/td&gt;</pre>
-<p>Jak wyżej + usunięcie tagów <span>&lt;B&gt;</span>.</p><br><br>
+<p>Jak wyżej + usunięcie tagów <span>&lt;B&gt;</span>.</p><br>---<br>
 
 <pre translate="no">.*SPAM.*</pre>
-<p>Usunie całą linijkę tekstu w którym znaduję się słowo SPAM.</p><br><br>
+<p>Usunie całą linijkę tekstu w którym znaduję się słowo SPAM.</p><br>---<br>
 
 <pre translate="no">(\d\d)\.(\d\d\d)
 \1,\2</pre>
-<p>Zamienia kropkę w "55.896", na przecinek "55,896".</p><br><br>
+<p>Zamienia kropkę w "55.896", na przecinek "55,896".</p><br>---<br>
 
-<p>Usunie duplikaty w wierszach.</p><br><br>
 <pre translate="no">^(.*\r?\n)(\1)+
 \1</pre>
-<p>Usunie duplikaty w wierszach, jeśli są jeden pod drugim.</p><br><br>
+<p>Usunie duplikaty w wierszach, jeśli są jeden pod drugim.</p><br>---<br>
 
 <pre translate="no">.*"&gt;(&lt;.*&gt;)&lt;\/a&gt;
 \1</pre>
 <p>Zamienia to:<br>
 <span>&lt;a href="www.google.com"&gt;&lt;a href="www.google.com">www.google.com&lt;/a&gt;&lt;/a&gt;</span><br>
 na to:<br>
-<span>&lt;a href="www.google.com"&gt;www.google.com&lt;/a&gt;</span></p><br><br>
+<span>&lt;a href="www.google.com"&gt;www.google.com&lt;/a&gt;</span></p><br>---<br>
 
 <pre translate="no">&lt;span style="color:#000000"&gt;(.*?)&lt;/span&gt;
 ░░</pre>
 <p>Zamieni to:<br>
 <span>&lt;span style="color:#000000"&gt;██&lt;/span&gt;</span><br>
-na to: <span>░░</span></p><br><br>
+na to: <span>░░</span></p><br>---<br>
 
 <pre translate="no">(░░+)
 &lt;span style="color:#000000"&gt;\1&lt;/span&gt;</pre>
 <p>Zamieni to: <span>░░░░</span><br>
-na to: <span>&lt;span style="color:#000000"&gt;░░░░&lt;/span&gt;</span></p><br><br>
+na to: <span>&lt;span style="color:#000000"&gt;░░░░&lt;/span&gt;</span></p><br>---<br>
 
 <pre translate="no">&lt;span class="a"&gt;(.*?)&lt;/span&gt;\r\n&lt;span class="a"&gt;(.*?)&lt;/span&gt;
 &lt;span class="a"&gt;\1\r\n\2&lt;/span&gt;</pre>
-<p>Połączy te same tagi w jeden.</p><br><br>
+<p>Połączy te same tagi w jeden.</p><br>---<br>
 
 <p>Edytowaie kolumny:<br>
 Zaznacz kolumne przytrzymując Alt, następnie wybierz opcje:<br>
-<span>Edycja &gt; Edytor kolumn... (Alt+C)</span></p><br><br>
+<span>Edycja &gt; Edytor kolumn... (Alt+C)</span></p><br>---<br>
 
 <p>Ustawienie szerokości tekstu:<br>
 <span>Ustawienia &gt; Preferencje... &gt; Edycja &gt; </span>zaznaczam <span>Pokaż krawędź pionową</span> i zmieniam Liczbę kolumn na powiedzmy 82. <br>
