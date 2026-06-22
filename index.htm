@@ -782,8 +782,8 @@ PS. Komendą "remove letter=Z" schowamy wyciągnięty wcześniej dysk Z.</p>
 </div></article>
 
 <article><div class="txt" id="38">
-<h2>Windows, ffmpeg</h2><h1><a href="#38">Jak używać youtube-dl</a></h1>
-<p class="dat">01.09.2020</p>
+<h2>Windows, Linux, ffmpeg, yt-dlp</h2><h1><a href="#38">Jak używać <s>youtube-dl</s> yt-dlp</a></h1>
+<p class="dat">22.06.2026</p>
 <div id="p38">
 <p>Najpierw pobierz plik <span>youtube-dl.exe</span>: <br><a href="https://github.com/ytdl-org/youtube-dl/releases/">https://github.com/ytdl-org/youtube-dl/releases/</a><br>
 Przenieś ten plik do katalogu <span>ffmpeg/bin</span>.</p>
@@ -800,8 +800,17 @@ youtube-dl -f 140 LINK
 ::Pobierz plik audio m4a i przekonwertuj do mp3:
 youtube-dl -f 140 --extract-audio --audio-format mp3 --audio-quality 128K LINK
 
-::Pobierz całą playliste m4a i przekonwertuj do mp3:
+::Pobierz całą playlistę m4a i przekonwertuj do mp3:
 youtube-dl -f 140 --extract-audio --audio-format mp3 --audio-quality 128K "LINK"</pre>
+<p>Program youtube-dl już nie działa od lat i zastąpił go <span>yt-dlp</span>. Mimo to powyższe komendy powinny działać jeśli zamienisz youtube-dl na <span>yt-dlp</span>. Program można pobrać na tej stronie:<br>
+<a href="https://github.com/yt-dlp/yt-dlp/releases">https://github.com/yt-dlp/yt-dlp/releases</a></p>
+<p>Poniżej podałem przykład pobrania playlisty z YouTuba w 1080p i w pliku mp4:</p>
+<pre translate="no">yt-dlp LINK -S res:1080,ext:mp4:m4a --recode mp4</pre>
+<p>Przypominam, że do poprawnego działania wymagany jest też program <span>ffmpeg</span> i na Windowsie plik <span>yt-dlp.exe</span> należy umieścić w katalogu <span>ffmpeg/bin</span>. Na Linuksie nie trzeba go tam umieszczać, ale w przypadku Minta, trzeba wybrać <span>Właściwości</span> pliku <span>yt-dlp_Linux</span> i w zakładce <span>Uprawnienia</span> zaznaczyć <span>"Zezwolenie na wykonywanie pliku jako programu"</span>.</p>
+<p>Na koniec wspomnę o filmach z YouTuba dla dorosłych. Niestety na tę chwilę nie wiem jak je pobrać. Niby coś takiego powinno zadziałać, oto przykład z Linuxa Mint:</p>
+<pre translate="no">./yt-dlp_Linux --cookies-from-browser chrome LINK_YT -S res:1080,ext:mp4:m4a --recode mp4</pre>
+<p>Ale nie działa. Nazwę <span>chrome</span> trzeba zastąpić nazwą przeglądarki jakiej używasz.</p>
+
 </div>
 </div></article>
 
